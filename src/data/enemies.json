@@ -1,0 +1,264 @@
+{
+  "enemies": [
+    {
+      "id": "void_thornvine",
+      "name": "เถาวัลย์ทมิฬกลืนชีพ",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 61,
+      "agi": 40,
+      "sta": 31,
+      "signatureName": "แส้ทมิฬสูบวิญญาณ",
+      "signatureEffect": {
+        "type": "lifesteal_pct",
+        "value": 0.20
+      },
+      "ability": {
+        "id": "matter_absorbing_vine",
+        "name": "เถาวัลย์ดูดกลืนมวลสาร",
+        "description": "เมื่อโจมตีโดน มีโอกาส 60% ดูดซับพลังฟื้นฟู 4% Max HP และตัด SP ศัตรู -4 แต้ม",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["plant_s", "plant_m1", "martial_s", "trick_s"],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "toxic_sporeling",
+      "name": "สปอร์เห็ดพิษคลั่ง",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 47,
+      "agi": 42,
+      "sta": 42,
+      "signatureName": "ระเบิดสปอร์ทมิฬ",
+      "signatureEffect": {
+        "type": "poison",
+        "duration": 2,
+        "chance": 0.70
+      },
+      "ability": {
+        "id": "spore_dispersion",
+        "name": "ละอองสปอร์แพร่เชื้อ",
+        "description": "เมื่อถูกโจมตี มีโอกาส 65% ปล่อยละอองพิษสะท้อนใส่ผู้โจมตี ทำให้ติดพิษ (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": ["poison_s", "poison_m1", "trick_s", "earth_s"],
+      "preferredRow": "mid",
+      "backlineChance": 0.40
+    },
+    {
+      "id": "putrid_slime",
+      "name": "สไลม์โคลนเน่าเปื่อย",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 32,
+      "agi": 35,
+      "sta": 65,
+      "signatureName": "คลื่นโคลนดูดทลายทัพ",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2,
+        "chance": 0.65
+      },
+      "ability": {
+        "id": "viscous_elastic_body",
+        "name": "กายเนื้อหยุ่นตัวดูดซับแรง",
+        "description": "ได้รับ Block Rate +10% และมีโอกาส 60% ลดความเสียหายที่ได้รับลง 20%",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["earth_s", "earth_m2", "martial_s", "trick_s"],
+      "preferredRow": "front",
+      "backlineChance": 0.05
+    },
+    {
+      "id": "mist_droplet_blob",
+      "name": "บล็อบหยดน้ำหมอกมายา",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 44,
+      "agi": 44,
+      "sta": 44,
+      "signatureName": "ม่านละอองน้ำลวงตา",
+      "signatureEffect": {
+        "type": "regen_pct",
+        "value": 0.08,
+        "duration": 2
+      },
+      "ability": {
+        "id": "cleansing_water_mist",
+        "name": "ไอน้ำชำระล้างจิต",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู 5% Max HP และเพิ่ม FLEE +15 (1 เทิร์น)",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["water_s", "water_m1", "medical_s", "trick_s"],
+      "preferredRow": "back",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "cursed_wisp",
+      "name": "วิสป์เพลิงวิญญาณแค้น",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 42,
+      "agi": 50,
+      "sta": 39,
+      "signatureName": "เปลวเพลิงนรกาทลายวิญญาณ",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2,
+        "chance": 0.70
+      },
+      "ability": {
+        "id": "floating_spark",
+        "name": "ประกายไฟล่องลอย",
+        "description": "CRI Rate +10% คงที่ และเมื่อตีคริติคอล มีโอกาส 70% ทำให้ศัตรูติดเผาไหม้ (2 เทิร์น)",
+        "procChance": 0.70
+      },
+      "defaultSkills": ["fire_s", "fire_m1", "trick_s", "martial_s"],
+      "preferredRow": "mid",
+      "backlineChance": 0.60
+    },
+    {
+      "id": "anomalous_rockling",
+      "name": "ผลึกหินคอร์แปรปรวน",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 35,
+      "agi": 31,
+      "sta": 66,
+      "signatureName": "ปราการศิลากลืนพลัง",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.25,
+        "duration": 2
+      },
+      "ability": {
+        "id": "resonance_rock_armor",
+        "name": "เกล็ดหินสะท้อนคลื่น",
+        "description": "ลดดาเมจ 5% คงที่ และเมื่อถูกโจมตี มีโอกาส 60% สะท้อนดาเมจกลับ 15%",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["earth_s", "earth_m2", "martial_s", "catalyst_s"],
+      "preferredRow": "front",
+      "backlineChance": 0.05
+    },
+    {
+      "id": "phantom_mandrake",
+      "name": "แมนเดรกพรายหวีดหวิว",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 44,
+      "agi": 46,
+      "sta": 42,
+      "signatureName": "เสียงกรีดร้องทลายประสาท",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.60
+      },
+      "ability": {
+        "id": "haunting_resonator",
+        "name": "คลื่นเสียงหลอนวิญญาณ",
+        "description": "เมื่อโจมตี มีโอกาส 55% ทำให้ศัตรูติดสถานะสับสน (1 เทิร์น) หรือสตัน (1 เทิร์น)",
+        "procChance": 0.55
+      },
+      "defaultSkills": ["plant_s", "plant_m1", "secret_s", "trick_s"],
+      "preferredRow": "mid",
+      "backlineChance": 0.45
+    },
+    {
+      "id": "shadow_parasite",
+      "name": "ปรสิตดูดเงา",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 46,
+      "agi": 48,
+      "sta": 38,
+      "signatureName": "หนามทมิฬทะลวงจุดตาย",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.65
+      },
+      "ability": {
+        "id": "shadow_infiltration",
+        "name": "แทรกซึมใต้เงา",
+        "description": "เจาะเกราะ AB +15% และเมื่อโจมตี มีโอกาส 60% ทำให้ศัตรูติดตาบอด (1 เทิร์น)",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["dark_s", "dark_m1", "trick_s", "martial_s"],
+      "preferredRow": "mid",
+      "backlineChance": 0.60
+    },
+    {
+      "id": "caustic_acid_jelly",
+      "name": "เจลลี่กรดกัดกร่อน",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 60,
+      "agi": 39,
+      "sta": 33,
+      "signatureName": "มหาคลื่นกรดละลายวิญญาณ",
+      "signatureEffect": {
+        "type": "vulnerable",
+        "duration": 2,
+        "chance": 0.70
+      },
+      "ability": {
+        "id": "armor_melting_bile",
+        "name": "น้ำย่อยละลายเกราะ",
+        "description": "เมื่อโจมตีโดน มีโอกาส 65% ลด DEF ศัตรูลง 20% (2 เทิร์น) และติดเปราะบาง (1 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": ["poison_s", "poison_m1", "trick_m1", "martial_s"],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "gale_swarm_orb",
+      "name": "ลูกแก้ววายุฉวัดเฉวียน",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 40,
+      "agi": 54,
+      "sta": 37,
+      "signatureName": "พายุมีดสายลมร้อยทิศ",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2,
+        "chance": 0.65
+      },
+      "ability": {
+        "id": "razor_wind_core",
+        "name": "กระแสลมหมุนเฉือนเนื้อ",
+        "description": "SPD +8 หน่วยคงที่ และเมื่อโจมตี มีโอกาส 60% กรีดแผลเลือดไหล (Bleed 2 เทิร์น)",
+        "procChance": 0.60
+      },
+      "defaultSkills": ["wind_s", "wind_m1", "martial_s", "trick_s"],
+      "preferredRow": "mid",
+      "backlineChance": 0.60
+    }
+  ]
+}
+

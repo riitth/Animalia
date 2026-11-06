@@ -1,0 +1,44 @@
+{
+  "name": "animalia-wild-heroes",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sim": "esbuild src/sim/run_sim.ts --bundle --platform=node --format=esm --outfile=sim/run_sim_bundle.mjs && node sim/run_sim_bundle.mjs",
+    "sim:2v2": "esbuild src/sim/run_sim_2v2.ts --bundle --platform=node --format=esm --outfile=sim/run_sim_2v2_bundle.mjs && node sim/run_sim_2v2_bundle.mjs",
+    "sim:log": "esbuild src/sim/run_sim.ts --bundle --platform=node --format=esm --outfile=sim/run_sim_bundle.mjs && node sim/run_sim_bundle.mjs --mode=log",
+    "test:save": "esbuild src/sim/test_save_manager.ts --bundle --platform=node --format=esm --outfile=sim/test_save_bundle.mjs && node sim/test_save_bundle.mjs",
+    "test:campaign": "esbuild src/sim/test_campaign.ts --bundle --platform=node --format=esm --outfile=sim/test_campaign_bundle.mjs && node sim/test_campaign_bundle.mjs",
+    "test:skills": "esbuild src/sim/test_skill_board.ts --bundle --platform=node --format=esm --outfile=sim/test_skills_bundle.mjs && node sim/test_skills_bundle.mjs",
+    "test:roster": "esbuild src/sim/test_roster_sorting.ts --bundle --platform=node --format=esm --outfile=sim/test_roster_bundle.mjs && node sim/test_roster_bundle.mjs",
+    "test:pet-state": "esbuild src/sim/test_heroes_view_state.ts --bundle --platform=node --format=esm --outfile=sim/test_pet_state_bundle.mjs && node sim/test_pet_state_bundle.mjs",
+    "test:skill-state": "esbuild src/sim/test_skill_tree_state.ts --bundle --platform=node --format=esm --outfile=sim/test_skill_state_bundle.mjs && node sim/test_skill_state_bundle.mjs",
+    "test:battle-ui": "esbuild src/sim/test_battle_ui_state.ts --bundle --platform=node --format=esm --outfile=sim/test_battle_ui_bundle.mjs && node sim/test_battle_ui_bundle.mjs",
+    "test:loading": "esbuild src/sim/test_battle_loading.ts --bundle --platform=node --format=esm --outfile=sim/test_loading_bundle.mjs && node sim/test_loading_bundle.mjs",
+    "test:brief-badges": "esbuild src/sim/test_campaign_skill_badges.ts --bundle --platform=node --format=esm --outfile=sim/test_brief_badges_bundle.mjs && node sim/test_brief_badges_bundle.mjs",
+    "test:new-statuses": "esbuild src/sim/test_new_status_effects.ts --bundle --platform=node --format=esm --outfile=sim/test_new_statuses_bundle.mjs && node sim/test_new_statuses_bundle.mjs",
+    "test:behemoth": "esbuild src/sim/test_behemoth.ts --bundle --platform=node --format=esm --outfile=sim/test_behemoth_bundle.mjs && node sim/test_behemoth_bundle.mjs",
+    "test:phoenix": "esbuild src/sim/test_phoenix_revive.ts --bundle --platform=node --format=esm --outfile=sim/test_phoenix_bundle.mjs && node sim/test_phoenix_bundle.mjs",
+    "test:leviathan": "esbuild src/sim/test_leviathan.ts --bundle --platform=node --format=esm --outfile=sim/test_leviathan_bundle.mjs && node sim/test_leviathan_bundle.mjs",
+    "test:garuda": "esbuild src/sim/test_garuda.ts --bundle --platform=node --format=esm --outfile=sim/test_garuda_bundle.mjs && node sim/test_garuda_bundle.mjs",
+    "test:thunderbird": "esbuild src/sim/test_thunderbird.ts --bundle --platform=node --format=esm --outfile=sim/test_thunderbird_bundle.mjs && node sim/test_thunderbird_bundle.mjs",
+    "test:fenrir": "esbuild src/sim/test_fenrir.ts --bundle --platform=node --format=esm --outfile=sim/test_fenrir_bundle.mjs && node sim/test_fenrir_bundle.mjs",
+    "test:verdant_hydra": "esbuild src/sim/test_verdant_hydra.ts --bundle --platform=node --format=esm --outfile=sim/test_verdant_hydra_bundle.mjs && node sim/test_verdant_hydra_bundle.mjs",
+    "test:king_basilisk": "esbuild src/sim/test_king_basilisk.ts --bundle --platform=node --format=esm --outfile=sim/test_king_basilisk_bundle.mjs && node sim/test_king_basilisk_bundle.mjs",
+    "test:cerberus": "esbuild src/sim/test_cerberus.ts --bundle --platform=node --format=esm --outfile=sim/test_cerberus_bundle.mjs && node sim/test_cerberus_bundle.mjs",
+    "test:solar_griffin": "esbuild src/sim/test_solar_griffin.ts --bundle --platform=node --format=esm --outfile=sim/test_solar_griffin_bundle.mjs && node sim/test_solar_griffin_bundle.mjs",
+    "test:nine_tailed_fox": "esbuild src/sim/test_nine_tailed_fox.ts --bundle --platform=node --format=esm --outfile=sim/test_nine_tailed_fox_bundle.mjs && node sim/test_nine_tailed_fox_bundle.mjs",
+    "test:ss-tanks": "esbuild src/sim/test_ss_tanks.ts --bundle --platform=node --format=esm --outfile=sim/test_ss_tanks_bundle.mjs && node sim/test_ss_tanks_bundle.mjs",
+    "test:ss-assassins": "esbuild src/sim/test_ss_assassins.ts --bundle --platform=node --format=esm --outfile=sim/test_ss_assassins_bundle.mjs && node sim/test_ss_assassins_bundle.mjs",
+    "test:codex": "esbuild src/sim/test_codex.ts --bundle --platform=node --format=esm --outfile=sim/test_codex_bundle.mjs && node sim/test_codex_bundle.mjs",
+    "typecheck": "tsc --noEmit",
+    "dev": "vite",
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  }
+}
+

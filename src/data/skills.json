@@ -1,0 +1,2026 @@
+{
+  "statusRules": {
+    "burn": {
+      "hpLossPctPerTurn": 0.06,
+      "duration": 2
+    },
+    "poison": {
+      "hpLossPctPerTurn": 0.05,
+      "duration": 3,
+      "maxStacks": 2
+    },
+    "slow": {
+      "spdRedPct": 0.2,
+      "fleeRed": 10,
+      "duration": 2
+    },
+    "blind": {
+      "hitRed": 20,
+      "criRed": 10,
+      "duration": 2
+    },
+    "stun": {
+      "skipTurn": true,
+      "duration": 1,
+      "isHardCC": true
+    },
+    "freeze": {
+      "skipTurn": true,
+      "duration": 1,
+      "isHardCC": true
+    },
+    "root": {
+      "zeroFlee": true,
+      "disableSwap": true,
+      "duration": 2,
+      "isHardCC": true
+    },
+    "confusion": {
+      "selfHitChance": 0.6,
+      "selfDamageHpPct": 0.12,
+      "duration": 2
+    },
+    "bleed": {
+      "actionDamageHpPct": 0.06,
+      "onHitDamageHpPct": 0.04,
+      "duration": 2
+    },
+    "taunt": {
+      "dmgReductionPct": 0.1,
+      "duration": 2
+    },
+    "sleep": {
+      "skipTurn": true,
+      "duration": 2,
+      "wakeOnHit": true,
+      "wakeCritBonus": 1,
+      "wakeDmgMult": 1.3,
+      "isHardCC": true
+    },
+    "silence": {
+      "disableSkills": true,
+      "disableSpRegen": true,
+      "duration": 2
+    },
+    "vulnerable": {
+      "extraDmgPct": 0.25,
+      "disableShield": true,
+      "duration": 2
+    },
+    "fire_skin": {
+      "fireDmgBonusPct": 0.20,
+      "onHitBurnChance": 0.40,
+      "burnIgniteHpPct": 0.03,
+      "duration": 2
+    },
+    "berserk": {
+      "atkBonusPct": 0.30,
+      "spdBonusPct": 0.20,
+      "defRedPct": 0.20,
+      "hitRed": 10,
+      "duration": 2
+    },
+    "ice_skin": {
+      "spdRedPct": 0.30,
+      "defBonusPct": 0.20,
+      "onHitFreezeChance": 0.40,
+      "duration": 2
+    },
+    "stone_curse": {
+      "duration": 1,
+      "isHardCC": true,
+      "blockHealing": true,
+      "transformElement": "earth"
+    },
+    "curse": {
+      "hpLossPctPerTurn": 0.03,
+      "permanent": true
+    },
+    "paralysis": {
+      "spdRedPct": 0.25,
+      "flinchChance": 0.60,
+      "duration": 2
+    },
+    "energy_coat": {
+      "damageToSpPct": 0.40,
+      "duration": 3,
+      "isBuff": true
+    },
+    "golden_bell_shield": {
+      "shieldHpPct": 0.50,
+      "spdRedPct": 0.30,
+      "duration": 2,
+      "isBuff": true,
+      "exclusiveShield": true
+    },
+    "elemental_ward": {
+      "elemDmgRedPct": 0.10,
+      "duration": 2,
+      "isBuff": true,
+      "exclusiveShield": true
+    },
+    "iron_body": {
+      "defBonusPct": 0.50,
+      "finalDmgRedPct": 0.30,
+      "criBonus": 40,
+      "spdRedPct": 0.50,
+      "immuneStun": true,
+      "immuneParalysis": true,
+      "duration": 5,
+      "isBuff": true,
+      "exclusiveShield": true
+    },
+    "iron_fortress": {
+      "dmgRedPct": 0.15,
+      "duration": 2,
+      "isBuff": true
+    },
+    "ccResistancePerStack": 0.4,
+    "ccResistanceDuration": 3,
+    "spCosts": {
+      "S": 20,
+      "M": 35,
+      "L": 55
+    }
+  },
+  "skills": [
+    {
+      "id": "fire_s",
+      "name": "ลูกไฟ",
+      "element": "fire",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "burn",
+          "chance": 0.35,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · โอกาส 35% ติดเผาไหม้ (2 เทิร์น)"
+    },
+    {
+      "id": "fire_m1",
+      "name": "เขี้ยวเพลิง",
+      "element": "fire",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "burn",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ติดเผาไหม้แน่นอน (2 เทิร์น)"
+    },
+    {
+      "id": "fire_m2",
+      "name": "เกราะเปลวอัคคี",
+      "element": "fire",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "fire_skin",
+          "target": "self",
+          "duration": 2
+        },
+        {
+          "type": "buff_atk",
+          "target": "self",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.1 · ได้รับผิวกายเพลิง 🔥 (เพิ่มดาเมจไฟ 20% & โดนตีมีโอกาส 40% ศัตรูติดเผาไหม้/ระเบิด) และบัฟ ATK +15% (2 เทิร์น)"
+    },
+    {
+      "id": "fire_l",
+      "name": "ภูเขาไฟระเบิด",
+      "element": "fire",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "bonusIfTargetHas": {
+        "status": "burn",
+        "extraMult": 0.2
+      },
+      "effects": [
+        {
+          "type": "burn",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · ติดเผาไหม้ 2 เทิร์น (ถ้าศัตรูติดไฟอยู่แล้ว ดาเมจแรงขึ้น +20%)"
+    },
+    {
+      "id": "water_s",
+      "name": "กระสุนน้ำ",
+      "element": "water",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · ลด ATK ศัตรู 10% (2 เทิร์น)"
+    },
+    {
+      "id": "water_m1",
+      "name": "คลื่นซัดสาด",
+      "element": "water",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ลด SPD 15% และลด ATK 15% (2 เทิร์น)"
+    },
+    {
+      "id": "water_m2",
+      "name": "ม่านน้ำชำระล้าง",
+      "element": "water",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "cleanse",
+          "target": "self",
+          "count": 1
+        },
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "value": 0.18
+        },
+        {
+          "type": "sp_change",
+          "target": "self",
+          "value": 15
+        }
+      ],
+      "description": "ล้างดีบัฟตัวเอง 1 อย่าง + ฟื้น HP 18% ของ Max HP และเพิ่ม SP +15"
+    },
+    {
+      "id": "water_l",
+      "name": "สึนามิ",
+      "element": "water",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "value": 0.1
+        },
+        {
+          "type": "sp_change",
+          "target": "self",
+          "value": 15
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · ลด SPD ศัตรู 25% (2 เทิร์น) + ฟื้น HP ตัวเอง 10% และเพิ่ม SP +15"
+    },
+    {
+      "id": "wind_s",
+      "name": "ใบมีดลม",
+      "element": "wind",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "bonusCri": 15,
+      "effects": [],
+      "description": "ดาเมจ ×1.6 · โอกาสคริของท่านี้ +15%"
+    },
+    {
+      "id": "wind_m1",
+      "name": "กรงเล็บสายลม",
+      "element": "wind",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "ignoreFleePct": 0.5,
+      "effects": [
+        {
+          "type": "debuff_def",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ไม่คิด FLEE ศัตรู 50% + ลด DEF ศัตรู 15% (2 เทิร์น)"
+    },
+    {
+      "id": "wind_m2",
+      "name": "ลมหนุนหลัง",
+      "element": "wind",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "buff_spd",
+          "target": "self",
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "buff_flee",
+          "target": "self",
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "บัฟตัวเอง SPD +25% และ FLEE +15 (2 เทิร์น) + ตี ×1.1"
+    },
+    {
+      "id": "wind_l",
+      "name": "พายุหมุนยักษ์",
+      "element": "wind",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "buff_spd",
+          "target": "self",
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "buff_cri",
+          "target": "self",
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · บัฟตัวเอง SPD +20% และ CRI% +15% (2 เทิร์น)"
+    },
+    {
+      "id": "earth_s",
+      "name": "ก้อนหินถล่ม",
+      "element": "earth",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "slow",
+          "chance": 0.5,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · โอกาส 50% ติดสโลว์ (SPD −20%, 2 เทิร์น)"
+    },
+    {
+      "id": "earth_m1",
+      "name": "ธรณีสูบ",
+      "element": "earth",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "slow",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ติดสโลว์แน่นอน (SPD −20%, FLEE −10, 2 เทิร์น)"
+    },
+    {
+      "id": "earth_m2",
+      "name": "กำแพงดิน",
+      "element": "earth",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "buff_def",
+          "target": "self",
+          "value": 0.3,
+          "duration": 2
+        },
+        {
+          "type": "buff_block",
+          "target": "self",
+          "value": 15,
+          "duration": 2
+        },
+        {
+          "type": "taunt",
+          "target": "enemy",
+          "chance": 0.7,
+          "duration": 2
+        }
+      ],
+      "description": "บัฟ DEF +30%, Block +15% และโอกาส 70% ยั่วยุ 💢 (2 เทิร์น) + ตี ×1.1"
+    },
+    {
+      "id": "earth_l",
+      "name": "แผ่นดินไหว",
+      "element": "earth",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "slow",
+          "chance": 1,
+          "duration": 2
+        },
+        {
+          "type": "stone_curse",
+          "chance": 0.35,
+          "duration": 1
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · ติดสโลว์ 2 เทิร์น + โอกาส 35% สาปกลายเป็นหิน 🗿 (1 เทิร์น: กลายเป็นธาตุดิน ห้ามโจมตีและห้ามฟื้นฟู)"
+    },
+    {
+      "id": "lightning_s",
+      "name": "ประกายไฟฟ้า",
+      "element": "lightning",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "bonusAb": 15,
+      "effects": [
+        {
+          "type": "paralysis",
+          "chance": 0.3,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · เจาะเกราะเพิ่ม +15% ในท่านี้ + โอกาส 30% ติดอัมพาต (2 เทิร์น: SPD -25%, ชะงัก 60%)"
+    },
+    {
+      "id": "lightning_m1",
+      "name": "โซ่สายฟ้า",
+      "element": "lightning",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "paralysis",
+          "chance": 0.55,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ปล่อยกระแสไฟช็อต โอกาส 55% ติดอัมพาต (2 เทิร์น: SPD -25%, ชะงัก 60%)"
+    },
+    {
+      "id": "lightning_m2",
+      "name": "สนามชาร์จพลัง",
+      "element": "lightning",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "buff_atk",
+          "target": "self",
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "buff_ab",
+          "target": "self",
+          "value": 20,
+          "duration": 2
+        }
+      ],
+      "description": "บัฟ ATK +20% และ Armor Break +20% (2 เทิร์น) + ตี ×1.1"
+    },
+    {
+      "id": "lightning_l",
+      "name": "ฟ้าผ่าพิโรธ",
+      "element": "lightning",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "stun",
+          "chance": 0.45,
+          "duration": 1
+        },
+        {
+          "type": "paralysis",
+          "chance": 0.65,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · โอกาส 45% ติดสตัน 1 เทิร์น และโอกาส 65% ช็อตติดอัมพาต (2 เทิร์น: SPD -25%, ชะงัก 60%)"
+    },
+    {
+      "id": "ice_s",
+      "name": "เกล็ดน้ำแข็ง",
+      "element": "ice",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · ลด SPD ศัตรู 15% (2 เทิร์น)"
+    },
+    {
+      "id": "ice_m1",
+      "name": "หอกน้ำแข็ง",
+      "element": "ice",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "freeze",
+          "chance": 0.3,
+          "duration": 1
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · โอกาส 30% ติดแช่แข็ง 1 เทิร์น"
+    },
+    {
+      "id": "ice_m2",
+      "name": "เกราะเหมันต์",
+      "element": "ice",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "ice_skin",
+          "target": "self",
+          "duration": 2
+        },
+        {
+          "type": "shield",
+          "target": "self",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "สร้างเกราะ 15% Max HP และได้รับผิวกายเยือกแข็ง ❄️ (DEF +20%, SPD −30%, ถูกตีมีโอกาส 40% แช่แข็งศัตรูและเปลี่ยนเป็นธาตุน้ำแข็ง) (2 เทิร์น)"
+    },
+    {
+      "id": "ice_l",
+      "name": "พายุหิมะ",
+      "element": "ice",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "freeze",
+          "chance": 0.55,
+          "bonusChanceIfSlowed": 0.2,
+          "duration": 1
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · โอกาส 55% ติดแช่แข็ง 1 เทิร์น (ถ้าศัตรูติดสโลว์อยู่ โอกาสเป็น 75%)"
+    },
+    {
+      "id": "plant_s",
+      "name": "เถาวัลย์ดูดเลือด",
+      "element": "plant",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.5,
+      "lifestealPct": 0.3,
+      "effects": [],
+      "description": "ดาเมจ ×1.5 · ดูด HP 30% ของดาเมจที่ทำได้"
+    },
+    {
+      "id": "plant_m1",
+      "name": "หนามพันธนาการ",
+      "element": "plant",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "root",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ติดสถานะตรึง (FLEE=0, ห้ามสลับตัว 2 เทิร์น)"
+    },
+    {
+      "id": "plant_m2",
+      "name": "พลังฟื้นคืนป่า",
+      "element": "plant",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.3,
+      "lifestealPct": 0.5,
+      "effects": [
+        {
+          "type": "regen",
+          "target": "self",
+          "value": 0.06,
+          "duration": 2
+        }
+      ],
+      "description": "ดูด HP ×1.3 ดาเมจ (ดูด 50%) + ฟื้น HP ต่อเนื่อง 6%/เทิร์น (2 เทิร์น)"
+    },
+    {
+      "id": "plant_l",
+      "name": "ป่ากลืนกิน",
+      "element": "plant",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.1,
+      "lifestealPct": 0.4,
+      "effects": [
+        {
+          "type": "root",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.1 · ดูด HP 40% ของดาเมจที่ทำได้ + ติดตรึง 2 เทิร์น"
+    },
+    {
+      "id": "poison_s",
+      "name": "เข็มพิษ",
+      "element": "poison",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.55,
+      "effects": [
+        {
+          "type": "poison",
+          "chance": 0.6,
+          "duration": 3
+        }
+      ],
+      "description": "ดาเมจ ×1.55 · โอกาส 60% ติดพิษ (3 เทิร์น)"
+    },
+    {
+      "id": "poison_m1",
+      "name": "หมอกพิษอ่อนแรง",
+      "element": "poison",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "poison",
+          "chance": 1,
+          "duration": 3
+        },
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · ติดพิษแน่นอน (3 เทิร์น) + ลด ATK ศัตรู 15% (2 เทิร์น)"
+    },
+    {
+      "id": "poison_m2",
+      "name": "เขี้ยวอสรพิษ",
+      "element": "poison",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.75,
+      "bonusIfTargetHas": {
+        "status": "poison",
+        "extraMult": 0.2
+      },
+      "effects": [
+        {
+          "type": "bleed",
+          "chance": 0.6,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.75 · โอกาส 60% ติดเลือดไหล (2 เทิร์น) (ถ้าศัตรูติดพิษอยู่แล้ว ดาเมจเพิ่มเป็น ×2.1)"
+    },
+    {
+      "id": "poison_l",
+      "name": "พิษกัดกร่อน",
+      "element": "poison",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.1,
+      "effects": [
+        {
+          "type": "poison",
+          "chance": 1,
+          "stacks": 2,
+          "duration": 3
+        },
+        {
+          "type": "debuff_def",
+          "target": "enemy",
+          "value": 0.2,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.1 · ติดพิษ 2 ชั้นทันที (3 เทิร์น) + ลด DEF ศัตรู 20% (2 เทิร์น)"
+    },
+    {
+      "id": "dark_s",
+      "name": "เล็บเงา",
+      "element": "dark",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "blind",
+          "chance": 0.45,
+          "duration": 1
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · โอกาส 45% ติดตาบอด (HIT −20, 1 เทิร์น)"
+    },
+    {
+      "id": "dark_m1",
+      "name": "ม่านมืดบอด",
+      "element": "dark",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "blind",
+          "chance": 1,
+          "duration": 1
+        },
+        {
+          "type": "silence",
+          "chance": 0.45,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · ติดตาบอดแน่นอน (1 เทิร์น) + โอกาส 45% ติดใบ้ 🔕 (2 เทิร์น)"
+    },
+    {
+      "id": "dark_m2",
+      "name": "ดูดกลืนเงา",
+      "element": "dark",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.5,
+      "effects": [
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "buff_atk",
+          "target": "self",
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "dispel",
+          "target": "enemy",
+          "chance": 0.3,
+          "count": 1
+        }
+      ],
+      "description": "ดาเมจ ×1.5 · ขโมย ATK ศัตรู 15% มาเป็นของตัวเอง (2 เทิร์น) + โอกาส 30% สุ่มลบล้างบัฟด้านดีของศัตรู 1 อย่าง"
+    },
+    {
+      "id": "dark_l",
+      "name": "กลืนกินความมืด",
+      "element": "dark",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "blind",
+          "chance": 1,
+          "duration": 1
+        },
+        {
+          "type": "curse",
+          "chance": 0.45
+        }
+      ],
+      "description": "ดาเมจ ×2.2 · ติดตาบอด 1 เทิร์น + โอกาส 45% ติดคำสาปมรณะ 🔮 (ลด HP 3% ทุกเทิร์นจนกว่าจะตาย ล้างด้วย Cleanse เท่านั้น)"
+    },
+    {
+      "id": "light_s",
+      "name": "ลำแสงศักดิ์สิทธิ์",
+      "element": "light",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "buff_hit",
+          "target": "self",
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.6 · บัฟ HIT ตัวเอง +15 (2 เทิร์น)"
+    },
+    {
+      "id": "light_m1",
+      "name": "แสงพิพากษา",
+      "element": "light",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "debuff_cri",
+          "target": "enemy",
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×1.65 · ลด ATK และ CRI% ศัตรู 15% (2 เทิร์น)"
+    },
+    {
+      "id": "light_m2",
+      "name": "ปราการแห่งแสง",
+      "element": "light",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "shield",
+          "target": "self",
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "cleanse",
+          "target": "self",
+          "count": 1
+        }
+      ],
+      "description": "สร้างเกราะรับดาเมจ 25% ของ Max HP (2 เทิร์น) + ล้างดีบัฟ 1 อย่าง"
+    },
+    {
+      "id": "light_l",
+      "name": "รัศมีบริสุทธิ์",
+      "element": "light",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.1,
+      "effects": [
+        {
+          "type": "shield",
+          "target": "self",
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "value": 0.2,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจ ×2.1 · สร้างเกราะให้ตัวเอง 20% Max HP (2 เทิร์น) + ลด ATK ศัตรู 20%"
+    },
+    {
+      "id": "martial_s",
+      "name": "หมัดกระแทกจุดตาย",
+      "element": "neutral",
+      "branch": "martial",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.6,
+      "effects": [
+        {
+          "type": "blind",
+          "chance": 0.45,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีไร้ธาตุ ×1.60 · โอกาส 45% ติดตาบอด (HIT −20, CRI −10%, 2 เทิร์น)"
+    },
+    {
+      "id": "martial_m1",
+      "name": "เตะตัดขาพสุธา",
+      "element": "neutral",
+      "branch": "martial",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "slow",
+          "chance": 0.65,
+          "duration": 2
+        },
+        {
+          "type": "root",
+          "chance": 0.35,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีไร้ธาตุ ×1.65 · โอกาส 65% ติดสโลว์ (2 เทิร์น) และโอกาส 35% ติดตรึง (2 เทิร์น)"
+    },
+    {
+      "id": "martial_m2",
+      "name": "ฝ่ามือสะท้านทรวง",
+      "element": "neutral",
+      "branch": "martial",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "effects": [
+        {
+          "type": "burn",
+          "chance": 0.6,
+          "duration": 2
+        },
+        {
+          "type": "stun",
+          "chance": 0.3,
+          "duration": 1
+        }
+      ],
+      "description": "โจมตีไร้ธาตุ ×1.65 · โอกาส 60% ติดเผาไหม้/บาดเจ็บภายใน (2 เทิร์น) และโอกาส 30% ติดสตัน (1 เทิร์น)"
+    },
+    {
+      "id": "martial_l",
+      "name": "เพลงยุทธ์สยบมาร",
+      "element": "neutral",
+      "branch": "martial",
+      "unlockedByDefault": true,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.2,
+      "effects": [
+        {
+          "type": "stun",
+          "chance": 0.65,
+          "duration": 1
+        },
+        {
+          "type": "slow",
+          "chance": 0.65,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีไร้ธาตุ ×2.20 · โอกาส 65% ติดสตัน (1 เทิร์น) และโอกาส 65% ติดสโลว์ (2 เทิร์น)"
+    },
+    {
+      "id": "medical_s",
+      "name": "สมุนไพรพันแผล",
+      "element": "neutral",
+      "branch": "medical",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 0.8,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "chance": 1,
+          "value": 0.12
+        },
+        {
+          "type": "regen",
+          "target": "self",
+          "chance": 0.5,
+          "value": 0.06,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×0.80 · ฟื้น HP 12% Max HP + โอกาส 50% ได้ Regen 6%/เทิร์น (2 เทิร์น)"
+    },
+    {
+      "id": "medical_m1",
+      "name": "เข็มทิพย์ถอนพิษ",
+      "element": "neutral",
+      "branch": "medical",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0.9,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "chance": 1,
+          "value": 0.15
+        },
+        {
+          "type": "cleanse",
+          "target": "self",
+          "chance": 0.75,
+          "count": 1
+        },
+        {
+          "type": "sp_change",
+          "target": "self",
+          "chance": 1,
+          "value": 20
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×0.90 · ฟื้น HP 15% Max HP, ฟื้น SP +20 + โอกาส 75% ล้างดีบัฟตัวเอง 1 อย่าง"
+    },
+    {
+      "id": "medical_m2",
+      "name": "หัตถ์เทวะฟื้นชีพ",
+      "element": "neutral",
+      "branch": "medical",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "chance": 1,
+          "value": 0.22
+        },
+        {
+          "type": "buff_def",
+          "target": "self",
+          "chance": 0.6,
+          "value": 0.25,
+          "duration": 2
+        }
+      ],
+      "description": "ฟื้นฟู HP ตัวเอง 22% Max HP + โอกาส 60% ได้รับบัฟ DEF +25% (2 เทิร์น)"
+    },
+    {
+      "id": "medical_l",
+      "name": "ปาฏิหาริย์แห่งชีวิต",
+      "element": "neutral",
+      "branch": "medical",
+      "unlockedByDefault": true,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "self",
+          "chance": 1,
+          "value": 0.28
+        },
+        {
+          "type": "sp_change",
+          "target": "self",
+          "chance": 1,
+          "value": 35
+        },
+        {
+          "type": "cleanse",
+          "target": "self",
+          "chance": 0.8,
+          "count": 99
+        },
+        {
+          "type": "shield",
+          "target": "self",
+          "chance": 0.8,
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ฟื้นฟู HP ตัวเอง 28% Max HP, ฟื้น SP +35 + โอกาส 80% ล้างดีบัฟทั้งหมดและได้เกราะ 15% Max HP (2 เทิร์น)"
+    },
+    {
+      "id": "trick_s",
+      "name": "ทรายพรางตา",
+      "element": "neutral",
+      "branch": "trick",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.15,
+      "effects": [
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "chance": 0.65,
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "debuff_hit",
+          "target": "enemy",
+          "chance": 0.65,
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.15 · โอกาส 65% ลด ATK ศัตรู 15% และลด HIT 15 (2 เทิร์น)"
+    },
+    {
+      "id": "trick_m1",
+      "name": "กับดักทลายเกราะ",
+      "element": "neutral",
+      "branch": "trick",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.2,
+      "effects": [
+        {
+          "type": "debuff_def",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "vulnerable",
+          "target": "enemy",
+          "chance": 0.5,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.20 · ลด DEF 25%, SPD 15% และโอกาส 50% ติดเปราะบาง 💔 (2 เทิร์น)"
+    },
+    {
+      "id": "trick_m2",
+      "name": "กลลวงตัดกำลัง",
+      "element": "neutral",
+      "branch": "trick",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.2,
+      "effects": [
+        {
+          "type": "debuff_cri",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": 20,
+          "duration": 2
+        },
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": -15
+        },
+        {
+          "type": "sp_change",
+          "target": "enemy",
+          "chance": 0.75,
+          "value": -15
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.20 · โอกาส 75% ลด CRI% ศัตรู 20%, ลด ATK 20% (2 เทิร์น), ลดเกจไม้ตาย 15 และตัด SP ศัตรู −15"
+    },
+    {
+      "id": "trick_l",
+      "name": "ค่ายกลลวงสังหาร",
+      "element": "neutral",
+      "branch": "trick",
+      "unlockedByDefault": true,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 1.35,
+      "effects": [
+        {
+          "type": "debuff_atk",
+          "target": "enemy",
+          "chance": 0.85,
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "debuff_def",
+          "target": "enemy",
+          "chance": 0.85,
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "chance": 0.85,
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "blind",
+          "target": "enemy",
+          "chance": 0.85,
+          "duration": 2
+        },
+        {
+          "type": "sp_change",
+          "target": "enemy",
+          "chance": 0.85,
+          "value": -20
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.35 · โอกาส 85% ลด ATK 25%, DEF 25%, SPD 20%, ติดตาบอด (2 เทิร์น) และตัด SP ศัตรู −20"
+    },
+    {
+      "id": "catalyst_s",
+      "name": "กระตุ้นชีพจร",
+      "element": "neutral",
+      "branch": "catalyst",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 0.8,
+      "effects": [
+        {
+          "type": "buff_spd",
+          "target": "self",
+          "chance": 0.7,
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "buff_atk",
+          "target": "self",
+          "chance": 0.7,
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "self",
+          "chance": 0.7,
+          "value": 10
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×0.80 · โอกาส 70% บัฟ SPD +20%, ATK +15% (2 เทิร์น) และเพิ่มเกจไม้ตาย +10"
+    },
+    {
+      "id": "catalyst_m1",
+      "name": "เร่งประจุวิญญาณ",
+      "element": "neutral",
+      "branch": "catalyst",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0.85,
+      "effects": [
+        {
+          "type": "buff_cri",
+          "target": "self",
+          "chance": 0.75,
+          "value": 20,
+          "duration": 2
+        },
+        {
+          "type": "buff_ab",
+          "target": "self",
+          "chance": 0.75,
+          "value": 20,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "self",
+          "chance": 0.75,
+          "value": 15
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×0.85 · โอกาส 75% บัฟ CRI% +20%, เจาะเกราะ +20% (2 เทิร์น) และเพิ่มเกจไม้ตาย +15"
+    },
+    {
+      "id": "catalyst_m2",
+      "name": "ระเบิดปฏิกิริยาธาตุ",
+      "element": "neutral",
+      "branch": "catalyst",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1,
+      "bonusIfTargetHas": {
+        "status": "burn_or_poison",
+        "extraMult": 0.5
+      },
+      "effects": [
+        {
+          "type": "buff_atk",
+          "target": "self",
+          "chance": 0.75,
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "buff_hit",
+          "target": "self",
+          "chance": 0.75,
+          "value": 20,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.00 · โอกาส 75% บัฟ ATK +25%, HIT +20 (2 เทิร์น) (ถ้าศัตรูติดเผาไหม้/พิษ แรงขึ้น +50%)"
+    },
+    {
+      "id": "catalyst_l",
+      "name": "ขีดจำกัดสายเลือด",
+      "element": "neutral",
+      "branch": "catalyst",
+      "unlockedByDefault": true,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "berserk",
+          "target": "self",
+          "chance": 0.85,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "self",
+          "chance": 0.85,
+          "value": 25
+        }
+      ],
+      "description": "ไม่โจมตี · โอกาส 85% เข้าสู่สภาวะคลั่งศึก 😡 (ATK +30%, SPD +20%, DEF −20%, HIT −10, 2 เทิร์น) และเพิ่มเกจไม้ตาย +25"
+    },
+    {
+      "id": "secret_s",
+      "name": "ฝนสุรา",
+      "element": "neutral",
+      "branch": "secret",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "wine_mist",
+          "target": "enemy",
+          "chance": 0.8,
+          "duration": 3
+        },
+        {
+          "type": "sleep",
+          "target": "enemy",
+          "chance": 0.4,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.10 · ชโลมฝนสุรา (3 เทิร์น) + โอกาส 40% ติดหลับใหล 💤 (2 เทิร์น)"
+    },
+    {
+      "id": "secret_m1",
+      "name": "กระจกยาตะ",
+      "element": "neutral",
+      "branch": "secret",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.35,
+      "effects": [
+        {
+          "type": "yata_mirror",
+          "target": "self",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.35 · กางม่านกระจกยาตะ (2 เทิร์น) เมื่อถูกโจมตี มีโอกาส 55% สะท้อนแสงจ้าทำให้ผู้โจมตีติดตาบอด (2 เทิร์น)"
+    },
+    {
+      "id": "secret_m2",
+      "name": "กระบวนท่าสวนกลับ",
+      "element": "neutral",
+      "branch": "secret",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.45,
+      "effects": [
+        {
+          "type": "counter_stance",
+          "target": "self",
+          "chance": 1,
+          "duration": 2
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.45 · เข้าท่าตั้งรับสวนกลับ (2 เทิร์น) เมื่อถูกโจมตี มีโอกาส 55% ฟันสวนกลับทันทีด้วยดาเมจ 45% ของ ATK"
+    },
+    {
+      "id": "secret_m3",
+      "name": "อัสนีคลั่ง",
+      "element": "neutral",
+      "branch": "secret",
+      "unlockedByDefault": true,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.4,
+      "effects": [
+        {
+          "type": "raging_thunder",
+          "target": "self",
+          "chance": 1,
+          "duration": 3
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.40 · เรียกเมฆอัสนีคลั่ง (3 เทิร์น) สุ่มผ่าสายฟ้าทุกต้นเทิร์น (โอกาส 70% ผ่าศัตรู, 30% ผ่าพวกเดียวกัน)"
+    },
+    {
+      "id": "secret_l",
+      "name": "วิชาลับเงามายา",
+      "element": "neutral",
+      "branch": "secret",
+      "unlockedByDefault": true,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 1.2,
+      "effects": [
+        {
+          "type": "shadow_clone",
+          "target": "self",
+          "chance": 1,
+          "duration": 3
+        }
+      ],
+      "description": "ตีไร้ธาตุ ×1.20 · เสกเงามายา (3 เทิร์น, ไม่ทอยซ้ำขณะมีเงา) ทุกครั้งที่โจมตี เงาจะฟันซ้ำเสริมด้วยดาเมจ 50% ของการโจมตีธรรมดา"
+    },
+    {
+      "id": "defense_s",
+      "name": "เกราะระฆังทอง",
+      "element": "neutral",
+      "branch": "defense",
+      "unlockedByDefault": true,
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "golden_bell_shield",
+          "target": "self",
+          "chance": 1,
+          "value": 0.5,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · สร้างเกราะระฆังทองที่มีพลังชีวิต 50% ของ Max HP ผู้ใช้งาน แต่ลด SPD ลง 30% (สูงสุด 2 เทิร์น, ไม่สามารถทับซ้อนกับสกิลเกราะตนเองและเกราะอื่นๆ ได้)"
+    },
+    {
+      "id": "defense_m1",
+      "name": "เกราะสลายธาตุ",
+      "element": "neutral",
+      "branch": "defense",
+      "unlockedByDefault": false,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "elemental_ward",
+          "target": "self",
+          "chance": 1,
+          "value": 0.1,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · สร้างเกราะลดทอนความเสียหายเฉพาะการโจมตีด้วยธาตุต่างๆ ลง 10% (สูงสุด 2 เทิร์น, ไม่สามารถทับซ้อนกับสกิลเกราะตนเองและเกราะอื่นๆ ได้)"
+    },
+    {
+      "id": "defense_m2",
+      "name": "เกราะกระแทก",
+      "element": "neutral",
+      "branch": "defense",
+      "unlockedByDefault": false,
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.35,
+      "useDefForAtk": true,
+      "effects": [
+        {
+          "type": "stun",
+          "chance": 0.4,
+          "duration": 1
+        },
+        {
+          "type": "paralysis",
+          "chance": 0.6,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีไร้ธาตุ (ใช้ค่า DEF แทนค่า ATK ×1.35) · พุ่งกระแทกศัตรูด้วยความแรง โอกาส 40% ติดสตัน (1 เทิร์น) และโอกาส 60% ติดอัมพาต (2 เทิร์น)"
+    },
+    {
+      "id": "defense_l",
+      "name": "กายาเหล็ก",
+      "element": "neutral",
+      "branch": "defense",
+      "unlockedByDefault": false,
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "iron_body",
+          "target": "self",
+          "chance": 1,
+          "duration": 5
+        }
+      ],
+      "description": "ไม่โจมตี · จิตแห่งกายเหล็กกล้า เพิ่ม DEF +50%, ดาเมจสุดท้ายที่ได้รับลดลง 30%, เพิ่ม CRI +40%, ลด SPD 50% และป้องกันสตัน/อัมพาต 100% (5 เทิร์น, ไม่สามารถทับซ้อนกับสกิลเกราะตนเองและเกราะอื่นๆ ได้)"
+    },
+    {
+      "id": "fire_aoe",
+      "name": "คลื่นเพลิงผลาญทัพ",
+      "element": "fire",
+      "tier": "L",
+      "targetScope": "all_enemies",
+      "baseChance": 0.1,
+      "damageMult": 1.15,
+      "effects": [
+        {
+          "type": "burn",
+          "chance": 0.4,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีหมู่ศัตรูทั้งหมด ดาเมจ ×1.15 · โอกาส 40% ติดเผาไหม้ (2 เทิร์น)"
+    },
+    {
+      "id": "water_aoe",
+      "name": "คลื่นสมุทรชำระล้าง",
+      "element": "water",
+      "tier": "L",
+      "targetScope": "all_allies",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "all_allies",
+          "value": 0.12
+        },
+        {
+          "type": "cleanse",
+          "target": "all_allies",
+          "count": 1
+        }
+      ],
+      "description": "ไม่โจมตี · ฟื้นฟู HP สมาชิกทุกคน 12% Max HP + ล้างดีบัฟ 1 สถานะให้ทุกคน"
+    },
+    {
+      "id": "wind_aoe",
+      "name": "วาตภัยพายุหมุน",
+      "element": "wind",
+      "tier": "M",
+      "targetScope": "all_enemies",
+      "baseChance": 0.15,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีหมู่ศัตรูทั้งหมด ดาเมจ ×1.10 · ลด SPD ศัตรูทุกคน 15% (2 เทิร์น)"
+    },
+    {
+      "id": "earth_aoe",
+      "name": "ปราการศิลาคุ้มภัย",
+      "element": "earth",
+      "tier": "M",
+      "targetScope": "all_allies",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "shield",
+          "target": "all_allies",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · มอบเกราะป้องกันให้สมาชิกทุกคน 15% Max HP (2 เทิร์น)"
+    },
+    {
+      "id": "lightning_aoe",
+      "name": "พายุอัสนีบาตฟาดสาย",
+      "element": "lightning",
+      "tier": "L",
+      "targetScope": "all_enemies",
+      "baseChance": 0.1,
+      "damageMult": 1.25,
+      "effects": [
+        {
+          "type": "stun",
+          "chance": 0.2,
+          "duration": 1
+        },
+        {
+          "type": "paralysis",
+          "chance": 0.4,
+          "duration": 2
+        }
+      ],
+      "description": "โจมตีหมู่ศัตรูทั้งหมด ดาเมจ ×1.25 · โอกาส 20% สตัน (1 เทิร์น) และโอกาส 40% ติดอัมพาต (2 เทิร์น)"
+    },
+    {
+      "id": "ice_aoe",
+      "name": "อาณาเขตพายุหิมะ",
+      "element": "ice",
+      "tier": "L",
+      "targetScope": "all_enemies",
+      "baseChance": 0.1,
+      "damageMult": 1.05,
+      "effects": [
+        {
+          "type": "debuff_spd",
+          "target": "enemy",
+          "value": 0.2,
+          "duration": 2
+        },
+        {
+          "type": "freeze",
+          "chance": 0.35,
+          "duration": 1
+        }
+      ],
+      "description": "โจมตีหมู่ศัตรูทั้งหมด ดาเมจ ×1.05 · ลด SPD ศัตรูทุกคน 20% (2 เทิร์น) และโอกาส 35% ติดแช่แข็ง (1 เทิร์น)"
+    },
+    {
+      "id": "plant_aoe",
+      "name": "ละอองเกสรฟื้นไพร",
+      "element": "plant",
+      "tier": "L",
+      "targetScope": "all_allies",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "all_allies",
+          "value": 0.1
+        },
+        {
+          "type": "regen_pct",
+          "target": "all_allies",
+          "value": 0.05,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · ฟื้นฟู HP สมาชิกทุกคน 10% Max HP + บัฟรีเจน 5% Max HP/เทิร์น (2 เทิร์น)"
+    },
+    {
+      "id": "poison_aoe",
+      "name": "ไอหมอกพิษกัดกร่อน",
+      "element": "poison",
+      "tier": "M",
+      "targetScope": "all_enemies",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "poison",
+          "chance": 1,
+          "duration": 3
+        },
+        {
+          "type": "debuff_def",
+          "target": "enemy",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · ศัตรูทุกคนติดพิษ 3 เทิร์น และลด DEF ศัตรูทุกคน 15% (2 เทิร์น)"
+    },
+    {
+      "id": "dark_aoe",
+      "name": "เงาราตรีกลืนวิญญาณ",
+      "element": "dark",
+      "tier": "L",
+      "targetScope": "all_enemies",
+      "baseChance": 0.1,
+      "damageMult": 1.1,
+      "effects": [
+        {
+          "type": "blind",
+          "chance": 0.5,
+          "duration": 2
+        },
+        {
+          "type": "sp_drain",
+          "target": "enemy",
+          "value": 6
+        }
+      ],
+      "description": "โจมตีหมู่ศัตรูทั้งหมด ดาเมจ ×1.10 · โอกาส 50% ติดตาบอด (2 เทิร์น) + ดูด SP ศัตรูละ 6 SP"
+    },
+    {
+      "id": "light_aoe",
+      "name": "ประกายสุริยันศักดิ์สิทธิ์",
+      "element": "light",
+      "tier": "M",
+      "targetScope": "all_allies",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "buff_cri",
+          "target": "all_allies",
+          "value": 10,
+          "duration": 2
+        },
+        {
+          "type": "buff_flee",
+          "target": "all_allies",
+          "value": 10,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · บัฟทีมเราทุกคน CRI% +10% และ FLEE +10 (2 เทิร์น)"
+    },
+    {
+      "id": "martial_aoe",
+      "name": "หมัดกระแทกผ่าแนวรบ",
+      "element": "neutral",
+      "branch": "martial",
+      "tier": "M",
+      "targetScope": "front_enemies",
+      "baseChance": 0.15,
+      "damageMult": 1.45,
+      "effects": [
+        {
+          "type": "armor_break",
+          "target": "enemy",
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจกายภาพกวาดแนวหน้า ×1.45 · เจาะเกราะ AB +15%"
+    },
+    {
+      "id": "medical_aoe",
+      "name": "โอสถประสานชีวิต",
+      "element": "neutral",
+      "branch": "medical",
+      "tier": "L",
+      "targetScope": "all_allies",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "heal_pct",
+          "target": "all_allies",
+          "value": 0.14
+        },
+        {
+          "type": "sp_change",
+          "target": "all_allies",
+          "value": 8
+        }
+      ],
+      "description": "ไม่โจมตี · ฟื้นฟู HP สมาชิกทุกคน 14% Max HP + ฟื้นฟู SP ให้สมาชิกทุกคน +8 SP"
+    },
+    {
+      "id": "trick_aoe",
+      "name": "ระเบิดควันสับสน",
+      "element": "neutral",
+      "branch": "trick",
+      "tier": "M",
+      "targetScope": "all_enemies",
+      "baseChance": 0.15,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "debuff_hit",
+          "target": "enemy",
+          "value": 20,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "enemy",
+          "value": -15
+        }
+      ],
+      "description": "ไม่โจมตี · ลด HIT ศัตรูทุกคน 20 (2 เทิร์น) + ลดเกจไม้ตายศัตรูทุกคนลง 15 แต้ม"
+    },
+    {
+      "id": "catalyst_aoe",
+      "name": "คลื่นปลุกเร้าจิตวิญญาณ",
+      "element": "neutral",
+      "branch": "catalyst",
+      "tier": "L",
+      "targetScope": "all_allies",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "buff_atk",
+          "target": "all_allies",
+          "value": 0.15,
+          "duration": 2
+        },
+        {
+          "type": "gauge_change",
+          "target": "all_allies",
+          "value": 12
+        }
+      ],
+      "description": "ไม่โจมตี · บัฟ ATK +15% ให้ทุกคน (2 เทิร์น) + เร่งเกจไม้ตายสมาชิกทุกคน +12 แต้ม"
+    },
+    {
+      "id": "defense_aoe",
+      "name": "ค่ายกลปราการเหล็ก",
+      "element": "neutral",
+      "branch": "defense",
+      "tier": "L",
+      "targetScope": "all_allies",
+      "baseChance": 0.1,
+      "damageMult": 0,
+      "effects": [
+        {
+          "type": "buff_def",
+          "target": "all_allies",
+          "value": 0.25,
+          "duration": 2
+        },
+        {
+          "type": "buff_block",
+          "target": "all_allies",
+          "value": 20,
+          "duration": 2
+        },
+        {
+          "type": "iron_fortress",
+          "target": "all_allies",
+          "value": 0.15,
+          "duration": 2
+        }
+      ],
+      "description": "ไม่โจมตี · กางอาณาเขตคุ้มกันให้สมาชิกทีมทุกคน เพิ่ม DEF +25%, Block +20% (ป้องกันการเจาะเกราะ) และลดดาเมจที่ได้รับลง 15% (2 เทิร์น)"
+    },
+    {
+      "id": "psychic_s",
+      "name": "คลื่นจิตแทรกซึม",
+      "element": "psychic",
+      "tier": "S",
+      "baseChance": 0.2,
+      "damageMult": 1.35,
+      "spCost": 28,
+      "effects": [
+        {
+          "type": "confusion",
+          "chance": 0.25,
+          "duration": 1
+        }
+      ],
+      "description": "ดาเมจพลังจิต ×1.35 (-28 SP) · โอกาส 25% ทำให้ศัตรูติดสับสน (1 เทิร์น)"
+    },
+    {
+      "id": "psychic_m1",
+      "name": "ลำแสงจิตสังหาร",
+      "element": "psychic",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.65,
+      "spCost": 45,
+      "effects": [
+        {
+          "type": "confusion",
+          "chance": 0.35,
+          "duration": 1
+        },
+        {
+          "type": "debuff_hit",
+          "target": "enemy",
+          "chance": 0.65,
+          "value": 15,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจพลังจิต ×1.65 (-45 SP) · โอกาส 35% ติดสับสน (1 เทิร์น) และโอกาส 65% ลด HIT 15 (2 เทิร์น)"
+    },
+    {
+      "id": "psychic_m2",
+      "name": "คลื่นกระแทกจิตสำนึก",
+      "element": "psychic",
+      "tier": "M",
+      "baseChance": 0.15,
+      "damageMult": 1.75,
+      "spCost": 48,
+      "effects": [
+        {
+          "type": "confusion",
+          "chance": 0.45,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจพลังจิต ×1.75 (-48 SP) · โอกาส 45% ทำให้ศัตรูติดสับสน (2 เทิร์น)"
+    },
+    {
+      "id": "psychic_l",
+      "name": "มหาคลื่นจิตทลายภพ",
+      "element": "psychic",
+      "tier": "L",
+      "baseChance": 0.1,
+      "damageMult": 2.25,
+      "spCost": 70,
+      "effects": [
+        {
+          "type": "confusion",
+          "chance": 0.6,
+          "duration": 2
+        },
+        {
+          "type": "sp_drain",
+          "target": "enemy",
+          "chance": 1,
+          "value": 12
+        }
+      ],
+      "description": "ดาเมจพลังจิต ×2.25 (-70 SP) · โอกาส 60% ติดสับสน (2 เทิร์น) และตัด SP ศัตรู -12 SP"
+    },
+    {
+      "id": "psychic_aoe",
+      "name": "พายุจิตวิญญาณปั่นป่วน",
+      "element": "psychic",
+      "tier": "L",
+      "targetScope": "all_enemies",
+      "baseChance": 0.1,
+      "damageMult": 1.3,
+      "spCost": 70,
+      "effects": [
+        {
+          "type": "confusion",
+          "chance": 0.35,
+          "duration": 2
+        }
+      ],
+      "description": "ดาเมจหมู่ศัตรูทั้งหมด ×1.30 (-70 SP) · ศัตรูแต่ละตัวมีโอกาส 35% ติดสับสน (2 เทิร์น)"
+    }
+  ]
+}

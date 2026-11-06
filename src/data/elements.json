@@ -1,0 +1,122 @@
+{
+  "multipliers": {
+    "advantage": 1.3,
+    "disadvantage": 0.85,
+    "neutral": 1.0,
+    "sameElementChanceBonus": 1.2,
+    "sameElementDamageBonus": 0.2
+  },
+  "elements": [
+    {
+      "id": "earth",
+      "name": "ดิน",
+      "icon": "🪨",
+      "color": "#8D6E63",
+      "borderColor": "#D7CCC8",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["lightning", "water", "fire"],
+      "weakAgainst": ["dark", "light", "poison", "psychic"]
+    },
+    {
+      "id": "water",
+      "name": "น้ำ",
+      "icon": "💧",
+      "color": "#1E88E5",
+      "borderColor": "#BBDEFB",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["fire", "plant", "ice"],
+      "weakAgainst": ["lightning", "earth", "dark"]
+    },
+    {
+      "id": "wind",
+      "name": "ลม",
+      "icon": "🌪️",
+      "color": "#26A69A",
+      "borderColor": "#B2DFDB",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["poison", "light", "dark"],
+      "weakAgainst": ["ice", "plant", "fire", "psychic"]
+    },
+    {
+      "id": "fire",
+      "name": "ไฟ",
+      "icon": "🔥",
+      "color": "#E53935",
+      "borderColor": "#FFCDD2",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["plant", "ice", "wind"],
+      "weakAgainst": ["water", "lightning", "earth"]
+    },
+    {
+      "id": "lightning",
+      "name": "สายฟ้า",
+      "icon": "⚡",
+      "color": "#FDD835",
+      "borderColor": "#FFF9C4",
+      "textColor": "#212121",
+      "strongAgainst": ["water", "fire", "plant", "psychic"],
+      "weakAgainst": ["earth", "dark", "light"]
+    },
+    {
+      "id": "ice",
+      "name": "น้ำแข็ง",
+      "icon": "❄️",
+      "color": "#4DD0E1",
+      "borderColor": "#E0F7FA",
+      "textColor": "#212121",
+      "strongAgainst": ["wind", "poison", "light", "psychic"],
+      "weakAgainst": ["plant", "fire", "water"]
+    },
+    {
+      "id": "plant",
+      "name": "พืช",
+      "icon": "🌿",
+      "color": "#43A047",
+      "borderColor": "#C8E6C9",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["ice", "wind", "poison"],
+      "weakAgainst": ["fire", "water", "lightning"]
+    },
+    {
+      "id": "poison",
+      "name": "พิษ",
+      "icon": "☠️",
+      "color": "#8E24AA",
+      "borderColor": "#E1BEE7",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["light", "dark", "earth"],
+      "weakAgainst": ["wind", "ice", "plant", "psychic"]
+    },
+    {
+      "id": "dark",
+      "name": "มืด",
+      "icon": "🌑",
+      "color": "#37474F",
+      "borderColor": "#CFD8DC",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["earth", "lightning", "water", "psychic"],
+      "weakAgainst": ["light", "poison", "wind"]
+    },
+    {
+      "id": "light",
+      "name": "แสง",
+      "icon": "✨",
+      "color": "#FFF176",
+      "borderColor": "#FFFFFF",
+      "textColor": "#212121",
+      "strongAgainst": ["dark", "earth", "lightning"],
+      "weakAgainst": ["poison", "wind", "ice"]
+    },
+    {
+      "id": "psychic",
+      "name": "พลังจิต",
+      "icon": "🔮",
+      "color": "#BA68C8",
+      "borderColor": "#F3E5F5",
+      "textColor": "#FFFFFF",
+      "strongAgainst": ["poison", "earth", "wind"],
+      "weakAgainst": ["dark", "lightning", "ice"]
+    }
+  ]
+}
+

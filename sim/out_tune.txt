@@ -1,0 +1,41 @@
+﻿iter 0 loss 1.5911
+iter 50 loss 1.2351
+iter 100 loss 0.6172
+iter 150 loss 0.1497
+iter 200 loss 0.1039
+iter 250 loss 0.0953
+iter 300 loss 0.0953
+iter 350 loss 0.0757
+TUNED C = {"atkPerSTR":2.805,"hpBase":200,"hpPerSTA":14.179,"defBase":10,"defPerSTA":0.721,"spdBase":70,"spdPerAGI":0.788,"hitBase":100,"hitPerAGI":0.2,"fleePerAGI":0.441,"criBase":5,"criPerAGI":0.159,"criCap":40,"criDmgBase":1.4,"criDmgPerSTR":0.004,"abPerSTR":0.31,"blockPerSTA":0.38,"abCap":50}
+TUNED ARCH = {"ATK":[0.464,0.302,0.234],"SPD":[0.318,0.378,0.304],"DEF":[0.242,0.267,0.491],"BAL":[0.36,0.32,0.32],"DRAGON":[0.378,0.354,0.268],"NAGA":[0.234,0.213,0.553],"PHOENIX":[0.498,0.209,0.293]}
+TUNED class step ratio r = 1.067 budgets B/A/S/SS = 150/160/171/182
+
+TUNED hero stats:
+  B  เนเธเน      STR 70 AGI 45 STA 35 | HP 698 ATK 195 DEF 35 SPD 106 HIT 109 FLEE 20 CRI 12.2% CRIDMG 168% AB 22% BLK 13%
+  B  เนเธกเธง      STR 48 AGI 57 STA 46 | HP 846 ATK 134 DEF 43 SPD 115 HIT 111 FLEE 25 CRI 14.0% CRIDMG 159% AB 15% BLK 17%
+  B  เธเธงเธฒเธข     STR 36 AGI 40 STA 74 | HP 1244 ATK 102 DEF 63 SPD 102 HIT 108 FLEE 18 CRI 11.4% CRIDMG 155% AB 11% BLK 28%
+  A  เธซเธกเธฒเธเนเธฒ   STR 51 AGI 61 STA 49 | HP 889 ATK 143 DEF 45 SPD 118 HIT 112 FLEE 27 CRI 14.6% CRIDMG 160% AB 16% BLK 18%
+  A  เน€เธ•เนเธฒ     STR 39 AGI 43 STA 79 | HP 1314 ATK 109 DEF 67 SPD 104 HIT 109 FLEE 19 CRI 11.8% CRIDMG 155% AB 12% BLK 30%
+  A  เน€เธชเธทเธญ     STR 74 AGI 48 STA 37 | HP 731 ATK 208 DEF 37 SPD 108 HIT 110 FLEE 21 CRI 12.7% CRIDMG 170% AB 23% BLK 14%
+  S  เธญเธดเธเธ—เธฃเธต   STR 54 AGI 65 STA 52 | HP 935 ATK 152 DEF 47 SPD 121 HIT 113 FLEE 28 CRI 15.3% CRIDMG 162% AB 17% BLK 20%
+  S  เนเธฃเธ”      STR 41 AGI 46 STA 84 | HP 1389 ATK 116 DEF 70 SPD 106 HIT 109 FLEE 20 CRI 12.3% CRIDMG 157% AB 13% BLK 32%
+  S  เธชเธดเธเนเธ•    STR 61 AGI 55 STA 55 | HP 975 ATK 172 DEF 49 SPD 113 HIT 111 FLEE 24 CRI 13.7% CRIDMG 165% AB 19% BLK 21%
+  SS เธกเธฑเธเธเธฃเธเนเธฒ STR 69 AGI 65 STA 49 | HP 891 ATK 193 DEF 45 SPD 121 HIT 113 FLEE 28 CRI 15.3% CRIDMG 168% AB 21% BLK 19%
+  SS เธเธเธฒเธเธฒเธ   STR 43 AGI 39 STA 101 | HP 1629 ATK 119 DEF 83 SPD 101 HIT 108 FLEE 17 CRI 11.2% CRIDMG 157% AB 13% BLK 38%
+  SS เธเธตเธเธดเธเธเน  STR 91 AGI 38 STA 53 | HP 957 ATK 255 DEF 48 SPD 100 HIT 108 FLEE 17 CRI 11.1% CRIDMG 176% AB 28% BLK 20%
+
+==================== TUNED STR/AGI/STA (K=100) ====================
+Avg fight length: 6.4 turns
+  B  เนเธเน 19.8% | เนเธกเธง 17.0% | เธเธงเธฒเธข 15.3%   spread(max-min)=4.5pt
+  A  เธซเธกเธฒเธเนเธฒ 41.8% | เน€เธ•เนเธฒ 40.3% | เน€เธชเธทเธญ 41.1%   spread(max-min)=1.5pt
+  S  เธญเธดเธเธ—เธฃเธต 65.0% | เนเธฃเธ” 63.5% | เธชเธดเธเนเธ• 67.3%   spread(max-min)=3.8pt
+  SS เธกเธฑเธเธเธฃเธเนเธฒ 71.9% | เธเธเธฒเธเธฒเธ 85.7% | เธเธตเธเธดเธเธเน 71.0%   spread(max-min)=14.6pt
+Class gap (lower class wins, same element): B>A  19.6%  A>S  22.8%  S>SS  35.3%  B>SS   4.4%
+  intra-B: เนเธเน/เนเธกเธง 44.5% ; เนเธเน/เธเธงเธฒเธข 53.9% ; เนเธกเธง/เธเธงเธฒเธข 42.4%
+  intra-A: เธซเธกเธฒเธเนเธฒ/เน€เธ•เนเธฒ 44.9% ; เธซเธกเธฒเธเนเธฒ/เน€เธชเธทเธญ 64.4% ; เน€เธ•เนเธฒ/เน€เธชเธทเธญ 50.1%
+  intra-S: เธญเธดเธเธ—เธฃเธต/เนเธฃเธ” 45.3% ; เธญเธดเธเธ—เธฃเธต/เธชเธดเธเนเธ• 54.8% ; เนเธฃเธ”/เธชเธดเธเนเธ• 41.0%
+  intra-SS: เธกเธฑเธเธเธฃเธเนเธฒ/เธเธเธฒเธเธฒเธ 37.5% ; เธกเธฑเธเธเธฃเธเนเธฒ/เธเธตเธเธดเธเธเน 45.6% ; เธเธเธฒเธเธฒเธ/เธเธตเธเธดเธเธเน 57.5%
+Within-class stdev of hero win-rate: 3.6pt  (lower = more even)
+Cross-class with element advantage x1.3/x0.85 (lower class):
+  เนเธกเธง>เธซเธกเธฒเธเนเธฒ 64.4% ; เธเธงเธฒเธข>เน€เธ•เนเธฒ 77.6% ; เน€เธชเธทเธญ>เธชเธดเธเนเธ• 67.8% ; เธซเธกเธฒเธเนเธฒ>เธญเธดเธเธ—เธฃเธต 63.3% ; เธญเธดเธเธ—เธฃเธต>เธเธเธฒเธเธฒเธ 66.2% ; เธญเธดเธเธ—เธฃเธต>เธเธตเธเธดเธเธเน 84.0% ; เธเธงเธฒเธข>เธเธเธฒเธเธฒเธ 10.8%
+SS signature used >=1x vs S:  22.3% /  99.9% /   2.7%

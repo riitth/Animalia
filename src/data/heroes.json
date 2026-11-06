@@ -1,0 +1,6688 @@
+{
+  "statFormula": {
+    "atkPerSTR": 2.805,
+    "hpBase": 200,
+    "hpPerSTA": 14.179,
+    "defBase": 10,
+    "defPerSTA": 0.721,
+    "spdBase": 70,
+    "spdPerAGI": 0.788,
+    "hitBase": 100,
+    "hitPerAGI": 0.2,
+    "fleePerAGI": 0.441,
+    "criBase": 5,
+    "criPerAGI": 0.159,
+    "criCap": 40,
+    "criDmgBase": 1.4,
+    "criDmgPerSTR": 0.004,
+    "abPerSTR": 0.31,
+    "blockPerSTA": 0.38,
+    "abCap": 50,
+    "defConstantK": 100,
+    "spBase": 70,
+    "spPerSTA": 0.8,
+    "spRegenFlat": 6,
+    "spNormalAttackBonus": 6,
+    "spBackupRegenFlat": 10
+  },
+  "classBudgets": {
+    "B": 150,
+    "A": 160,
+    "S": 171,
+    "SS": 182
+  },
+  "archetypeShares": {
+    "ATK": [
+      0.464,
+      0.302,
+      0.234
+    ],
+    "SPD": [
+      0.318,
+      0.378,
+      0.304
+    ],
+    "DEF": [
+      0.242,
+      0.267,
+      0.491
+    ],
+    "BAL": [
+      0.36,
+      0.32,
+      0.32
+    ],
+    "DRAGON": [
+      0.378,
+      0.354,
+      0.268
+    ],
+    "NAGA": [
+      0.234,
+      0.213,
+      0.553
+    ],
+    "PHOENIX": [
+      0.498,
+      0.209,
+      0.293
+    ],
+    "QILIN": [
+      0.374,
+      0.33,
+      0.296
+    ],
+    "BEHEMOTH": [
+      0.505,
+      0.198,
+      0.297
+    ],
+    "LEVIATHAN": [
+      0.4835,
+      0.2308,
+      0.2857
+    ],
+    "GARUDA": [
+      0.489,
+      0.2582,
+      0.2528
+    ],
+    "THUNDERBIRD": [
+      0.4945,
+      0.2527,
+      0.2528
+    ],
+    "FENRIR": [
+      0.5,
+      0.2253,
+      0.2747
+    ],
+    "VERDANT_HYDRA": [
+      0.478,
+      0.2143,
+      0.3077
+    ],
+    "KING_BASILISK": [
+      0.489,
+      0.2363,
+      0.2747
+    ],
+    "CERBERUS": [
+      0.5055,
+      0.2198,
+      0.2747
+    ],
+    "SOLAR_GRIFFIN": [
+      0.4945,
+      0.2418,
+      0.2637
+    ],
+    "NINE_TAILED_FOX": [
+      0.4835,
+      0.2527,
+      0.2638
+    ],
+    "XUANWU": [
+      0.2473,
+      0.1923,
+      0.5604
+    ],
+    "ZIZ": [
+      0.2308,
+      0.2418,
+      0.5274
+    ],
+    "KHALKOTAUROI": [
+      0.2747,
+      0.1868,
+      0.5385
+    ],
+    "ERAWAN": [
+      0.2418,
+      0.1978,
+      0.5604
+    ],
+    "YETI": [
+      0.2582,
+      0.1813,
+      0.5605
+    ],
+    "TARASQUE": [
+      0.2527,
+      0.1868,
+      0.5605
+    ],
+    "KARKINOS": [
+      0.2527,
+      0.1978,
+      0.5495
+    ],
+    "AMMUT": [
+      0.2747,
+      0.1868,
+      0.5385
+    ],
+    "NEMEAN_LION": [
+      0.2857,
+      0.2088,
+      0.5055
+    ],
+    "BAKU": [
+      0.2308,
+      0.2198,
+      0.5494
+    ],
+    "TSUCHIGUMO": [
+      0.3791,
+      0.3791,
+      0.2418
+    ],
+    "KRAKEN": [
+      0.3736,
+      0.3736,
+      0.2528
+    ],
+    "KAMAITACHI": [
+      0.3516,
+      0.4176,
+      0.2308
+    ],
+    "SKOLL": [
+      0.3901,
+      0.3791,
+      0.2308
+    ],
+    "RAIJU": [
+      0.3626,
+      0.4066,
+      0.2308
+    ],
+    "WENDIGO": [
+      0.3956,
+      0.3736,
+      0.2308
+    ],
+    "WERETIGER_SAMING": [
+      0.3846,
+      0.3736,
+      0.2418
+    ],
+    "MANTICORE": [
+      0.3791,
+      0.3791,
+      0.2418
+    ],
+    "CAMAZOTZ": [
+      0.3736,
+      0.3956,
+      0.2308
+    ],
+    "NUE": [
+      0.3626,
+      0.3846,
+      0.2528
+    ]
+  },
+  "signatureByClass": {
+    "B": {
+      "startGauge": 0,
+      "gainPerTurn": 34,
+      "gainOnHit": 0,
+      "damageMult": 2,
+      "effectChance": 0.25
+    },
+    "A": {
+      "startGauge": 0,
+      "gainPerTurn": 25,
+      "gainOnHit": 0,
+      "damageMult": 2.8,
+      "effectChance": 0.45
+    },
+    "S": {
+      "startGauge": 0,
+      "gainPerTurn": 20,
+      "gainOnHit": 0,
+      "damageMult": 3.6,
+      "effectChance": 0.7
+    },
+    "SS": {
+      "startGauge": 30,
+      "gainPerTurn": 17,
+      "gainOnHit": 3,
+      "damageMult": 4.5,
+      "effectChance": 0.9
+    }
+  },
+  "heroes": [
+    {
+      "id": "rooster",
+      "name": "ไก่",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "จะงอยเพลิงจู่โจม",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2
+      },
+      "ability": {
+        "id": "morning_call",
+        "name": "ขันปลุกอรุณ",
+        "description": "เทิร์นแรกของไฟต์ มีโอกาส 70% ได้รับ CRI% +15% และ ATK +10% (1 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_m2",
+        "martial_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "cat",
+      "name": "แมว",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ก้าวพริบตาวายุ",
+      "signatureEffect": {
+        "type": "buff_spd",
+        "value": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "nine_lives",
+        "name": "เก้าชีวิตพริ้วไหว",
+        "description": "มีโอกาส 20% ที่จะหลบการโจมตีคริติคอลทันที และเมื่อหลบการโจมตีสำเร็จจะฟื้นฟู HP 8% ของ Max HP"
+      },
+      "defaultSkills": [
+        "wind_l",
+        "wind_m1",
+        "martial_l",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "buffalo",
+      "name": "ควาย",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "เขาเหล็กชนแหลก",
+      "signatureEffect": {
+        "type": "taunt",
+        "duration": 2
+      },
+      "ability": {
+        "id": "mud_hide",
+        "name": "หนังเหนียวสู้โคลน",
+        "description": "ลดดาเมจจากสถานะต่อเนื่อง (เผาไหม้/พิษ) ลง 40% และมีโอกาส 50% ลดดาเมจจากการโจมตีลง 25%"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m1",
+        "medical_m1",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "dog",
+      "name": "หมา",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "เขี้ยวพงไพรขย้ำไม่ปล่อย",
+      "signatureEffect": {
+        "type": "root",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "loyal_guardian",
+        "name": "สัญชาตญาณผู้ภักดี",
+        "description": "เมื่อโจมตีโดนเป้าหมาย มีโอกาส 60% ดาเมจแรงขึ้น +15% และฟื้นฟู HP 4% ของ Max HP",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_s",
+        "plant_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "pig",
+      "name": "หมู",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "โคลนแร่ธาตุเยียวยา",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "earth_herbal_snout",
+        "name": "สมุนไพรพสุธาฟื้นฟู",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "earth_s",
+        "earth_m2",
+        "medical_s",
+        "medical_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "horse",
+      "name": "ม้า",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "กีบเพลิงควบผ่าสมรภูมิ",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2
+      },
+      "ability": {
+        "id": "warhorse_gallop",
+        "name": "อาชาควบทะยานศึก",
+        "description": "เมื่อโจมตีมีโอกาส 50% ได้รับบัฟ SPD +12% (2 เทิร์น) และสร้างโบนัสดาเมจแรงควบปะทะ +10%"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m2",
+        "martial_m1",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "rat",
+      "name": "หนู",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "เขี้ยวทมิฬกาฬโรค",
+      "signatureEffect": {
+        "type": "poison",
+        "duration": 3
+      },
+      "ability": {
+        "id": "plague_nibble",
+        "name": "ฟันแทะแพร่เชื้อ",
+        "description": "เมื่อโจมตีโดน มีโอกาส 55% แพร่เชื้อพิษ 1 ชั้น (3 เทิร์น) และหากศัตรูติดพิษอยู่แล้ว จะกัดกินตัด SP ศัตรูลง −10 SP"
+      },
+      "defaultSkills": [
+        "poison_s",
+        "poison_m1",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "squirrel",
+      "name": "กระรอก",
+      "rarity": "B",
+      "element": "light",
+      "archetype": "SPD",
+      "role": "Supporter",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ลำแสงพวงหางสุริยันนำทัพ",
+      "signatureEffect": {
+        "type": "team_buff_hit_cri",
+        "target": "all_allies",
+        "hit": 20,
+        "cri": 12,
+        "duration": 2
+      },
+      "ability": {
+        "id": "solar_stash",
+        "name": "ประกายแสงกักตุน",
+        "description": "เมื่อหลบการโจมตีสำเร็จ หรือเมื่อโจมตีโดน มีโอกาส 55% ฟื้นฟู +12 SP และฟื้นฟู +3% Max HP"
+      },
+      "defaultSkills": [
+        "light_s",
+        "light_m2",
+        "medical_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.25,
+      "customSigMult": 1.8
+    },
+    {
+      "id": "snail",
+      "name": "หอยทาก",
+      "rarity": "B",
+      "element": "ice",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "เมือกเหมันต์คุ้มกันแดนดิน",
+      "signatureEffect": {
+        "type": "team_shield_slow",
+        "target": "all_allies",
+        "shield": 0.12,
+        "slowEnemy": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "glacial_mucus",
+        "name": "เมือกน้ำแข็งกระดองหิน",
+        "description": "ลดดาเมจจากการโจมตีลง 8% · เมื่อถูกโจมตี มีโอกาส 50% ทำให้ผู้โจมตีติดสถานะสโลว์ (2 เทิร์น) และฟื้นฟู HP ตนเอง 2% ของ Max HP"
+      },
+      "defaultSkills": [
+        "ice_s",
+        "ice_m2",
+        "medical_s",
+        "martial_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 1.8
+    },
+    {
+      "id": "rabbit",
+      "name": "กระต่าย",
+      "rarity": "B",
+      "element": "light",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ลูกเตะทะยานแสงสุริยัน",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 1
+      },
+      "ability": {
+        "id": "solar_leap",
+        "name": "ก้าวกระโดดแสงตะวัน",
+        "description": "เพิ่มอัตราหลบหลีก FLEE +6 · เมื่อหลบการโจมตีสำเร็จ มีโอกาส 60% ได้รับบัฟ CRI% +15% และได้เกจท่าไม้ตาย +10 แต้ม"
+      },
+      "defaultSkills": [
+        "light_s",
+        "light_m1",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "bat",
+      "name": "ค้างคาว",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ฝูงค้างคาวเงาราตรีกลืนเลือด",
+      "signatureEffect": {
+        "type": "team_blind_drain",
+        "target": "all_enemies",
+        "blindChance": 0.35,
+        "teamHeal": 0.08,
+        "duration": 1
+      },
+      "ability": {
+        "id": "vampiric_sonar",
+        "name": "คลื่นโซนาร์ดูดโลหิต",
+        "description": "เมื่อโจมตีโดน มีโอกาส 55% ดูดเลือดฟื้นฟู HP 5% ของ Max HP, ตัด SP ศัตรูลง −8 SP และฟื้นฟู SP ตนเอง +8 SP"
+      },
+      "defaultSkills": [
+        "dark_s",
+        "dark_m2",
+        "trick_m2",
+        "medical_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.25,
+      "customSigMult": 1.2
+    },
+    {
+      "id": "porcupine",
+      "name": "เม่น",
+      "rarity": "B",
+      "element": "lightning",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "สลัดขนหนามอัสนีรอบทิศ",
+      "signatureEffect": {
+        "type": "team_stun_def",
+        "target": "all_enemies",
+        "stunChance": 0.3,
+        "def": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "static_quills",
+        "name": "ขนหนามสถิตสายฟ้า",
+        "description": "ลดดาเมจที่ได้รับลง 6% · เมื่อถูกโจมตี มีโอกาส 50% สะท้อนดาเมจกลับไป 12% และลด DEF ผู้โจมตี 10% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "lightning_s",
+        "lightning_m2",
+        "martial_s",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 1.25
+    },
+    {
+      "id": "frog",
+      "name": "กบ",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "กระโดดทุ่มคลื่นน้ำวน",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2
+      },
+      "ability": {
+        "id": "sticky_tongue_splash",
+        "name": "ลิ้นตวัดวารีเหนียวหนืด",
+        "description": "เมื่อโจมตีโดน มีโอกาส 55% ตวัดลิ้นดึงจังหวะทำให้ศัตรูติดสโลว์ (2 เทิร์น) และฟื้นฟู SP ตนเอง +10 SP"
+      },
+      "defaultSkills": [
+        "water_s",
+        "water_m2",
+        "trick_s",
+        "medical_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4
+    },
+    {
+      "id": "wolf",
+      "name": "หมาป่า",
+      "rarity": "A",
+      "element": "dark",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "เขี้ยวเงาจันทรา",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2
+      },
+      "ability": {
+        "id": "pack_hunter",
+        "name": "สัญชาตญาณจ่าฝูง",
+        "description": "เพิ่มโอกาสคริติคอล +8% และเมื่อโจมตีศัตรูที่มี HP ต่ำกว่า 60% มีโอกาส 60% ทำดาเมจแรงขึ้น +20%"
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m1",
+        "martial_l",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "turtle",
+      "name": "เต่า",
+      "rarity": "A",
+      "element": "water",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ปราการกระดองวารีคุ้มทัพ",
+      "signatureEffect": {
+        "type": "team_shield_cleanse",
+        "target": "all_allies",
+        "shield": 0.15,
+        "cleanse": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "shell_retreat",
+        "name": "หดหัวเข้ากระดอง",
+        "description": "เมื่อถูกโจมตีคริติคอล มีโอกาส 70% ลดดาเมจลง 30% และได้รับเกราะ 5% ของ Max HP (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_l",
+        "water_m1",
+        "medical_l",
+        "medical_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2
+    },
+    {
+      "id": "tiger",
+      "name": "เสือ",
+      "rarity": "A",
+      "element": "fire",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "พยัคฆ์เพลิงขย้ำ",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2
+      },
+      "ability": {
+        "id": "ambush_predator",
+        "name": "พยัคฆ์ซุ่มขย้ำ",
+        "description": "เพิ่ม CRI% +10% · เมื่อโจมตีศัตรูที่ติดเผาไหม้หรือติดคริติคอล มีโอกาส 65% ดาเมจแรงขึ้น +18%, เจาะเกราะ +15% และได้เกจท่าไม้ตาย +10"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_l",
+        "martial_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "snake",
+      "name": "งู",
+      "rarity": "A",
+      "element": "poison",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "อสรพิษฉกปลิดชีพ",
+      "signatureEffect": {
+        "type": "poison",
+        "duration": 3
+      },
+      "ability": {
+        "id": "neurotoxin_fang",
+        "name": "พิษร้ายซึมลึก",
+        "description": "เมื่อโจมตีโดนมีโอกาส 50% แพร่พิษ 1 ชั้น (3 เทิร์น) และหากเป้าหมายติดพิษอยู่แล้วจะทำดาเมจแรงขึ้น +10%"
+      },
+      "defaultSkills": [
+        "poison_l",
+        "poison_m2",
+        "trick_m1",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "penguin",
+      "name": "เพนกวิน",
+      "rarity": "A",
+      "element": "ice",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "คลื่นสไลด์ภูเขาน้ำแข็ง",
+      "signatureEffect": {
+        "type": "freeze",
+        "duration": 1
+      },
+      "ability": {
+        "id": "belly_slide_frost",
+        "name": "สไลด์พุงเหมันต์",
+        "description": "ลดดาเมจที่ได้รับลง 8% และเมื่อถูกโจมตีมีโอกาส 55% ทำให้ผู้โจมตีติดสถานะสโลว์ (ลด SPD 20% นาน 2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "ice_l",
+        "ice_m2",
+        "medical_l",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "owl",
+      "name": "นกฮูก",
+      "rarity": "A",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "พายุสะกดจิตปีกราตรี",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.5
+      },
+      "ability": {
+        "id": "night_confusion_gaze",
+        "name": "เนตรราตรีสับสนเวหา",
+        "description": "เมื่อเริ่มเทิร์น มีโอกาส 60% สับสนศัตรู ลด HIT -15 (2 เทิร์น) และเมื่อถูกโจมตี มีโอกาส 50% ตัดเกจท่าไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "psychic_m1",
+        "psychic_m2",
+        "trick_m1",
+        "secret_m2"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "firefly",
+      "name": "หิ่งห้อย",
+      "rarity": "A",
+      "element": "light",
+      "archetype": "SPD",
+      "role": "Controller",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "ลำแสงหิ่งห้อยนำทาง",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.18,
+        "duration": 2
+      },
+      "ability": {
+        "id": "bioluminescent_flash",
+        "name": "แสงกระพริบลวงตา",
+        "description": "เมื่อถูกโจมตี มีโอกาส 50% ทำให้ผู้โจมตีติดสถานะตาบอด (1 เทิร์น)"
+      },
+      "defaultSkills": [
+        "light_m1",
+        "light_m2",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4
+    },
+    {
+      "id": "leopard",
+      "name": "เสือดาว",
+      "rarity": "A",
+      "element": "lightning",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "กรงเล็บอัสนีพิฆาตความเร็วเสียง",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1
+      },
+      "ability": {
+        "id": "thunder_sprint",
+        "name": "สปรินต์สายฟ้าแลบ",
+        "description": "เพิ่ม SPD พื้นฐาน +8 · เมื่อโจมตีมีโอกาส 60% ได้รับบัฟ CRI% +12% (2 เทิร์น), โบนัสดาเมจ +12% และเร่งเกจไม้ตาย +8 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_m1",
+        "martial_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "pangolin",
+      "name": "ตัวนิ่ม",
+      "rarity": "A",
+      "element": "earth",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ลูกเหล็กพสุธากวาดแนวรบ",
+      "signatureEffect": {
+        "type": "cleave_slow_shield",
+        "target": "front_enemies",
+        "spd": 0.25,
+        "shield": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "iron_scale_curl",
+        "name": "ม้วนตัวเกราะเกล็ดปฐพี",
+        "description": "เพิ่มอัตราบล็อก Block +8% · เมื่อถูกโจมตีมีโอกาส 55% ลดดาเมจลง 18% และสะท้อนดาเมจกลับไป 10%"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m1",
+        "martial_m2",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 1.65
+    },
+    {
+      "id": "deer",
+      "name": "กวาง",
+      "rarity": "A",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "เขากวางศักดิ์สิทธิ์พิทักษ์ไพร",
+      "signatureEffect": {
+        "type": "team_heal_shield_sp",
+        "target": "all_allies",
+        "heal": 0.12,
+        "shield": 0.15,
+        "sp": 15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "antler_blessing",
+        "name": "พรแห่งเขาพฤกษาสวรรค์",
+        "description": "ต้นเทิร์นมีโอกาส 55% ฟื้นฟู HP 3.5% ของ Max HP, ฟื้นฟู +10 SP และล้างดีบัฟตนเอง 1 สถานะ"
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_m2",
+        "medical_m1",
+        "medical_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.25,
+      "customSigMult": 0
+    },
+    {
+      "id": "eagle",
+      "name": "อินทรี",
+      "rarity": "S",
+      "element": "lightning",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "สายฟ้าโฉบเวหา",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1
+      },
+      "ability": {
+        "id": "hawk_eye",
+        "name": "สายตาเหยี่ยวเวหา",
+        "description": "ไม่ติดสถานะตาบอด (Blind) · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 55% ได้ CRI% +10% และโบนัสดาเมจ +30%"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_m1",
+        "martial_l",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "rhino",
+      "name": "แรด",
+      "rarity": "S",
+      "element": "earth",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "ปราการหินถล่มทลาย",
+      "signatureEffect": {
+        "type": "stone_curse",
+        "duration": 1,
+        "chance": 0.65
+      },
+      "ability": {
+        "id": "horn_counter",
+        "name": "เกราะสะท้อนแรงปะทะ",
+        "description": "ลดดาเมจที่ได้รับลง 6% และเมื่อถูกโจมตีมีโอกาส 50% สะท้อนดาเมจกลับไปหาผู้โจมตี 12% ของดาเมจที่ทำได้"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m2",
+        "martial_l",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "lion",
+      "name": "สิงโต",
+      "rarity": "S",
+      "element": "plant",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "คำรามราชันย์ปลุกขวัญ",
+      "signatureEffect": {
+        "type": "team_buff_atk_spd",
+        "target": "all_allies",
+        "atk": 0.2,
+        "spd": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "kings_majesty",
+        "name": "ศักดิ์ศรีเจ้าป่า",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 3.5% ของ Max HP และข่มขวัญลด ATK ศัตรู 15% (1 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_aoe",
+        "martial_l",
+        "martial_aoe"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.6
+    },
+    {
+      "id": "fox",
+      "name": "จิ้งจอก",
+      "rarity": "S",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Striker",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "ระบำลูกไฟเก้ามายา",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2
+      },
+      "ability": {
+        "id": "kitsune_illusion",
+        "name": "มายาจิ้งจอกเพลิง",
+        "description": "เพิ่มอัตราหลบหลีก FLEE +5 · เมื่อโจมตีโดนมีโอกาส 45% ล่อหลอกลดเกจท่าไม้ตายศัตรู 5 แต้ม และสร้างโบนัสดาเมจ +6%"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_s",
+        "trick_m1",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "grizzly",
+      "name": "หมีกริสลี่",
+      "rarity": "S",
+      "element": "earth",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "อุ้งตีนกริสลี่ถล่มผา",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "grizzly_berserk",
+        "name": "พยัคฆ์หมีคลั่งพสุธา",
+        "description": "เมื่อถูกโจมตีขณะ HP ต่ำกว่า 65% มีโอกาส 65% เข้าสู่สภาวะคลั่งศึก (Berserk: ATK+30%, SPD+20%, DEF-20%, HIT-10, 2 เทิร์น) และฟื้นฟู HP 5% Max HP",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "earth_m1",
+        "earth_l",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "mantis",
+      "name": "แมนติส",
+      "rarity": "S",
+      "element": "lightning",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "เพลงเคียวอัสนีสังหาร",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.3,
+        "duration": 2
+      },
+      "ability": {
+        "id": "twin_scythe_strike",
+        "name": "เคียวคู่ผ่าสายฟ้า",
+        "description": "เพิ่มเจาะเกราะ AB +8% · เมื่อโจมตีมีโอกาส 50% ฟันซ้ำจุดตาย ได้ CRI% +8% และโบนัสดาเมจ +10%"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_m1",
+        "martial_l",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "hornet",
+      "name": "ฮอร์เนส",
+      "rarity": "S",
+      "element": "poison",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "เหล็กในมรณะสังหารรัง",
+      "signatureEffect": {
+        "type": "poison",
+        "stacks": 2,
+        "duration": 3
+      },
+      "ability": {
+        "id": "neurotoxic_stinger",
+        "name": "เหล็กในพิษอัมพาต",
+        "description": "เมื่อโจมตีเป้าหมายที่ติดพิษอยู่แล้ว มีโอกาส 65% เพิ่มดาเมจ +18%, เจาะเกราะ AB +15% และมีโอกาส 50% ฉีดพิษประสาททำให้ศัตรูติดอัมพาต (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "poison_l",
+        "poison_m2",
+        "catalyst_m1",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "peacock",
+      "name": "นกยูง",
+      "rarity": "S",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "รำแพนแสงสะกดสมรภูมิ",
+      "signatureEffect": {
+        "type": "team_debuff_atk_confusion",
+        "target": "all_enemies",
+        "atk": 0.2,
+        "confusion": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "dazzling_plume",
+        "name": "รำแพนหางสะกดภพ",
+        "description": "เมื่อโจมตี มีโอกาส 60% ลด ATK ศัตรู 12% (2 เทิร์น) และหากศัตรูติดสับสนหรือตาบอด จะทำดาเมจแรงขึ้น +18%"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m1",
+        "catalyst_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4,
+      "customSigMult": 1.8
+    },
+    {
+      "id": "sea_lion",
+      "name": "สิงโตทะเล",
+      "rarity": "S",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "สึนามิน้ำแข็งถล่มสมรภูมิ",
+      "signatureEffect": {
+        "type": "team_slow_freeze",
+        "target": "all_enemies",
+        "freezeChance": 0.4,
+        "shield": 0.12,
+        "duration": 2
+      },
+      "ability": {
+        "id": "polar_roar",
+        "name": "คลื่นคำรามเหมันต์ขั้วโลก",
+        "description": "ลดดาเมจที่ได้รับ 8% · เมื่อโจมตีเป้าหมายที่ติดสโลว์หรือแช่แข็ง มีโอกาส 65% ทำดาเมจแรงขึ้น +18% และมีโอกาส 50% ทำให้เป้าหมายติดสถานะแช่แข็ง (1 เทิร์น)"
+      },
+      "defaultSkills": [
+        "ice_l",
+        "ice_m1",
+        "martial_m2",
+        "catalyst_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4,
+      "customSigMult": 1.85
+    },
+    {
+      "id": "black_panther",
+      "name": "เสือดำ",
+      "rarity": "S",
+      "element": "dark",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "เขี้ยวทมิฬขย้ำวิญญาณ",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 1
+      },
+      "ability": {
+        "id": "shadow_predator",
+        "name": "นักล่าไร้เงาแห่งรัตติกาล",
+        "description": "เพิ่ม CRI% +10% และเจาะเกราะ AB +10% · เมื่อโจมตีมีโอกาส 60% ทำดาเมจแรงขึ้น +16% และดูดเลือด 12% ของดาเมจที่ทำได้"
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m1",
+        "martial_l",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "shark",
+      "name": "ฉลาม",
+      "rarity": "S",
+      "element": "water",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "ขากรรไกรฉลามขาวขย้ำสมุทร",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2
+      },
+      "ability": {
+        "id": "blood_frenzy",
+        "name": "คลั่งกลิ่นคาวเลือดมหาสมุทร",
+        "description": "เมื่อโจมตีมีโอกาส 60% เพิ่มเจาะเกราะ AB +15% และบัฟ ATK +12% (2 เทิร์น) · หากศัตรูมี HP ต่ำกว่า 65% จะทำดาเมจแรงขึ้น +18%"
+      },
+      "defaultSkills": [
+        "water_l",
+        "water_m1",
+        "martial_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "falcon",
+      "name": "เหยี่ยวเพเรกริน",
+      "rarity": "S",
+      "element": "wind",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "พายุโฉบเพเรกรินผ่าเวหา",
+      "signatureEffect": {
+        "type": "buff_spd",
+        "value": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "supersonic_dive",
+        "name": "ดิ่งเวหาเหนือความเร็วเสียง",
+        "description": "เพิ่ม SPD พื้นฐาน +6 และ HIT +8 · เมื่อโจมตีเป้าหมายที่มี SPD ต่ำกว่าตน มีโอกาส 60% ทำดาเมจแรงขึ้น +18% และเจาะเกราะ AB +12%"
+      },
+      "defaultSkills": [
+        "wind_l",
+        "wind_m1",
+        "martial_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "azure_dragon",
+      "name": "มังกรฟ้า",
+      "rarity": "SS",
+      "element": "light",
+      "archetype": "DRAGON",
+      "role": "Assassin",
+      "str": 69,
+      "agi": 64,
+      "sta": 49,
+      "signatureName": "มหาทัณฑ์สวรรค์อัสนีบาตมังกรศักดิ์สิทธิ์",
+      "signatureEffect": {
+        "type": "chain_buff_spd_cri",
+        "target": "all_allies",
+        "chainDmg": 1.2,
+        "spd": 0.2,
+        "cri": 15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "celestial_scales",
+        "name": "เกล็ดมังกรสวรรค์",
+        "description": "เริ่มไฟต์ด้วยเกราะ 30% ของ Max HP · ลดดาเมจที่ได้รับ 12% และเมื่อโจมตีโดนมีโอกาส 60% ได้บัฟ ATK/SPD +10% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_m1",
+        "catalyst_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6,
+      "customSigMult": 3.5
+    },
+    {
+      "id": "naga",
+      "name": "พญานาค",
+      "rarity": "SS",
+      "element": "water",
+      "archetype": "NAGA",
+      "role": "Tank",
+      "str": 43,
+      "agi": 39,
+      "sta": 100,
+      "customMultipliers": {
+        "hp": 1.2,
+        "def": 0.5
+      },
+      "signatureName": "มหาสมุทรนาคราชกลืนมหาพิภพ",
+      "signatureEffect": {
+        "type": "team_flood_shield",
+        "target": "all_enemies",
+        "gaugeDrain": 20,
+        "teamShield": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "immortal_serpent",
+        "name": "เกล็ดนาคราชอมตะ",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4.5% ของ Max HP และเมื่อ HP ต่ำกว่า 50% มีโอกาส 75% ลดดาเมจที่ได้รับลง 18%"
+      },
+      "defaultSkills": [
+        "water_l",
+        "water_m2",
+        "medical_l",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2
+    },
+    {
+      "id": "behemoth",
+      "name": "เบฮีมอธ",
+      "rarity": "SS",
+      "element": "earth",
+      "archetype": "BEHEMOTH",
+      "role": "Striker",
+      "str": 92,
+      "agi": 36,
+      "sta": 54,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "พสุธากัมปนาทถล่มโลกันตร์",
+      "signatureEffect": {
+        "type": "armor_break_and_stun",
+        "target": "enemy",
+        "duration": 1,
+        "defRedPct": 0.3,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "colossal_tremor",
+        "name": "พสุธาสะเทือนเลื่อนลั่น",
+        "description": "เพิ่มเจาะเกราะ (AB) +15% และต้านทานสตันถาวร · เมื่อโจมตีคริติคอล จะสร้างคลื่นกระแทกแผ่นดินไหวทำดาเมจ 25% ATK ใส่ศัตรูทั้งหมด"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m2",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.5
+    },
+    {
+      "id": "leviathan",
+      "name": "เลเวียธาน",
+      "rarity": "SS",
+      "element": "water",
+      "archetype": "LEVIATHAN",
+      "role": "Striker",
+      "str": 88,
+      "agi": 42,
+      "sta": 52,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "มหาสึนามิกลืนสมุทร",
+      "signatureEffect": {
+        "type": "dispel_and_sp_drain",
+        "target": "enemy",
+        "count": 1,
+        "value": 25,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "oceanic_surge",
+        "name": "จ้าวคลั่งสมุทร",
+        "description": "เมื่อ SP ของตนเองมากกว่า 50% สกิลธาตุน้ำจะรุนแรงขึ้น +20% · เมื่อโจมตีศัตรูสำเร็จ มีโอกาส 40% ที่จะฟื้นฟู SP +15 ให้แก่ตนเอง"
+      },
+      "defaultSkills": [
+        "water_l",
+        "water_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "garuda",
+      "name": "พญาครุฑ",
+      "rarity": "SS",
+      "element": "wind",
+      "archetype": "GARUDA",
+      "role": "Striker",
+      "str": 89,
+      "agi": 47,
+      "sta": 46,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "วายุสลาตันฉีกนภา",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2,
+        "chance": 0.9
+      },
+      "ability": {
+        "id": "sky_rending_talons",
+        "name": "กรงเล็บเวหาสังหาร",
+        "description": "อัตราคริติคอล CRI +12% และความเสียหายคริติคอล CriDmg +25% · มีภูมิคุ้มกันสถานะตรึงร่าง (Root) และสโลว์ (Slow) 100%"
+      },
+      "defaultSkills": [
+        "wind_l",
+        "wind_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.4
+    },
+    {
+      "id": "thunderbird",
+      "name": "ธันเดอร์เบิร์ด",
+      "rarity": "SS",
+      "element": "electric",
+      "archetype": "THUNDERBIRD",
+      "role": "Striker",
+      "str": 90,
+      "agi": 46,
+      "sta": 46,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "มหาอัสนีบาตผ่าพิภพ",
+      "signatureEffect": {
+        "type": "stun_and_gauge_drain",
+        "duration": 1,
+        "value": 25,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "static_discharge",
+        "name": "ประกายประจุอัสนีคลั่ง",
+        "description": "ทุกการโจมตีสำเร็จ มีโอกาส 45% เกิดสายฟ้าแฉลบผ่าซ้ำทำดาเมจสายฟ้า 30% ATK · เมื่อโค่นศัตรูลงได้ ได้รับเกจไม้ตายทันที +25"
+      },
+      "defaultSkills": [
+        "electric_l",
+        "electric_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.5
+    },
+    {
+      "id": "fenrir",
+      "name": "เฟนริร์",
+      "rarity": "SS",
+      "element": "ice",
+      "archetype": "FENRIR",
+      "role": "Striker",
+      "str": 91,
+      "agi": 41,
+      "sta": 50,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เขี้ยวรัตติกาลกลืนเหมันต์",
+      "signatureEffect": {
+        "type": "freeze",
+        "duration": 1,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "glacial_fang_hunt",
+        "name": "เขี้ยวเหมันต์ฉีกวิญญาณ",
+        "description": "หากศัตรูมีสถานะแช่แข็ง (Freeze) หรือผิวกายเหมันต์ (Ice Skin) จะโจมตีแรงขึ้น +30% · การโจมตีทั้งหมดได้รับพลังดูดเลือด +12%"
+      },
+      "defaultSkills": [
+        "ice_l",
+        "ice_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.6
+    },
+    {
+      "id": "verdant_hydra",
+      "name": "ไฮดราพฤกษา",
+      "rarity": "SS",
+      "element": "plant",
+      "archetype": "VERDANT_HYDRA",
+      "role": "Striker",
+      "str": 87,
+      "agi": 39,
+      "sta": 56,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เก้าเศียรพฤกษากลืนปฐพี",
+      "signatureEffect": {
+        "type": "root",
+        "duration": 2,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "thorn_regrowth",
+        "name": "หนามงอกเงยคืนชีพ",
+        "description": "ต้นเทิร์นฟื้นฟู HP 4% Max HP · เมื่อโจมตีทำดาเมจ จะสร้างเกราะป้องกัน (Shield) เท่ากับ 15% ของดาเมจที่ทำได้"
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.2
+    },
+    {
+      "id": "king_basilisk",
+      "name": "บาซิลิสก์",
+      "rarity": "SS",
+      "element": "poison",
+      "archetype": "KING_BASILISK",
+      "role": "Striker",
+      "str": 89,
+      "agi": 43,
+      "sta": 50,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เนตรมรณะพิษอเวจี",
+      "signatureEffect": {
+        "type": "max_poison_and_armor_break",
+        "duration": 3,
+        "value": 0.3,
+        "chance": 0.9
+      },
+      "ability": {
+        "id": "caustic_venom_aura",
+        "name": "ไอกรดพิษละลายกระดูก",
+        "description": "โจมตีใส่ศัตรูที่ติดพิษแรงขึ้น +25% · เมื่อถูกโจมตี มีโอกาส 40% ที่ศัตรูจะติดพิษ 1 ชั้น (3 เทิร์น)"
+      },
+      "defaultSkills": [
+        "poison_l",
+        "poison_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.5
+    },
+    {
+      "id": "cerberus",
+      "name": "เซอร์เบอรัส",
+      "rarity": "SS",
+      "element": "dark",
+      "archetype": "CERBERUS",
+      "role": "Striker",
+      "str": 92,
+      "agi": 40,
+      "sta": 50,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เพลิงทมิฬทาร์ทารัส",
+      "signatureEffect": {
+        "type": "curse",
+        "duration": 999,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "tartarus_three_fangs",
+        "name": "สามเศียรฉีกกระชากบัฟ",
+        "description": "ทุกครั้งที่โจมตี มีโอกาส 35% กัดซ้ำทำดาเมจ 35% ATK · และมีโอกาส 30% สลายบัฟของศัตรู 1 อย่าง"
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.7
+    },
+    {
+      "id": "solar_griffin",
+      "name": "พญากริฟฟอนสุริยัน",
+      "rarity": "SS",
+      "element": "light",
+      "archetype": "SOLAR_GRIFFIN",
+      "role": "Striker",
+      "str": 90,
+      "agi": 44,
+      "sta": 48,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "แสงสุริยะพิพากษา",
+      "signatureEffect": {
+        "type": "dispel_all_and_blind",
+        "duration": 2,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "solar_piercing_crest",
+        "name": "รัศมีสุริยะเจาะเกราะ",
+        "description": "เพิ่มความแม่นยำ HIT +15 และเจาะเกราะ AB +15 ถาวร · มีภูมิคุ้มกันสถานะตาบอด (Blind) 100%"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.4
+    },
+    {
+      "id": "nine_tailed_fox",
+      "name": "พญาจิ้งจอกเก้าหาง",
+      "rarity": "SS",
+      "element": "psychic",
+      "archetype": "NINE_TAILED_FOX",
+      "role": "Striker",
+      "str": 88,
+      "agi": 46,
+      "sta": 48,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เก้าหางสะกดวิญญาณ",
+      "signatureEffect": {
+        "type": "sp_drain",
+        "value": 30,
+        "chance": 1
+      },
+      "ability": {
+        "id": "psionic_spirit_orbs",
+        "name": "ลูกแก้วพลังจิตทวีคูณ",
+        "description": "ทุกครั้งที่ร่ายสกิลสำเร็จ จะสะสมลูกแก้วจิตวิญญาณ 1 ลูก (เพิ่ม ATK +5% สูงสุด 4 ลูก รวม +20%) · เมื่อสะสมครบ 4 ลูก มีโอกาส 20% ที่จะระเบิดพลังลูกแก้วสร้างความเสียหายมหาประลัยและตัด SP -15 ศัตรูทุกคน (สลายลูกแก้วเริ่มสะสมใหม่) · เมื่อถูกโจมตี มีโอกาส 35% ทำให้ผู้โจมตีติดสับสน (Confusion 2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "phoenix",
+      "name": "ฟีนิกซ์",
+      "rarity": "SS",
+      "element": "fire",
+      "archetype": "PHOENIX",
+      "role": "Striker",
+      "str": 91,
+      "agi": 38,
+      "sta": 53,
+      "customMultipliers": {
+        "hp": 1.05,
+        "atk": 1.05
+      },
+      "signatureName": "เพลิงอมตะชุบวิญญาณล้างกัลป์",
+      "signatureEffect": {
+        "type": "team_burn_heal",
+        "target": "all_enemies",
+        "teamHeal": 0.15,
+        "cleanse": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "rebirth_ashes",
+        "name": "วิหคเพลิงคืนชีพ & ผิวกายเพลิง",
+        "description": "มีสถานะผิวกายเพลิงถาวร (เพิ่มดาเมจไฟ 20% & ถูกโจมตีมีโอกาส 40% ศัตรูติดเผาไหม้/ระเบิด) · เมื่อได้รับดาเมจถึงตายครั้งแรกในไฟต์ จะฟื้นคืนชีพ 100% (มีโอกาส 80% ฟื้นคืนชีพด้วย HP เต็มหลอด, หากไม่สำเร็จฟื้น 60% ของ Max HP) และล้างดีบัฟทั้งหมด"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "catalyst_l",
+        "catalyst_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.3
+    },
+    {
+      "id": "bull",
+      "name": "วัว",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "กระทิงเพลิงขวิดพสุธา",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "raging_bull",
+        "name": "เลือดเดือดวัวกระทิง",
+        "description": "เมื่อ HP ต่ำกว่า 50% มีโอกาส 60% ได้รับบัฟ DEF +20% และลดดาเมจที่ได้รับ 15% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_s",
+        "fire_m1",
+        "medical_m1",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "beetle",
+      "name": "ด้วง",
+      "rarity": "A",
+      "element": "fire",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "เขากว่างหนีบเพลิงกัลป์",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.18,
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "fire_chitin_shell",
+        "name": "เกราะไคตินทนไฟ",
+        "description": "ได้รับ Block Rate +12% · เมื่อบล็อกสำเร็จ มีโอกาส 65% ปลดปล่อยคลื่นความร้อนใส่ผู้โจมตี (ติดเผาไหม้ 2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_m1",
+        "fire_l",
+        "medical_m2",
+        "martial_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "wild_boar",
+      "name": "หมูป่า",
+      "rarity": "S",
+      "element": "fire",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "หมูป่าเพลิงทะลวงทัพ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "blazing_tusk_hide",
+        "name": "หนังหนาเขี้ยวทมิฬ",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อถูกโจมตี มีโอกาส 50% สะท้อนคลื่นความร้อน 15% และได้เกจไม้ตาย +6"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "mongoose",
+      "name": "พังพอน",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "เขี้ยวเพลิงพริบตา",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 20,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "blazing_reflexes",
+        "name": "เขี้ยวไวท้าไฟ",
+        "description": "เพิ่ม FLEE +8 และ CRI% +5% · เมื่อหลบการโจมตีสำเร็จ มีโอกาส 60% สวนกลับด้วยการกัดไฟ (ดาเมจ 40% ATK)"
+      },
+      "defaultSkills": [
+        "fire_s",
+        "fire_m2",
+        "trick_m1",
+        "trick_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.35
+    },
+    {
+      "id": "monkey",
+      "name": "ลิง",
+      "rarity": "A",
+      "element": "fire",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "หมัดวานรเพลิงทะลวง",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "monkey_acrobat",
+        "name": "วานรเหินเวหา",
+        "description": "เพิ่ม SPD +8 · เมื่อโจมตีเป้าหมายที่มี SPD ช้ากว่าตน มีโอกาส 60% ดาเมจคริติคอลแรงขึ้น +25%"
+      },
+      "defaultSkills": [
+        "fire_m1",
+        "fire_l",
+        "trick_l",
+        "trick_m2"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4
+    },
+    {
+      "id": "bullet_ant",
+      "name": "มดกระสุน",
+      "rarity": "S",
+      "element": "fire",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "พิษกระสุนเพลิงปลิดชีพ",
+      "signatureEffect": {
+        "type": "burn",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "bullet_stinger",
+        "name": "เหล็กในเพลิงกระสุน",
+        "description": "เพิ่มเจาะเกราะ AB +15% · การโจมตีคริติคอลมีโอกาส 65% ลด DEF ศัตรู 30% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_l",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.45
+    },
+    {
+      "id": "goat",
+      "name": "แพะ",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "เขาเพลิงกระแทกจุด",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "taunting_ram",
+        "name": "เขาแกะกวนประสาท",
+        "description": "เมื่อโจมตี มีโอกาส 50% ทำให้ศัตรูเสียจังหวะ (ลด HIT 15 และลด SPD 12% 2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_s",
+        "fire_m1",
+        "trick_m1",
+        "trick_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "parrot",
+      "name": "นกแก้ว",
+      "rarity": "A",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "เพลิงเสียงคลื่นรบกวน",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "mimic_cacophony",
+        "name": "เสียงกู่ล่อหลอก",
+        "description": "เริ่มเทิร์นมีโอกาส 55% ลดเกจไม้ตายศัตรู -8 แต้ม"
+      },
+      "defaultSkills": [
+        "fire_m1",
+        "fire_m2",
+        "trick_m2",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "komodo",
+      "name": "มังกรโคโมโด",
+      "rarity": "S",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "เพลิงลาวากลืนสังหาร",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "pyro_toxin_aura",
+        "name": "หมอกควันพิษกักบริเวณ",
+        "description": "เมื่อโจมตีศัตรูที่ติดเผาไหม้ ดาเมจแรงขึ้น +20% · เมื่อโจมตีมีโอกาส 60% สั่งตรึง (Root 2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "trick_l",
+        "secret_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "flamingo",
+      "name": "นกฟลามิงโก",
+      "rarity": "B",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ระบำเพลิงพิทักษ์ฝูง",
+      "signatureEffect": {
+        "type": "cleanse",
+        "count": 1,
+        "chance": 1,
+        "duration": 0
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "warmth_of_the_flock",
+        "name": "ปีกอบอุ่นร่วมรัง",
+        "description": "ทุกต้นเทิร์น มีโอกาส 50% ฟื้นฟู HP 3.5% ของ Max HP ให้ตนเองและเพื่อนร่วมทีม"
+      },
+      "defaultSkills": [
+        "fire_m2",
+        "fire_s",
+        "medical_m1",
+        "medical_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "capybara",
+      "name": "คาปิบารา",
+      "rarity": "A",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 48,
+      "agi": 44,
+      "sta": 68,
+      "signatureName": "วารีอุ่นเยียวยาวิญญาณ",
+      "signatureEffect": {
+        "type": "heal_pct",
+        "value": 0.18,
+        "duration": 2,
+        "chance": 1,
+        "target": "all_allies"
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "hot_spring_aura",
+        "name": "ไออุ่นน้ำพุร้อน",
+        "description": "เริ่มเทิร์นมีโอกาส 60% ล้างสถานะผิดปกติ 1 สถานะ และฟื้นฟู SP +8"
+      },
+      "defaultSkills": [
+        "fire_m2",
+        "fire_m1",
+        "medical_l",
+        "medical_m2"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "sun_stag",
+      "name": "กวางดาวเพลิง",
+      "rarity": "S",
+      "element": "fire",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "แสงอรุณแห่งการเกิดใหม่",
+      "signatureEffect": {
+        "type": "heal_pct",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 1,
+        "target": "all_allies"
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "solar_resonance",
+        "name": "ประกายสุริยะคืนชีพ",
+        "description": "ทุกครั้งที่สร้างดาเมจไฟ มีโอกาส 60% ฟื้นฟู HP 5% Max HP และเร่งเกจไม้ตาย +10"
+      },
+      "defaultSkills": [
+        "fire_m2",
+        "fire_l",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "crab",
+      "name": "ปู",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "ก้ามวารีสกัดคลื่น",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.12,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "iron_crab_pincer",
+        "name": "ก้ามปูตั้งรับ",
+        "description": "ได้รับ Block Rate +10% · เมื่อบล็อกสำเร็จ มีโอกาส 60% สวนกลับด้วยการหนีบ (35% ATK)"
+      },
+      "defaultSkills": [
+        "water_s",
+        "water_m1",
+        "martial_s",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 100
+    },
+    {
+      "id": "piranha",
+      "name": "ปลาปิรันยา",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "คมเขี้ยวสายน้ำเชี่ยว",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "frenzy_bite",
+        "name": "สัญชาตญาณกัดขย้ำ",
+        "description": "เมื่อโจมตีศัตรูที่ HP ต่ำกว่า 60% มีโอกาส 60% ดาเมจแรงขึ้น +18% และได้ CRI% +10%"
+      },
+      "defaultSkills": [
+        "water_s",
+        "water_m2",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 100
+    },
+    {
+      "id": "flying_fish",
+      "name": "ปลาบิน",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ครีบวายุโฉบเกลียวคลื่น",
+      "signatureEffect": {
+        "type": "buff_spd",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "glide_wave",
+        "name": "ร่อนเวหาวารี",
+        "description": "เพิ่ม FLEE +8 และ SPD +6 · เมื่อหลบหลีกสำเร็จ มีโอกาส 60% ได้รับเกจไม้ตาย +10 แต้ม"
+      },
+      "defaultSkills": [
+        "water_s",
+        "water_m2",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 90
+    },
+    {
+      "id": "starfish",
+      "name": "ปลาดาว",
+      "rarity": "B",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "หัตถ์ดาราสมุทรฟื้นชีวา",
+      "signatureEffect": {
+        "type": "heal_pct",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1,
+        "target": "all_allies"
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "regenerative_core",
+        "name": "กายางอกฟื้นฟู",
+        "description": "ต้นเทิร์นมีโอกาส 55% ฟื้นฟู HP 4% Max HP และล้างสถานะผิดปกติ 1 สถานะให้ตนเอง"
+      },
+      "defaultSkills": [
+        "water_s",
+        "water_m1",
+        "medical_s",
+        "medical_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "crocodile",
+      "name": "จระเข้",
+      "rarity": "A",
+      "element": "water",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "มหากาลคชสารฟาดหาง",
+      "signatureEffect": {
+        "type": "vulnerable",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "death_roll_jaw",
+        "name": "เขี้ยวนักล่ากระชากร่าง",
+        "description": "เพิ่ม Armor Break +12% · เมื่อโจมตีโดน มีโอกาส 65% ดาเมจ +15% และลด HIT ศัตรู 12 (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_m2",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 100
+    },
+    {
+      "id": "swordfish",
+      "name": "ปลากระโทงดาบ",
+      "rarity": "A",
+      "element": "water",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "ดาบสมุทรทะลวงจุดตาย",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 20,
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "piercing_bill",
+        "name": "ปลายดาบวารีพิฆาต",
+        "description": "เพิ่ม Armor Break +15% · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 60% CRI DMG +25%"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_m2",
+        "trick_m2",
+        "secret_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 90
+    },
+    {
+      "id": "octopus",
+      "name": "ปลาหมึกสาย",
+      "rarity": "A",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "วังวนหนวดสมุทร",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "ink_cloud_grasp",
+        "name": "ม่านหมึกแปดหนวด",
+        "description": "เมื่อถูกโจมตี มีโอกาส 50% พ่นหมึกทำให้ผู้โจมตีตาบอด (1 เทิร์น) · เมื่อโจมตี มีโอกาส 50% ตรึงศัตรู (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_m2",
+        "trick_m1",
+        "trick_m2"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 30
+    },
+    {
+      "id": "sea_otter",
+      "name": "นากทะเล",
+      "rarity": "A",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "ไข่มุกวารีคุ้มทัพ",
+      "signatureEffect": {
+        "type": "heal_pct",
+        "value": 0.18,
+        "duration": 2,
+        "chance": 1,
+        "target": "all_allies"
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "buoyant_comfort",
+        "name": "กระแสน้ำชื่นใจ",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู SP +8 ให้ตนเอง และสร้างเกราะคุ้มกัน 5% Max HP (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_l",
+        "medical_m2",
+        "catalyst_m2"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "hippo",
+      "name": "ฮิปโป",
+      "rarity": "S",
+      "element": "water",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "ฮิปโปคลื่นพสุธาทะลวง",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "submerged_thick_hide",
+        "name": "หนังหนาสะเทินน้ำ",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อ HP ต่ำกว่า 60% มีโอกาส 65% ฟื้นฟู HP 4% และได้รับบัฟ DEF +20% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_l",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 100
+    },
+    {
+      "id": "orca",
+      "name": "วาฬเพชฌฆาต",
+      "rarity": "S",
+      "element": "water",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "เขี้ยวออร์กาฉีกสมุทร",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.3,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "apex_pod_hunter",
+        "name": "มัจจุราชสีน้ำเงิน",
+        "description": "เพิ่ม CRI% +10% และ SPD +8 · เมื่อโจมตีติดคริติคอล มีโอกาส 65% ดูดเลือด 15% และลด SPD ศัตรู 15% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "water_m2",
+        "water_l",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 85
+    },
+    {
+      "id": "jellyfish",
+      "name": "แมงกะพรุน",
+      "rarity": "S",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มรสุมสายใยมรณะ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "nematocyst_paralysis",
+        "name": "สัมผัสกัลปังหาพิษชา",
+        "description": "เมื่อโจมตีหรือถูกโจมตี มีโอกาส 50% ปล่อยเข็มพิษเนมาโทซิสต์ ทำให้ศัตรูติดอัมพาต (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม"
+      },
+      "defaultSkills": [
+        "water_m2",
+        "water_l",
+        "trick_m2",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 20
+    },
+    {
+      "id": "dolphin",
+      "name": "โลมา",
+      "rarity": "S",
+      "element": "water",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "คลื่นเสียงแห่งปาฏิหาริย์",
+      "signatureEffect": {
+        "type": "heal_pct",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 1,
+        "target": "all_allies"
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "echolocation_harmony",
+        "name": "โซนาร์สะท้อนสติปัญญา",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู SP +10 และเร่งเกจไม้ตายตนเองและเพื่อน +10 แต้ม"
+      },
+      "defaultSkills": [
+        "water_m1",
+        "water_l",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0
+    },
+    {
+      "id": "bighorn",
+      "name": "แกะภูเขา",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "เขาเกลียวพสุธาวายุ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "stand_against_gale",
+        "name": "ยืนหยัดต้านลมกรด",
+        "description": "ได้รับอัตราบล็อก Block Rate +10% · เมื่อบล็อกสำเร็จ มีโอกาส 60% ได้รับบัฟ DEF +20% (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_s",
+        "wind_m2",
+        "martial_s",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "woodpecker",
+      "name": "นกหัวขวาน",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "เจาะกะโหลกความเร็วเสียง",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "woodpecker_drill_beak",
+        "name": "จะงอยปากสว่านวายุ",
+        "description": "ได้รับเจาะเกราะ Armor Break +15% · เมื่อโจมตี มีโอกาส 60% ดาเมจแรงขึ้น +15%",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_s",
+        "wind_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "seagull",
+      "name": "นกนางนวล",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "เสียงโวยวายปีกวายุสับสน",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "screeching_sea_gale",
+        "name": "เสียงหวีดร้องโต้ลมทะเล",
+        "description": "เมื่อโจมตี มีโอกาส 55% ลดความแม่นยำศัตรู HIT -12 (2 เทิร์น) และขโมยเกจไม้ตายศัตรู 6 แต้มมาให้ตนเอง",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "wind_s",
+        "wind_m1",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.7
+    },
+    {
+      "id": "dove",
+      "name": "นกพิราบ",
+      "rarity": "B",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ปีกสันติภาพเยียวยา",
+      "customSigMult": 0,
+      "signatureEffect": {
+        "type": "buff_spd",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "pure_breeze_cleanse",
+        "name": "สายลมบริสุทธิ์ปัดเป่า",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "wind_s",
+        "wind_m2",
+        "medical_s",
+        "medical_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85
+    },
+    {
+      "id": "yak",
+      "name": "จามรี",
+      "rarity": "A",
+      "element": "wind",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ปราการวายุหิมาลัย",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "thick_fur_gale_shield",
+        "name": "ขนหนาต้านพายุ",
+        "description": "ลดดาเมจที่ได้รับ 8% · เมื่อถูกโจมตี มีโอกาส 60% สะบัดคลื่นลมลด ATK ศัตรู 15% (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_m2",
+        "martial_m1",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "kangaroo",
+      "name": "จิงโจ้",
+      "rarity": "A",
+      "element": "wind",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "บาทาวายุทะลวงอก",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "shockwave_double_kick",
+        "name": "ลูกถีบคลื่นกระแทก",
+        "description": "เพิ่ม ATK +8% · เมื่อโจมตี มีโอกาส 65% ดาเมจแรงขึ้น +18% และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_l",
+        "martial_m1",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "swan",
+      "name": "หงส์",
+      "rarity": "A",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "ระบำวายุพิทักษ์ชีวา",
+      "customSigMult": 0,
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.12,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "swan_dance_guardian",
+        "name": "ระบำหงส์คุ้มทัพ",
+        "description": "ต้นเทิร์นมีโอกาส 60% มอบเกราะวายุ 5% Max HP (2 เทิร์น) ให้ตนเองหรือเพื่อนร่วมทีม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_m2",
+        "medical_m1",
+        "catalyst_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85
+    },
+    {
+      "id": "ostrich",
+      "name": "นกกระจอกเทศ",
+      "rarity": "S",
+      "element": "wind",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "เตะสกัดพายุคลั่ง",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "thick_hide_gale_runner",
+        "name": "หนังเหนียววิ่งโต้ลม",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อถูกโจมตีขณะ HP ต่ำกว่า 60% มีโอกาส 65% ได้รับ FLEE +15 (2 เทิร์น) และฟื้นฟู HP 4% Max HP",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "wind_m2",
+        "wind_l",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "cassowary",
+      "name": "นกคาสโซวารี",
+      "rarity": "S",
+      "element": "wind",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "กรงเล็บสังหารสะบั้นลม",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "cassowary_dagger_claw",
+        "name": "กรงเล็บมีดดาบวายุ",
+        "description": "ได้รับเจาะเกราะ Armor Break +15% · เมื่อโจมตี มีโอกาส 65% ทำดาเมจแรงขึ้น +15% และทำให้ศัตรูติดเลือดไหลพิษ (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_l",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "condor",
+      "name": "แร้งคอนดอร์",
+      "rarity": "S",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "ไซโคลนมหาวาตภัย",
+      "signatureEffect": {
+        "type": "debuff_spd",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "condor_dominion_wings",
+        "name": "พญากางปีกคุมน่านฟ้า",
+        "description": "ต้นเทิร์นมีโอกาส 60% ปล่อยลมกดทับ ลด SPD ศัตรู 15% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_m2",
+        "wind_l",
+        "trick_m2",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "quetzal",
+      "name": "นกเควตซัล",
+      "rarity": "S",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาพรแห่งเทพเจ้าสายลม",
+      "customSigMult": 0,
+      "signatureEffect": {
+        "type": "buff_spd",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "sacred_emerald_wind",
+        "name": "พรอัญมณีสายลมศักดิ์สิทธิ์",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "wind_m2",
+        "wind_l",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85
+    },
+    {
+      "id": "cheetah",
+      "name": "เสือชีตาห์",
+      "rarity": "A",
+      "element": "wind",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "กรามล่าความเร็ว 120km",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "cheetah_sprint_burst",
+        "name": "สปรินต์สายลมพริบตา",
+        "description": "เพิ่ม SPD +10, FLEE +8 · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 65% ได้รับ CRI% +15% และ CRI DMG +20%",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_m2",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "honey_badger",
+      "name": "ฮันนี่แบดเจอร์",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "ตะปบฉีกหินผา",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "claw_break_stone",
+        "name": "กรงเล็บทลายศิลา",
+        "description": "ได้รับเจาะเกราะ Armor Break +15% · เมื่อโจมตี มีโอกาส 60% ดาเมจแรงขึ้น +15%",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "earth_s",
+        "earth_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "gorilla",
+      "name": "กอริลลา",
+      "rarity": "A",
+      "element": "earth",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "มหาหมัดกอริลลาทลายผา",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "gorilla_ground_slam",
+        "name": "กำปั้นศิลาทุบพสุธา",
+        "description": "เพิ่ม ATK +8% · เมื่อโจมตี มีโอกาส 65% ดาเมจแรงขึ้น +18% และตัดเกจไม้ตายศัตรู -10 แต้ม",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "earth_m1",
+        "earth_l",
+        "martial_m1",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "mole",
+      "name": "ตัวตุ่น",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "ทะลวงจุดตายใต้พิภพ",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "burrow_ambush",
+        "name": "ดำดินลอบสังหาร",
+        "description": "เพิ่ม FLEE +8 และ SPD +6 · เมื่อหลบหลีกสำเร็จ มีโอกาส 60% สวนกลับด้วยการข่วนแทง (40% ATK)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "earth_s",
+        "earth_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "cougar",
+      "name": "เสือพูม่า",
+      "rarity": "A",
+      "element": "earth",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "พุ่งขย้ำจากผาหิน",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "cliff_stalker",
+        "name": "นักล่าซอกหินผา",
+        "description": "เพิ่ม SPD +10, FLEE +8 · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 65% ได้รับ CRI% +15% และ CRI DMG +20%",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "earth_m1",
+        "earth_m2",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "perentie",
+      "name": "ตะกวดทรายยักษ์",
+      "rarity": "S",
+      "element": "earth",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "คมเขี้ยวพสุธาปลิดชีพ",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.3,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "sand_dragon_ambush",
+        "name": "มังกรดินซุ่มสังหาร",
+        "description": "เพิ่ม CRI% +10% และ SPD +8 · เมื่อโจมตีติดคริติคอล มีโอกาส 65% ดูดเลือด 15% และลด DEF ศัตรู 25% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "earth_m2",
+        "earth_l",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "prairie_dog",
+      "name": "แพรี่ด็อก",
+      "rarity": "B",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "เสียงเตือนป่วนพสุธา",
+      "signatureEffect": {
+        "type": "root",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "pitfall_trap",
+        "name": "หลุมพรางดินทรุด",
+        "description": "เมื่อโจมตี มีโอกาส 55% ทำให้ศัตรูติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "earth_s",
+        "earth_m1",
+        "trick_s",
+        "secret_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.75
+    },
+    {
+      "id": "anteater",
+      "name": "ตัวกินมดยักษ์",
+      "rarity": "A",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "กรงเล็บทลายจอมปลวก",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "quicksand_vortex",
+        "name": "วังวนทรายดูดกลืน",
+        "description": "เมื่อถูกโจมตี มีโอกาส 50% ทำให้ศัตรูติดสโลว์ (2 เทิร์น) · เมื่อโจมตีโดน มีโอกาส 50% ตรึงศัตรู Root (2 เทิร์น)",
+        "procChance": 0.5
+      },
+      "defaultSkills": [
+        "earth_m1",
+        "earth_m2",
+        "trick_m1",
+        "secret_m2"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.75
+    },
+    {
+      "id": "elephant",
+      "name": "ช้างแอฟริกา",
+      "rarity": "S",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาแผ่นดินไหวสะท้านภพ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "earthquake_footsteps",
+        "name": "ฝีเท้าพสุธากัมปนาท",
+        "description": "ต้นเทิร์นมีโอกาส 60% ปล่อยคลื่นสะเทือนดิน ลด SPD ศัตรู 15% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "earth_m2",
+        "earth_l",
+        "trick_m2",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "wombat",
+      "name": "ตัววอมแบต",
+      "rarity": "A",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "ปราการโพรงดินพิทักษ์",
+      "customSigMult": 0,
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "burrow_safehaven",
+        "name": "โพรงดินกำบังภัย",
+        "description": "ต้นเทิร์นมีโอกาส 60% มอบเกราะดิน 5% Max HP (2 เทิร์น) ให้ตนเองหรือเพื่อนร่วมทีม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "earth_m1",
+        "earth_m2",
+        "medical_m1",
+        "catalyst_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85
+    },
+    {
+      "id": "giraffe",
+      "name": "ยีราฟ",
+      "rarity": "S",
+      "element": "earth",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "พรมิ่งขวัญแห่งผืนดิน",
+      "customSigMult": 0,
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "high_ground_blessing",
+        "name": "พรเนตรพสุธาสูงชัน",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "earth_m2",
+        "earth_l",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85
+    },
+    {
+      "id": "sloth",
+      "name": "ตัวสล็อธ",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 38,
+      "agi": 22,
+      "sta": 90,
+      "signatureName": "โอบกอดเถาวัลย์พฤกษา",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "moss_coat",
+        "name": "มอสพงไพรห่อหุ้ม",
+        "description": "ลดดาเมจจากการโจมตีลง 10% · เมื่อถูกโจมตี มีโอกาส 50% ฟื้นฟู HP 3% ของ Max HP",
+        "procChance": 0.5
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_m2",
+        "medical_s",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "tapir",
+      "name": "สมเสร็จ",
+      "rarity": "A",
+      "element": "plant",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ละอองนิทรากลืนฝัน",
+      "signatureEffect": {
+        "type": "sleep",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "ancient_forest_hide",
+        "name": "หนังหนาพงไพรมหากาฬ",
+        "description": "ได้รับอัตราบล็อก Block +12% · เมื่อบล็อกสำเร็จ มีโอกาส 60% ฟื้นฟู HP 4% และมอบเกราะ 6% Max HP",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_l",
+        "medical_m1",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "panda",
+      "name": "หมีแพนด้า",
+      "rarity": "S",
+      "element": "plant",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "มหาพสุธาไผ่พันลำ",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "bamboo_fortress",
+        "name": "ปราการป่าไผ่สะบัด",
+        "description": "ลดดาเมจจากการโจมตีลง 10% · เมื่อ HP ต่ำกว่า 60% มีโอกาส 65% ฟื้นฟู HP 5% Max HP และได้รับบัฟ DEF +25% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "plant_m2",
+        "plant_l",
+        "martial_m2",
+        "medical_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "moose",
+      "name": "กวางมูส",
+      "rarity": "A",
+      "element": "plant",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "ขวิดทะลวงไพรสน",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "titan_antler_charge",
+        "name": "เขามหายักษ์พังพินาศ",
+        "description": "เพิ่ม ATK +8% · เมื่อโจมตี มีโอกาส 65% ดาเมจแรงขึ้น +18% และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_l",
+        "martial_m1",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "leaf_insect",
+      "name": "ตั๊กแตนใบไม้",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "คมเคี้ยวใบไม้ปลิดชีพ",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "foliage_cloak",
+        "name": "พรางใบไม้พริบตา",
+        "description": "เพิ่ม FLEE +8 และ SPD +6 · เมื่อหลบหลีกสำเร็จ มีโอกาส 60% สวนกลับด้วยคมมีดใบไม้ (40% ATK)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_s",
+        "plant_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "ocelot",
+      "name": "เสือดาวโอซีล็อต",
+      "rarity": "A",
+      "element": "plant",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "กรงเล็บพรานพงไพร",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "bush_ambush",
+        "name": "ซุ่มล่าพงพุ่ม",
+        "description": "เพิ่ม SPD +10, FLEE +8 · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 65% ได้รับ CRI% +15% และ CRI DMG +20%",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_l",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "clouded_leopard",
+      "name": "เสือลายเมฆ",
+      "rarity": "S",
+      "element": "plant",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "โฉบสังหารยอดเรือนไพร",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.3,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "canopy_shadow_fang",
+        "name": "กรงเล็บเขี้ยวเงาพฤกษา",
+        "description": "เพิ่ม CRI% +10% และ SPD +8 · เมื่อโจมตีติดคริติคอล มีโอกาส 65% ดูดเลือด 15% และลด DEF ศัตรู 25% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_m1",
+        "martial_m2",
+        "trick_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "chameleon",
+      "name": "กิ้งก่าคาเมเลียน",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "สะกดตาสลับสีลวงตา",
+      "signatureEffect": {
+        "type": "root",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "vine_tongue_catch",
+        "name": "ลิ้นตวัดเถาวัลย์พฤกษา",
+        "description": "เมื่อโจมตี มีโอกาส 55% ทำให้ศัตรูติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "plant_s",
+        "plant_m1",
+        "trick_s",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "gibbon",
+      "name": "ชะนี",
+      "rarity": "A",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "เถาวัลย์พันธนาการโหนสวาท",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "wild_canopy_howl",
+        "name": "เสียงกู่ก้องพงไพร",
+        "description": "ต้นเทิร์นมีโอกาส 60% ลดความแม่นยำศัตรู HIT -15 (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_m1",
+        "plant_m2",
+        "trick_m1",
+        "trick_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "orangutan",
+      "name": "อุรังอุตัง",
+      "rarity": "S",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาพฤกษาทลายภพ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "ancient_root_weave",
+        "name": "รากไม้พสุธาพันธนาการ",
+        "description": "ต้นเทิร์นมีโอกาส 60% บัญชาเถาวัลย์รัด ลด SPD ศัตรู 15% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_m2",
+        "plant_l",
+        "trick_m2",
+        "trick_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "koala",
+      "name": "โคอาลา",
+      "rarity": "B",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ไออุ่นพฤกษาโอบนิทรา",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "eucalyptus_rest",
+        "name": "กลิ่นยูคาลิปตัสผ่อนคลาย",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "plant_s",
+        "plant_m2",
+        "medical_s",
+        "medical_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.35
+    },
+    {
+      "id": "hornbill",
+      "name": "นกเงือก",
+      "rarity": "S",
+      "element": "plant",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "พรมหาวนาลัยพิทักษ์ชีพ",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 1
+      },
+      "customSigMult": 0,
+      "ability": {
+        "id": "seed_of_rebirth",
+        "name": "เมล็ดพันธุ์พฤกษาฟื้นชีพ",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_aoe",
+        "medical_m2",
+        "medical_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "toad",
+      "name": "คางคก",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "คางคกพ่นยางพิษสกัดทัพ",
+      "signatureEffect": {
+        "type": "poison",
+        "duration": 3,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "bufotoxin_skin",
+        "name": "ยางพิษคางคกคุ้มกาย",
+        "description": "ลดดาเมจจากการโจมตีลง 10% · เมื่อถูกโจมตี มีโอกาส 55% ทำให้ผู้โจมตีติดพิษ 1 ชั้น (3 เทิร์น)",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "poison_s",
+        "poison_m1",
+        "martial_s",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "centipede",
+      "name": "ตะขาบ",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "กรงเล็บร้อยขารุมทึ้ง",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 3,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "thousand_leg_fang",
+        "name": "เขี้ยวขย้ำร้อยขา",
+        "description": "ได้รับเจาะเกราะ Armor Break +15% · เมื่อโจมตีเป้าหมายที่ติดพิษอยู่แล้ว มีโอกาส 60% ทำดาเมจแรงขึ้น +18%",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "poison_s",
+        "poison_m2",
+        "martial_s",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "butterfly",
+      "name": "ผีเสื้อ",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ระบำปีกผีเสื้อพิษลวงตา",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "toxic_scale_flutter",
+        "name": "ละอองปีกพิษสับสน",
+        "description": "เมื่อโจมตี มีโอกาส 55% สลัดละอองปีกพิษทำให้ศัตรูติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "poison_s",
+        "poison_m1",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "bee",
+      "name": "ผึ้ง",
+      "rarity": "B",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ละอองนมผึ้งฟื้นฟูรัง",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "royal_propolis",
+        "name": "เกสรนมผึ้งสมานแผล",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "poison_s",
+        "poison_m1",
+        "medical_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "gila_monster",
+      "name": "กิลามอนสเตอร์",
+      "rarity": "A",
+      "element": "poison",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ขากรรไกรพิษบดกระดูก",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.55
+      },
+      "ability": {
+        "id": "osteoderm_toxic_armor",
+        "name": "เกล็ดกระดูกพิษทนทาน",
+        "description": "ได้รับ Block Rate +12% · เมื่อบล็อกสำเร็จ มีโอกาส 65% แพร่พิษใส่ศัตรู และลด ATK ศัตรู 15% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "poison_m1",
+        "poison_m2",
+        "martial_m1",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "black_widow",
+      "name": "แมงมุมแม่ม่ายดำ",
+      "rarity": "A",
+      "element": "poison",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "เขี้ยวแม่ม่ายดำปลิดชีพ",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.25,
+        "duration": 2,
+        "chance": 0.55
+      },
+      "ability": {
+        "id": "hourglass_ambush",
+        "name": "ซุ่มสังหารนาฬิกาทราย",
+        "description": "เพิ่ม SPD +10, FLEE +8 · เมื่อโจมตีเป้าหมายที่ติดพิษ มีโอกาส 65% ได้รับ CRI% +20% และ CRI DMG +25%",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "poison_m1",
+        "poison_m2",
+        "trick_m1",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "pitohui",
+      "name": "นกพิโทฮุย",
+      "rarity": "A",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "พายุขนนกพิษมึนงง",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.55
+      },
+      "ability": {
+        "id": "toxic_plumage_flutter",
+        "name": "สะบัดขนวิหคพิษคลั่ง",
+        "description": "ต้นเทิร์นมีโอกาส 60% ปล่อยละอองพิษ ลด HIT ศัตรู -15 (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "poison_m1",
+        "poison_aoe",
+        "trick_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "salamander",
+      "name": "ซาลาแมนเดอร์",
+      "rarity": "A",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "หัตถ์สมานวิญญาณซาลาแมนเดอร์",
+      "signatureEffect": {
+        "type": "cleanse",
+        "chance": 1
+      },
+      "ability": {
+        "id": "regenerative_toxic_skin",
+        "name": "กายางอกเซลล์พิษฟื้นชีพ",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 3.5% Max HP และมอบบัฟต้านทานสถานะ 25% (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "poison_m1",
+        "poison_aoe",
+        "medical_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "stonefish",
+      "name": "ปลาหิน",
+      "rarity": "S",
+      "element": "poison",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "ปราการหินทมิฬขย้ำวิญญาณ",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.18,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "stone_spine_barb",
+        "name": "หนามหินพิษมรณะ",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อถูกโจมตี มีโอกาส 65% สะท้อนดาเมจพิษกลับ 20% และทำให้ผู้โจมตีติดพิษร้ายแรง (3 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "poison_m2",
+        "poison_l",
+        "martial_m2",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "deathstalker",
+      "name": "แมงป่องมัจจุราช",
+      "rarity": "S",
+      "element": "poison",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "หางมัจจุราชแทงวิญญาณ",
+      "signatureEffect": {
+        "type": "poison",
+        "duration": 3,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "deathstalker_stinger",
+        "name": "เหล็กในมัจจุราชทะเลทราย",
+        "description": "ได้รับ Armor Break +15% และ CRI% +10% · เมื่อโจมตีติดคริติคอล มีโอกาส 70% ระเบิดพิษ (ทำดาเมจพิษโบนัส 25% และดูดเลือด 15%)",
+        "procChance": 0.7
+      },
+      "defaultSkills": [
+        "poison_m2",
+        "poison_l",
+        "trick_m2",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "cone_snail",
+      "name": "หอยเต้าปูน",
+      "rarity": "S",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาฉมวกมรณะดับประสาท",
+      "signatureEffect": {
+        "type": "root",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "conotoxin_harpoon",
+        "name": "ฉมวกอัมพาตโคโนท็อกซิน",
+        "description": "ต้นเทิร์นมีโอกาส 60% ปล่อยกระแสพิษอัมพาต ลด SPD ศัตรู 18% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "poison_m1",
+        "poison_l",
+        "trick_m2",
+        "catalyst_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "horseshoe_crab",
+      "name": "แมงดาทะเล",
+      "rarity": "S",
+      "element": "poison",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาปราการโลหิตครามล้างกัลป์",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "miracle_blue_blood",
+        "name": "สายธารเลือดน้ำเงินมหัศจรรย์",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "poison_aoe",
+        "poison_l",
+        "medical_m2",
+        "catalyst_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "walrus",
+      "name": "วอลรัส",
+      "rarity": "S",
+      "element": "ice",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "งาเหมันต์ทลายธารน้ำแข็ง",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "blubber_ice_fortress",
+        "name": "ปราการไขมันงาเหมันต์",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อ HP ต่ำกว่า 60% มีโอกาส 65% ได้รับผิวกายเยือกแข็ง (Ice Skin: DEF+20%, SPD-30%, ถูกตีมีโอกาส 40% แช่แข็งศัตรู) 2 เทิร์น และฟื้นฟู HP 5% Max HP",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "ice_m2",
+        "ice_l",
+        "martial_m2",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.15
+    },
+    {
+      "id": "leopard_seal",
+      "name": "แมวน้ำเสือดาว",
+      "rarity": "B",
+      "element": "ice",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "ขากรรไกรเหมันต์กระชากร่าง",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 3,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "ice_floe_hunter",
+        "name": "นักล่าขอบธารน้ำแข็ง",
+        "description": "ได้รับ Armor Break +15% · เมื่อโจมตีเป้าหมายที่ติดสโลว์หรือแช่แข็ง มีโอกาส 60% ทำดาเมจแรงขึ้น +18%",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "ice_s",
+        "ice_m1",
+        "martial_s",
+        "martial_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "wolverine",
+      "name": "วูล์ฟเวอรีน",
+      "rarity": "A",
+      "element": "ice",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "กรงเล็บคลั่งทลายหิมะ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "frozen_bone_crusher",
+        "name": "กรงเล็บบดกระดูกเยือกแข็ง",
+        "description": "เพิ่ม ATK +8% · เมื่อโจมตี มีโอกาส 65% ดาเมจแรงขึ้น +18% และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_l",
+        "martial_m1",
+        "trick_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25
+    },
+    {
+      "id": "polar_bear",
+      "name": "หมีขั้วโลก",
+      "rarity": "S",
+      "element": "ice",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "มหาอุ้งตีนถล่มขั้วโลก",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "apex_polar_dominion",
+        "name": "ราชันย์อุ้งตีนหิมะคลั่ง",
+        "description": "ได้รับ Armor Break +15% · เมื่อโจมตีเป้าหมายที่ติดสโลว์หรือแช่แข็ง มีโอกาส 65% ดาเมจแรงขึ้น +20% และมีโอกาส 50% ทำให้ศัตรูติดแช่แข็ง (1 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_l",
+        "martial_m2",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2
+    },
+    {
+      "id": "ermine",
+      "name": "เออร์มิน",
+      "rarity": "B",
+      "element": "ice",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "เขี้ยวขาวพริบตาปลิดชีพ",
+      "signatureEffect": {
+        "type": "buff_cri",
+        "value": 20,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "stoat_snow_dance",
+        "name": "ระบำพริ้วไหวพรางหิมะ",
+        "description": "เพิ่ม FLEE +8 และ SPD +6 · เมื่อหลบหลีกสำเร็จ มีโอกาส 60% สวนกลับด้วยการกัดขย้ำจุดตาย (40% ATK)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "ice_s",
+        "ice_m1",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "lynx",
+      "name": "แมวป่าลิงซ์",
+      "rarity": "A",
+      "element": "ice",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "กรงเล็บเงาหิมะทะลวงจุดตาย",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "snowshoe_stalker",
+        "name": "ย่างก้าวอุ้งตีนหิมะเงียบ",
+        "description": "เพิ่ม SPD +10, FLEE +8 · เมื่อโจมตีเป้าหมายที่ SPD ต่ำกว่าตน มีโอกาส 65% ได้รับ CRI% +15% และ CRI DMG +20%",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_l",
+        "trick_m1",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "snow_leopard",
+      "name": "เสือดาวหิมะ",
+      "rarity": "S",
+      "element": "ice",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "โผนขย้ำจากยอดผาเยือกแข็ง",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.3,
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "ghost_of_frozen_peaks",
+        "name": "ภูตเงาผาหิมะสังหาร",
+        "description": "ได้รับ Armor Break +15% และ CRI% +10% · เมื่อโจมตีติดคริติคอล มีโอกาส 70% ทำดาเมจเยือกแข็งโบนัส +25% และดูดเลือด 15%",
+        "procChance": 0.7
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_l",
+        "trick_m2",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "puffin",
+      "name": "นกพัฟฟิน",
+      "rarity": "B",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "พายุจะงอยเหมันต์ปั่นป่วน",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "blizzard_wing_flurry",
+        "name": "สะบัดปีกพายุเกล็ดน้ำแข็ง",
+        "description": "เมื่อโจมตี มีโอกาส 55% ทำให้ศัตรูติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "ice_s",
+        "ice_m1",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "narwhal",
+      "name": "นาร์วาล",
+      "rarity": "A",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "หอกเกลียวน้ำแข็งเสียบสกัดจุด",
+      "signatureEffect": {
+        "type": "freeze",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "sonar_ice_horn",
+        "name": "งาโซนาร์สะท้อนคลื่นเยือกแข็ง",
+        "description": "ต้นเทิร์นมีโอกาส 60% ปล่อยคลื่นโซนาร์ ลด SPD ศัตรู 15% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_aoe",
+        "trick_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "krill",
+      "name": "กุ้งเคย",
+      "rarity": "B",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "customSigMult": 0,
+      "signatureName": "ละอองแสงออโรราฝูงเคยฟื้นชีวา",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "krill_bio_antifreeze",
+        "name": "สารต้านเยือกแข็งแห่งฝูงเคย",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "ice_s",
+        "ice_m1",
+        "medical_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "beluga",
+      "name": "วาฬเบลูกา",
+      "rarity": "A",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "customSigMult": 0,
+      "signatureName": "คลื่นเพลงบริสุทธิ์สมานทัพ",
+      "signatureEffect": {
+        "type": "cleanse",
+        "chance": 1
+      },
+      "ability": {
+        "id": "canary_of_the_sea",
+        "name": "บทเพลงวารีขาวกล่อมวิญญาณ",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู SP +8 และสร้างเกราะน้ำแข็ง 5% Max HP (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "ice_m1",
+        "ice_aoe",
+        "medical_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "reindeer",
+      "name": "กวางเรนเดียร์",
+      "rarity": "S",
+      "element": "ice",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "customSigMult": 0,
+      "signatureName": "มหาพรมงกุฎแสงเหนือชุบวิญญาณ",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.15,
+        "duration": 2,
+        "chance": 1
+      },
+      "ability": {
+        "id": "aurora_tundra_blessing",
+        "name": "พรแสงเหนือคุ้มทุ่งทุนดรา",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "ice_aoe",
+        "ice_l",
+        "medical_m2",
+        "catalyst_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8
+    },
+    {
+      "id": "armadillo",
+      "name": "ตัวอาร์มาดิลโล",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "ก้อนเหล็กทมิฬกลิ้งกระแทก",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "bone_armor_curl",
+        "name": "ม้วนตัวเกราะกระดูกทมิฬ",
+        "description": "ลดดาเมจจากการโจมตีลง 10% · เมื่อถูกโจมตี มีโอกาส 50% สะท้อนดาเมจกลับ 12% และทำให้ผู้โจมตีติด debuff_hit -12 (2 เทิร์น)",
+        "procChance": 0.5
+      },
+      "defaultSkills": [
+        "dark_s",
+        "dark_m2",
+        "martial_s",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "hyena",
+      "name": "ไฮยีน่า",
+      "rarity": "A",
+      "element": "dark",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "กรามเหล็กขย้ำกระดูกทลายทัพ",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "scavenger_thick_hide",
+        "name": "หนังเหนียวทมิฬเคี้ยวกระดูก",
+        "description": "ลดดาเมจที่ได้รับ 8% · เมื่อ HP ต่ำกว่า 60% มีโอกาส 65% ฟื้นฟู HP 4% Max HP และได้รับบัฟ DEF +20% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "dark_m1",
+        "dark_m2",
+        "martial_m1",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "sperm_whale",
+      "name": "วาฬสเปิร์ม",
+      "rarity": "S",
+      "element": "dark",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "มหาคลื่นกระแทกอเวจีใต้สมุทร",
+      "signatureEffect": {
+        "type": "stun",
+        "target": "all_enemies",
+        "duration": 1,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "abyssal_pressure_skull",
+        "name": "กะโหลกทนแรงดันอเวจี",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อถูกโจมตี มีโอกาส 65% ปล่อยคลื่นโซนาร์ทมิฬสะท้อนดาเมจ 15% และลด SPD ผู้โจมตี 15% (2 เทิร์น)",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_aoe",
+        "martial_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "tasmanian_devil",
+      "name": "แทสเมเนียนเดวิล",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "เขี้ยวปีศาจขย้ำแหลก",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.2,
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "devil_bone_crusher_jaw",
+        "name": "กรามปีศาจบดกระดูก",
+        "description": "ได้รับ Armor Break +15% · เมื่อโจมตี มีโอกาส 60% ทำดาเมจแรงขึ้น +15% และสร้างบาดแผลเลือดไหล (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "dark_s",
+        "dark_m1",
+        "martial_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "black_vulture",
+      "name": "แร้งดำ",
+      "rarity": "A",
+      "element": "dark",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "จะงอยทมิฬฉีกกระชากวิญญาณ",
+      "signatureEffect": {
+        "type": "poison",
+        "stacks": 1,
+        "duration": 3,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "carrion_hunter_gaze",
+        "name": "สายตาแร้งดำล่าซาก",
+        "description": "ได้รับ Armor Break +15% · เมื่อโจมตีเป้าหมายที่มี HP ต่ำกว่า 60% มีโอกาส 65% ทำดาเมจแรงขึ้น +18% และดูดเลือด 12% ของดาเมจ",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "dark_m1",
+        "dark_l",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.4
+    },
+    {
+      "id": "jaguar",
+      "name": "เสือจากัวร์",
+      "rarity": "S",
+      "element": "dark",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "เงาพยัคฆ์ขย้ำกะโหลกปลิดชีพ",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.7
+      },
+      "ability": {
+        "id": "skull_piercing_fang",
+        "name": "เขี้ยวเงาทะลวงจุดตาย",
+        "description": "ได้รับ Armor Break +15% และ CRI% +10% · เมื่อโจมตีติดคริติคอล มีโอกาส 65% ทำดาเมจโบนัส +25% และดูดเลือด 15% ของดาเมจ",
+        "procChance": 0.65
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m2",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "aye_aye",
+      "name": "อาย-อาย",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "เนตรปีศาจสะกดวิญญาณ",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2,
+        "chance": 0.25
+      },
+      "ability": {
+        "id": "night_tap_confusion",
+        "name": "เคาะจังหวะรัตติกาลป่วนประสาท",
+        "description": "เมื่อโจมตี มีโอกาส 55% ทำให้เป้าหมายติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "dark_s",
+        "dark_m1",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.7
+    },
+    {
+      "id": "crow",
+      "name": "อีกา",
+      "rarity": "A",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "พายุขนนกทมิฬกลืนตะวัน",
+      "signatureEffect": {
+        "type": "blind",
+        "target": "all_enemies",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "cunning_dark_wings",
+        "name": "เล่ห์เหลี่ยมปีกทมิฬ",
+        "description": "ต้นเทิร์นมีโอกาส 60% สะบัดปีกทมิฬ ลดความแม่นยำ HIT ศัตรู -15 (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "dark_m1",
+        "dark_l",
+        "trick_m1",
+        "secret_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.7
+    },
+    {
+      "id": "vampire_squid",
+      "name": "หมึกแวมไพร์",
+      "rarity": "S",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาพายุหมึกรัตติกาลล้างบัฟ",
+      "signatureEffect": {
+        "type": "curse_and_silence",
+        "duration": 2,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "vampire_cloak_veil",
+        "name": "ม่านปีกมารบดบังทัศนวิสัย",
+        "description": "ต้นเทิร์นมีโอกาส 60% สับสนลด SPD ศัตรู 15% (2 เทิร์น) และตัดเกจไม้ตายศัตรู -8 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_aoe",
+        "trick_l",
+        "secret_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "cockroach",
+      "name": "แมลงสาบ",
+      "rarity": "B",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ฟีโรโมนทมิฬรวมฝูงคืนชีพ",
+      "signatureEffect": {
+        "type": "team_heal_buff",
+        "target": "all_allies"
+      },
+      "ability": {
+        "id": "undying_adaptation",
+        "name": "สัญชาตญาณปรับตัวไร้พ่าย",
+        "description": "ต้นเทิร์นมีโอกาส 55% ล้าง 1 ดีบัฟให้ตนเอง และฟื้นฟู SP +8",
+        "procChance": 0.55
+      },
+      "defaultSkills": [
+        "dark_s",
+        "dark_m2",
+        "medical_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "tokay_gecko",
+      "name": "ตุ๊กแก",
+      "rarity": "A",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "กู่ก้องสมานวิญญาณรัตติกาล",
+      "signatureEffect": {
+        "type": "team_cleanse_shield",
+        "target": "all_allies"
+      },
+      "ability": {
+        "id": "gecko_regenerative_cells",
+        "name": "พลังสมานแผลเซลล์งอกใหม่",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู SP +8 และสร้างเกราะเงามืด 5% Max HP (2 เทิร์น)",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "dark_m2",
+        "dark_l",
+        "medical_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "axolotl",
+      "name": "แอกโซลอเติลทมิฬ",
+      "rarity": "S",
+      "element": "dark",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาปาฏิหาริย์ชุบวิญญาณแห่งเงามืด",
+      "signatureEffect": {
+        "type": "team_full_regen_cleanse",
+        "target": "all_allies"
+      },
+      "ability": {
+        "id": "miracle_organ_regeneration",
+        "name": "กายางอกเซลล์อัศจรรย์",
+        "description": "ต้นเทิร์นมีโอกาส 60% ฟื้นฟู HP 4% Max HP และเร่งเกจไม้ตายตนเอง +10 แต้ม",
+        "procChance": 0.6
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_aoe",
+        "medical_l",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85,
+      "customSigMult": 0
+    },
+    {
+      "id": "sand_frog",
+      "name": "กบทราย",
+      "rarity": "B",
+      "element": "light",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "กายาทรายพองลมสะท้อนสุริยัน",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "sand_burrow_puff",
+        "name": "กายาพองลมสะท้อนแดด",
+        "description": "ลดดาเมจที่ได้รับ 8% · เพิ่ม Block Rate +12% และเมื่อบล็อกการโจมตีสำเร็จ มีโอกาส 60% ฟื้นฟู +4% Max HP"
+      },
+      "defaultSkills": [
+        "light_s",
+        "light_m2",
+        "martial_s",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "camel",
+      "name": "อูฐ",
+      "rarity": "A",
+      "element": "light",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "ปราการโหนกสุริยะแห่งทะเลทราย",
+      "signatureEffect": {
+        "type": "buff_def_regen",
+        "target": "self",
+        "def": 0.25,
+        "regen": 0.06,
+        "duration": 2
+      },
+      "ability": {
+        "id": "solar_hump_endurance",
+        "name": "โหนกสะสมสุริยะทานทน",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อ HP ต่ำกว่า 60% มีโอกาส 65% ได้รับบัฟ DEF +20% (2 เทิร์น) และฟื้นฟู +5% Max HP"
+      },
+      "defaultSkills": [
+        "light_m1",
+        "light_m2",
+        "martial_m1",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.4
+    },
+    {
+      "id": "white_bison",
+      "name": "กระทิงไบซันขาว",
+      "rarity": "S",
+      "element": "light",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "เกราะแสงศักดิ์สิทธิ์ไบซันเทวะ",
+      "signatureEffect": {
+        "type": "team_shield_cleanse",
+        "target": "all_allies",
+        "shield": 0.22,
+        "cleanse": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "sacred_white_hide",
+        "name": "กายาสุริยะไบซันศักดิ์สิทธิ์",
+        "description": "เริ่มไฟต์ด้วยเกราะ 25% Max HP · ลดดาเมจที่ได้รับ 12% และเมื่อถูกโจมตี มีโอกาส 60% สะท้อนดาเมจแสง 15% และลด ATK ผู้โจมตี 12% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_aoe",
+        "martial_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.6
+    },
+    {
+      "id": "sand_cat",
+      "name": "แมวทราย",
+      "rarity": "B",
+      "element": "light",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 69,
+      "agi": 45,
+      "sta": 36,
+      "signatureName": "กรงเล็บสุริยันฉีกผืนทราย",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2
+      },
+      "ability": {
+        "id": "sand_stealth_claw",
+        "name": "กรงเล็บล่าซุ่มทรายร้อน",
+        "description": "เพิ่ม Armor Break +15 · เมื่อโจมตีโดน มีโอกาส 50% ทำให้เป้าหมายติดสถานะเลือดไหล (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "light_s",
+        "light_m1",
+        "martial_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2,
+      "customSigMult": 2.8
+    },
+    {
+      "id": "sidewinder",
+      "name": "งูหางกระดิ่งไซด์ไวนเดอร์",
+      "rarity": "A",
+      "element": "light",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 37,
+      "signatureName": "อสรพิษไซด์ไวนเดอร์ฉกแสงสุริยัน",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "target": "target",
+        "def": 0.25,
+        "duration": 2
+      },
+      "ability": {
+        "id": "infrared_heat_strike",
+        "name": "เนตรความร้อนอินฟราเรด",
+        "description": "เพิ่ม HIT +15 และ Armor Break +15 · หากเป้าหมายติดสถานะผิดปกติ จะมีโอกาสคริติคอลเพิ่มขึ้น +25%"
+      },
+      "defaultSkills": [
+        "light_m1",
+        "light_l",
+        "martial_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4,
+      "customSigMult": 3
+    },
+    {
+      "id": "akhal_teke",
+      "name": "ม้าทองคำอาคัลเทคี",
+      "rarity": "S",
+      "element": "light",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "บาทาสวรรค์สะท้านสุริยะทองคำ",
+      "signatureEffect": {
+        "type": "chain_damage",
+        "target": "adjacent",
+        "chainDmg": 1.2
+      },
+      "ability": {
+        "id": "golden_heavenly_steed",
+        "name": "ประกายม้าทองคำสวรรค์",
+        "description": "เพิ่ม ATK +10% และ Armor Break +20 · เมื่อโจมตีคริติคอล มีโอกาส 70% ตัดเกจไม้ตายศัตรู 15 แต้ม"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_aoe",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.25,
+      "customSigMult": 3.2
+    },
+    {
+      "id": "caracal",
+      "name": "แมวป่าคาราคัล",
+      "rarity": "A",
+      "element": "light",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "ทะยานตะปบแสงสุริยะสังหาร",
+      "signatureEffect": {
+        "type": "crit_burst",
+        "target": "target",
+        "criBonus": 30
+      },
+      "ability": {
+        "id": "tufted_ear_spring",
+        "name": "สปริงพู่หูทะยานเวหา",
+        "description": "เพิ่ม CRI% +12% และ FLEE +8 · เมื่อโจมตีคริติคอล มีโอกาส 60% ได้รับเกจไม้ตาย +15 แต้ม"
+      },
+      "defaultSkills": [
+        "light_m1",
+        "light_m2",
+        "trick_m1",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6,
+      "customSigMult": 3
+    },
+    {
+      "id": "gyrfalcon",
+      "name": "เหยี่ยวขาวไจร์ฟอลคอน",
+      "rarity": "S",
+      "element": "light",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "ศรสุริยันดิ่งพิฆาตไจร์ฟอลคอน",
+      "signatureEffect": {
+        "type": "backline_pierce",
+        "target": "target",
+        "defPen": 0.35
+      },
+      "ability": {
+        "id": "solar_apex_dive",
+        "name": "ดิ่งเวหาผ่าตะวัน",
+        "description": "เพิ่ม SPD +12% และ CRI DMG +25% · ในเทิร์นแรกเพิ่มโอกาสติดคริติคอล 100% และเจาะเกราะ 25%"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_aoe",
+        "trick_l",
+        "martial_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 3.3
+    },
+    {
+      "id": "frilled_lizard",
+      "name": "กิ้งก่าแผงคอ",
+      "rarity": "B",
+      "element": "light",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "แผ่แผงคอสุริยันสะกดขวัญ",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2
+      },
+      "ability": {
+        "id": "frilled_sun_flare",
+        "name": "แผงคอแสงวาบตื่นตระหนก",
+        "description": "เริ่มไฟต์ทำให้ศัตรูมีโอกาส 60% ติดสถานะตาบอด (1 เทิร์น) · เมื่อโจมตีโดน มีโอกาส 50% ลด HIT ศัตรู 15 แต้ม (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "light_s",
+        "light_m1",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.35,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "alpaca",
+      "name": "อัลปากา",
+      "rarity": "A",
+      "element": "light",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "ไออุ่นปุยขนสุริยะโอบอุ้ม",
+      "signatureEffect": {
+        "type": "team_heal_shield_cleanse",
+        "target": "all_allies",
+        "healPercent": 0.18,
+        "shield": 0.12,
+        "cleanse": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "gentle_solar_fleece",
+        "name": "ปุยขนสุริยะอบอุ่น",
+        "description": "ต้นเทิร์นมีโอกาส 60% ชำระล้างดีบัฟ 1 ชนิดให้ตนเอง · เมื่อถูกโจมตี มีโอกาส 45% ได้รับเกราะ 10% Max HP"
+      },
+      "defaultSkills": [
+        "light_m2",
+        "light_l",
+        "medical_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.2,
+      "customSigMult": 0
+    },
+    {
+      "id": "white_elephant",
+      "name": "ช้างเผือก",
+      "rarity": "S",
+      "element": "light",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาบารมีคชสารเผือกแสงทิพย์คุ้มเกล้า",
+      "signatureEffect": {
+        "type": "team_heal_cleanse_all_buff",
+        "target": "all_allies",
+        "healPercent": 0.26,
+        "cleanseAll": true,
+        "buffDef": 0.25,
+        "duration": 2
+      },
+      "ability": {
+        "id": "sacred_white_grace",
+        "name": "บารมีคชสารเผือกคุ้มภัย",
+        "description": "ต้นเทิร์นฟื้นฟู +5% Max HP และล้างดีบัฟ 1 ชนิด · เริ่มไฟต์มอบเกราะ 20% Max HP"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_aoe",
+        "medical_l",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.2,
+      "customSigMult": 0
+    },
+    {
+      "id": "electric_ray",
+      "name": "ปลากระเบนไฟฟ้า",
+      "rarity": "A",
+      "element": "lightning",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 43,
+      "sta": 79,
+      "signatureName": "เกราะสนามไฟฟ้ากระตุกมรณะ",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "torpedo_discharge",
+        "name": "เกราะสนามไฟฟ้ากระตุก",
+        "description": "ลดดาเมจที่ได้รับ 10% · เมื่อถูกโจมตี มีโอกาส 60% ปล่อยไฟฟ้าสะท้อนดาเมจ 15% และลด SPD ผู้โจมตี 15% (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "lightning_m1",
+        "lightning_m2",
+        "martial_m1",
+        "medical_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.4
+    },
+    {
+      "id": "african_buffalo",
+      "name": "ควายป่าแอฟริกา",
+      "rarity": "S",
+      "element": "lightning",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 46,
+      "sta": 84,
+      "signatureName": "มหาเกราะกระดูกเขาอัสนีบาตพุ่งชน",
+      "signatureEffect": {
+        "type": "team_shield",
+        "target": "all_allies",
+        "shield": 0.22,
+        "duration": 2
+      },
+      "ability": {
+        "id": "cape_boss_charge",
+        "name": "เกราะกระดูกเขาสายฟ้าฟาด",
+        "description": "เริ่มไฟต์ด้วยเกราะ 25% Max HP · เพิ่ม Block Rate +15% และเมื่อบล็อกการโจมตีสำเร็จ มีโอกาส 65% ขวิดสวนกลับด้วยดาเมจสายฟ้า 40% ATK"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_aoe",
+        "martial_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.6
+    },
+    {
+      "id": "pistol_shrimp",
+      "name": "กุ้งดีดขัน",
+      "rarity": "B",
+      "element": "lightning",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 69,
+      "agi": 45,
+      "sta": 36,
+      "signatureName": "ก้ามพลาสม่าคลื่นกระแทกสุญญากาศ",
+      "signatureEffect": {
+        "type": "vulnerable",
+        "duration": 2
+      },
+      "ability": {
+        "id": "cavitation_bubble_burst",
+        "name": "คลื่นกระแทกพลาสม่าสุญญากาศ",
+        "description": "เพิ่ม Armor Break +18 · เมื่อโจมตีโดน มีโอกาส 50% ตัดเกจ SP เป้าหมาย 15 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_s",
+        "lightning_m1",
+        "martial_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.2,
+      "customSigMult": 2.8
+    },
+    {
+      "id": "tiger_beetle",
+      "name": "ด้วงเสือ",
+      "rarity": "B",
+      "element": "lightning",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "กรามสายฟ้าสับพริบตาปลิดชีพ",
+      "signatureEffect": {
+        "type": "bleed",
+        "duration": 2
+      },
+      "ability": {
+        "id": "supersonic_dash_mandibles",
+        "name": "ย่างก้าวสายฟ้าแลบเหนือเสียง",
+        "description": "เพิ่ม SPD +8 และ FLEE +6 · เมื่อโจมตีเป้าหมายที่มี SPD ต่ำกว่าตน มีโอกาส 55% ทำดาเมจแรงขึ้น +18%"
+      },
+      "defaultSkills": [
+        "lightning_s",
+        "lightning_m1",
+        "trick_s",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6,
+      "customSigMult": 2.8
+    },
+    {
+      "id": "black_mamba",
+      "name": "งูแบล็คแมมบา",
+      "rarity": "A",
+      "element": "lightning",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "อสรพิษดำฉกเขี้ยวอัสนีปลิดชีพ",
+      "signatureEffect": {
+        "type": "crit_burst",
+        "target": "target",
+        "criBonus": 30
+      },
+      "ability": {
+        "id": "lightning_viper_strike",
+        "name": "ฉกเขี้ยวอสรพิษสายฟ้า",
+        "description": "เพิ่ม HIT +15 และ CRI% +10% · เมื่อโจมตีติดคริติคอล มีโอกาส 60% ทำให้เป้าหมายติดสถานะเลือดไหล (3 เทิร์น) และดูดเลือด 12%"
+      },
+      "defaultSkills": [
+        "lightning_m1",
+        "lightning_m2",
+        "trick_m1",
+        "martial_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6,
+      "customSigMult": 3
+    },
+    {
+      "id": "electric_catfish",
+      "name": "ปลาดุกไฟฟ้า",
+      "rarity": "B",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "ประจุอัมพาต 350 โวลต์ช็อตกระตุก",
+      "signatureEffect": {
+        "type": "slow",
+        "duration": 2
+      },
+      "ability": {
+        "id": "galvanic_shock_pulse",
+        "name": "คลื่นประจุไฟฟ้ากระตุก",
+        "description": "เมื่อโจมตี มีโอกาส 50% ทำให้ศัตรูติดสโลว์ (2 เทิร์น) และตัดเกจไม้ตายศัตรู -6 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_s",
+        "lightning_m1",
+        "trick_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.35,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "zebra",
+      "name": "ม้าลาย",
+      "rarity": "A",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "แถบสายฟ้าลวงตาโมชันแดซเซิล",
+      "signatureEffect": {
+        "type": "blind",
+        "duration": 2
+      },
+      "ability": {
+        "id": "motion_dazzle_stripes",
+        "name": "ลายพรางแถบสายฟ้าลวงตา",
+        "description": "ต้นเทิร์นมีโอกาส 55% ทำให้ศัตรูติดสถานะตาบอด (1 เทิร์น) · เมื่อโจมตี มีโอกาส 50% ตัดเกจไม้ตายศัตรู -8 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_m1",
+        "lightning_l",
+        "trick_m1",
+        "secret_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.35,
+      "customSigMult": 2.4
+    },
+    {
+      "id": "electric_eel",
+      "name": "ปลาไหลไฟฟ้า",
+      "rarity": "S",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหาทัณฑ์อัสนี 860 โวลต์ถล่มสมรภูมิ",
+      "signatureEffect": {
+        "type": "team_stun_cleanse_buffs",
+        "target": "all_enemies",
+        "stun": 1,
+        "duration": 1
+      },
+      "ability": {
+        "id": "high_voltage_organ",
+        "name": "อวัยวะไฟฟ้าแรงดันสูง 860V",
+        "description": "ต้นเทิร์นมีโอกาส 50% ปล่อยกระแสไฟฟ้าแรงสูง 860V ทำให้ศัตรูติดอัมพาต (2 เทิร์น) และตัดเกจไม้ตายศัตรู -10 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_aoe",
+        "trick_l",
+        "secret_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4,
+      "customSigMult": 2.6
+    },
+    {
+      "id": "star_nosed_mole",
+      "name": "ตุ่นจมูกดาว",
+      "rarity": "B",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "สัมผัสประสาทความเร็วแสงนำทัพ",
+      "signatureEffect": {
+        "type": "team_heal_sp",
+        "target": "all_allies",
+        "healPercent": 0.15,
+        "sp": 15
+      },
+      "ability": {
+        "id": "eimer_organ_reflex",
+        "name": "ประสาทสัมผัสเอเมอร์ไวพริบตา",
+        "description": "ต้นเทิร์นมีโอกาส 55% ฟื้นฟู SP +8 ให้ตนเอง และเร่งเกจไม้ตายตนเอง +6 แต้ม"
+      },
+      "defaultSkills": [
+        "lightning_s",
+        "lightning_m2",
+        "medical_s",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.25,
+      "customSigMult": 0
+    },
+    {
+      "id": "mouflon",
+      "name": "แกะเขาม้วน",
+      "rarity": "A",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 58,
+      "agi": 51,
+      "sta": 51,
+      "signatureName": "เกราะประจุไฟฟ้าสถิตขนแกะคุ้มภัย",
+      "signatureEffect": {
+        "type": "team_heal_shield_spd",
+        "target": "all_allies",
+        "healPercent": 0.18,
+        "shield": 0.12,
+        "spd": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "spiral_horn_resonance",
+        "name": "เขาม้วนสะท้อนคลื่นไฟฟ้าสถิต",
+        "description": "ต้นเทิร์นมีโอกาส 60% ล้างดีบัฟ 1 ชนิดให้ตนเอง · เมื่อถูกโจมตี มีโอกาส 50% มอบบัฟ SPD +15% ให้ตนเองและเพื่อน (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "lightning_m2",
+        "lightning_l",
+        "medical_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.25,
+      "customSigMult": 0
+    },
+    {
+      "id": "okapi",
+      "name": "ตัวโอคาปิ",
+      "rarity": "S",
+      "element": "lightning",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 62,
+      "agi": 55,
+      "sta": 55,
+      "signatureName": "มหากระตุ้นชีพจรสายฟ้าพงไพรลึกลับ",
+      "signatureEffect": {
+        "type": "team_heal_cleanse_buff_atk_spd",
+        "target": "all_allies",
+        "healPercent": 0.26,
+        "cleanseAll": true,
+        "buffAtk": 0.2,
+        "buffSpd": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "galvanic_life_pulse",
+        "name": "ชีพจรกัลวานิกกระตุ้นหัวใจ",
+        "description": "ต้นเทิร์นฟื้นฟู HP 5% Max HP และล้างดีบัฟ 1 ชนิดให้ทั้งทีม · เมื่อใช้ท่าไม้ตายเพิ่ม ATK +20% และ SPD +20% แก่ทุกคน (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "lightning_l",
+        "lightning_aoe",
+        "medical_l",
+        "secret_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.2,
+      "customSigMult": 0
+    },
+    {
+      "id": "platypus",
+      "name": "ตุ่นปากเป็ด",
+      "rarity": "B",
+      "element": "psychic",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 36,
+      "agi": 40,
+      "sta": 74,
+      "signatureName": "คลื่นเหนี่ยวนำประจุจิต",
+      "signatureEffect": {
+        "type": "shield",
+        "value": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "electro_sense",
+        "name": "สัมผัสกระแสจิตคุ้มภัย",
+        "description": "เมื่อถูกโจมตี มีโอกาส 45% กางเกราะพลังงาน (Energy Coat: ซับดาเมจ 40% เข้า SP นาน 2 เทิร์น) และลดความแม่นยำ (HIT) ของผู้โจมตีลง 10 แต้ม"
+      },
+      "defaultSkills": [
+        "psychic_s",
+        "psychic_m2",
+        "medical_m1",
+        "medical_s"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "lemur",
+      "name": "ลีเมอร์",
+      "rarity": "B",
+      "element": "psychic",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 70,
+      "agi": 45,
+      "sta": 35,
+      "signatureName": "กระสุนจิตสะท้อนกะโหลก",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.35
+      },
+      "ability": {
+        "id": "mind_focus",
+        "name": "เพ่งกระแสจิต",
+        "description": "เพิ่มพลังโจมตีคริติคอล (CRI DMG) +20% เมื่อโจมตีศัตรูที่ติดสถานะผิดปกติ"
+      },
+      "defaultSkills": [
+        "psychic_m1",
+        "psychic_m2",
+        "martial_m2",
+        "martial_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.3
+    },
+    {
+      "id": "sphynx_cat",
+      "name": "แมวสฟิงซ์",
+      "rarity": "B",
+      "element": "psychic",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 48,
+      "agi": 57,
+      "sta": 46,
+      "signatureName": "กรงเล็บจิตลวงประสาท",
+      "signatureEffect": {
+        "type": "debuff_def",
+        "value": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "psychic_shift",
+        "name": "ญาณหลบหลีก",
+        "description": "เมื่อ HP ต่ำกว่า 50% จะเพิ่ม EVA (หลบหลีก) +15%"
+      },
+      "defaultSkills": [
+        "psychic_s",
+        "psychic_m1",
+        "martial_m1",
+        "trick_s"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5
+    },
+    {
+      "id": "basilisk",
+      "name": "กิ้งก่าบาซิลิสก์",
+      "rarity": "B",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 48,
+      "sta": 48,
+      "signatureName": "เนตรสะกดบาซิลิสก์",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.4
+      },
+      "ability": {
+        "id": "brain_interference",
+        "name": "คลื่นรบกวนสมอง",
+        "description": "เมื่อเริ่มเทิร์น มีโอกาส 25% สุ่มลดเกจท่าไม้ตายศัตรู 1 ตัวลง -5 แต้ม"
+      },
+      "defaultSkills": [
+        "psychic_s",
+        "psychic_m1",
+        "trick_m1",
+        "secret_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.7
+    },
+    {
+      "id": "hamster",
+      "name": "แฮมสเตอร์",
+      "rarity": "B",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 40,
+      "agi": 52,
+      "sta": 58,
+      "signatureName": "คลื่นจิตเกื้อหนุนดวงใจ",
+      "signatureEffect": {
+        "type": "team_heal_sp",
+        "target": "all_allies",
+        "heal": 0.15,
+        "sp": 15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "psychic_bond",
+        "name": "สายใยจิตประสาน",
+        "description": "ทุกครั้งที่ตนเองใช้สกิล เพื่อนร่วมทีมทุกคนจะได้รับ SP คืน 3 แต้ม"
+      },
+      "defaultSkills": [
+        "psychic_s",
+        "psychic_m2",
+        "medical_m1",
+        "catalyst_s"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.85,
+      "customSigMult": 0
+    },
+    {
+      "id": "giant_tortoise",
+      "name": "เต่าอัลดาบรา",
+      "rarity": "A",
+      "element": "psychic",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 39,
+      "agi": 42,
+      "sta": 79,
+      "signatureName": "ปราการกระดองจิตสะท้อน",
+      "signatureEffect": {
+        "type": "buff_def",
+        "value": 0.3,
+        "duration": 2
+      },
+      "ability": {
+        "id": "psionic_barrier",
+        "name": "บาเรียคลื่นสมอง",
+        "description": "เมื่อเริ่มการต่อสู้ มอบม่านพลังป้องกันสถานะผิดปกติ 1 ครั้งให้ตนเองและเพื่อนแนวหน้า"
+      },
+      "defaultSkills": [
+        "psychic_m2",
+        "psychic_s",
+        "medical_m1",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0
+    },
+    {
+      "id": "serow",
+      "name": "เลียงผา",
+      "rarity": "A",
+      "element": "psychic",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 74,
+      "agi": 48,
+      "sta": 38,
+      "signatureName": "เขาจิตอัดกระแทก",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.45
+      },
+      "ability": {
+        "id": "cliff_resolve",
+        "name": "จิตตั้งมั่นยอดผา",
+        "description": "เมื่อ HP ต่ำกว่า 40% พลังโจมตี (ATK) เพิ่มขึ้น +20%"
+      },
+      "defaultSkills": [
+        "psychic_m2",
+        "psychic_m1",
+        "martial_l",
+        "martial_m2"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1
+    },
+    {
+      "id": "slow_loris",
+      "name": "ลิงลม",
+      "rarity": "A",
+      "element": "psychic",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 51,
+      "agi": 60,
+      "sta": 49,
+      "signatureName": "เขี้ยวพิษสะกดประสาท",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.35
+      },
+      "ability": {
+        "id": "mesmerizing_gaze",
+        "name": "ภาพลวงตาตาหวาน",
+        "description": "การโจมตีธรรมดามีโอกาส 25% ทำให้เป้าหมายติดตาบอด (Blind) 1 เทิร์น"
+      },
+      "defaultSkills": [
+        "psychic_m1",
+        "psychic_s",
+        "trick_m1",
+        "secret_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.6
+    },
+    {
+      "id": "crane",
+      "name": "นกกระเรียน",
+      "rarity": "A",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 42,
+      "agi": 56,
+      "sta": 62,
+      "signatureName": "ระบำจิตชำระมลทิน",
+      "signatureEffect": {
+        "type": "team_heal_cleanse",
+        "target": "all_allies",
+        "teamHeal": 0.2,
+        "cleanse": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "zen_mind",
+        "name": "จิตสงบนิ่ง",
+        "description": "ลดโอกาสติดสถานะผิดปกติลง 25% · ต้นเทิร์นมีโอกาส 40% มอบเกราะพลังงาน (Energy Coat: ซับดาเมจ 40% เข้า SP นาน 2 เทิร์น) ให้สมาชิกทีมที่มี HP ต่ำที่สุด"
+      },
+      "defaultSkills": [
+        "psychic_m1",
+        "psychic_m2",
+        "medical_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.8,
+      "customSigMult": 0
+    },
+    {
+      "id": "mammoth",
+      "name": "แมมมอธ",
+      "rarity": "S",
+      "element": "psychic",
+      "archetype": "DEF",
+      "role": "Tank",
+      "str": 41,
+      "agi": 44,
+      "sta": 86,
+      "signatureName": "มหาคลื่นงาช้างจิตสะท้าน",
+      "signatureEffect": {
+        "type": "team_buff_def",
+        "target": "all_allies",
+        "def": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "ancient_bulwark",
+        "name": "กายาจิตนิรันดร์",
+        "description": "ลดความเสียหายที่ได้รับลง 12% · เมื่อ HP ลดลงต่ำกว่า 65% จะปลดปล่อยพลังจิตกางเกราะพลังงาน (Energy Coat: ซับดาเมจ 40% เข้า SP นาน 3 เทิร์น)"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m2",
+        "medical_l",
+        "martial_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 1.6
+    },
+    {
+      "id": "harpy_eagle",
+      "name": "อินทรีฮาร์ปี",
+      "rarity": "S",
+      "element": "psychic",
+      "archetype": "ATK",
+      "role": "Striker",
+      "str": 79,
+      "agi": 52,
+      "sta": 40,
+      "signatureName": "กรงเล็บจิตระเบิดประสาท",
+      "signatureEffect": {
+        "type": "confusion",
+        "duration": 2,
+        "chance": 0.5
+      },
+      "ability": {
+        "id": "apex_telekinesis",
+        "name": "สัมผัสเพชฌฆาต",
+        "description": "ดาเมจสกิลธาตุพลังจิตแรงขึ้น +15%"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m1",
+        "martial_l",
+        "trick_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0.1,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "anaconda",
+      "name": "งูอนาคอนดา",
+      "rarity": "S",
+      "element": "psychic",
+      "archetype": "SPD",
+      "role": "Assassin",
+      "str": 54,
+      "agi": 65,
+      "sta": 52,
+      "signatureName": "รัดรึงคลื่นจิตกลืนวิญญาณ",
+      "signatureEffect": {
+        "type": "debuff_atk",
+        "value": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "mind_stalker",
+        "name": "สายตานักล่าไร้เงา",
+        "description": "เพิ่ม CRI% +15% และหากเป้าหมาย HP ต่ำกว่า 35% จะทำดาเมจแรงขึ้น +25%"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m2",
+        "secret_l",
+        "martial_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.4,
+      "customSigMult": 2
+    },
+    {
+      "id": "blue_whale",
+      "name": "วาฬสีน้ำเงิน",
+      "rarity": "S",
+      "element": "psychic",
+      "archetype": "BAL",
+      "role": "Supporter",
+      "str": 44,
+      "agi": 50,
+      "sta": 77,
+      "signatureName": "คลื่นโซนาร์จิตมหาสมุทร",
+      "signatureEffect": {
+        "type": "team_heal_sp",
+        "target": "all_allies",
+        "heal": 0.25,
+        "sp": 20,
+        "duration": 2
+      },
+      "ability": {
+        "id": "resonance_echo",
+        "name": "คลื่นประสานจิตก้องกังวาน",
+        "description": "เมื่อเริ่มเทิร์น มีโอกาส 50% มอบเกราะ 10% Max HP ให้เพื่อนร่วมทีมที่มี HP ต่ำที่สุด"
+      },
+      "defaultSkills": [
+        "psychic_aoe",
+        "psychic_l",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "back",
+      "backlineChance": 0.9,
+      "customSigMult": 0
+    },
+    {
+      "id": "qilin",
+      "name": "กิเลน",
+      "rarity": "SS",
+      "element": "psychic",
+      "archetype": "QILIN",
+      "role": "Controller",
+      "str": 68,
+      "agi": 60,
+      "sta": 54,
+      "signatureName": "มหาญาณทิพย์กิเลนพิพากษา",
+      "signatureEffect": {
+        "type": "team_confusion_cleanse",
+        "target": "all_enemies",
+        "confusion": 1,
+        "duration": 2
+      },
+      "ability": {
+        "id": "omniscient_gaze",
+        "name": "เนตรทิพย์หยั่งรู้สวรรค์",
+        "description": "เพิ่มต้านทานสถานะผิดปกติ 100% และเมื่อเริ่มเทิร์น มีโอกาส 60% สับสนศัตรู 1 ตัว (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "psychic_aoe",
+        "psychic_l",
+        "psychic_m2",
+        "trick_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.5,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "giant_dragonfly",
+      "name": "แมลงปอยักษ์",
+      "rarity": "A",
+      "element": "wind",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 54,
+      "agi": 56,
+      "sta": 50,
+      "signatureName": "วาตภัยปีกกระพือสะท้าน",
+      "signatureEffect": {
+        "type": "stun",
+        "duration": 1,
+        "chance": 0.65
+      },
+      "ability": {
+        "id": "aerobatic_hover",
+        "name": "การบินผาดแผลง 360 องศา",
+        "description": "เพิ่ม FLEE +15 และเมื่อหลบหลีกการโจมตีสำเร็จ มีโอกาส 70% สะบัดกระแสลมตัดเกจท่าไม้ตายศัตรู -10 แต้ม และลด HIT ศัตรู -15 (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "wind_m1",
+        "wind_m2",
+        "trick_m1",
+        "secret_m2"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.7
+    },
+    {
+      "id": "white_lion",
+      "name": "สิงโตขาว",
+      "rarity": "S",
+      "element": "light",
+      "archetype": "BAL",
+      "role": "Controller",
+      "str": 62,
+      "agi": 55,
+      "sta": 54,
+      "signatureName": "คำรามสุริยะพิพากษา",
+      "signatureEffect": {
+        "type": "team_debuff_atk_blind",
+        "target": "all_enemies",
+        "atk": 0.2,
+        "blind": 2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "solar_majesty_aura",
+        "name": "รัศมีราชันย์สุริยะ",
+        "description": "เมื่อเริ่มเทิร์น มีโอกาส 60% ปล่อยรังสีแสงสะกดขวัญ ลดเกจไม้ตายศัตรู -8 แต้ม และทำให้ศัตรูติดตาบอด (Blind) 1 เทิร์น"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_m1",
+        "catalyst_m1",
+        "trick_m1"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.3,
+      "customSigMult": 1.8
+    },
+    {
+      "id": "xuanwu",
+      "name": "เสวียนอู่",
+      "rarity": "SS",
+      "element": "earth",
+      "archetype": "XUANWU",
+      "role": "Tank",
+      "str": 45,
+      "agi": 35,
+      "sta": 102,
+      "customMultipliers": {
+        "hp": 1.25,
+        "def": 0.55
+      },
+      "signatureName": "กำแพงปฐพีดึกดำบรรพ์",
+      "signatureEffect": {
+        "type": "xuanwu_wall",
+        "target": "all_enemies",
+        "shield": 0.25,
+        "criRed": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "xuanwu_bastion",
+        "name": "กระดองเต่าผสานอสรพิษ",
+        "description": "เพิ่มโอกาสบล็อก +18% · เมื่อบล็อกการโจมตีสำเร็จ มีโอกาส 60% สวนกลับทำให้ผู้โจมตีติดสถานะกลายเป็นหิน (Petrify) 1 เทิร์น"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "ziz",
+      "name": "ซิซ",
+      "rarity": "SS",
+      "element": "wind",
+      "archetype": "ZIZ",
+      "role": "Tank",
+      "str": 42,
+      "agi": 44,
+      "sta": 96,
+      "customMultipliers": {
+        "hp": 1.18,
+        "def": 0.45
+      },
+      "signatureName": "กางปีกสกัดมหาวายุ",
+      "signatureEffect": {
+        "type": "ziz_wind_barrier",
+        "target": "enemy",
+        "teamShield": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "ziz_aegis_wings",
+        "name": "ปีกค้ำฟ้าปัดป้อง",
+        "description": "เพิ่มอัตราหลบหลีก FLEE +15% และบล็อก +15% · เมื่อถูกโจมตี มีโอกาส 45% ปัดป้องการโจมตีให้กลายเป็น MISS และลด HIT ของศัตรูลง 15 หน่วย (2 เทิร์น)"
+      },
+      "defaultSkills": [
+        "wind_l",
+        "wind_m1",
+        "martial_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.3
+    },
+    {
+      "id": "khalkotauroi",
+      "name": "คัลโคเทารอย",
+      "rarity": "SS",
+      "element": "fire",
+      "archetype": "KHALKOTAUROI",
+      "role": "Tank",
+      "str": 50,
+      "agi": 34,
+      "sta": 98,
+      "customMultipliers": {
+        "hp": 1.2,
+        "def": 0.45,
+        "atk": 1.05
+      },
+      "signatureName": "เพลิงอสูรโลหะหลอมเหลว",
+      "signatureEffect": {
+        "type": "molten_bronze_blast",
+        "target": "all_enemies",
+        "shield": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "bronze_furnace_hide",
+        "name": "ผิวกายทองแดงดูดซับความร้อน",
+        "description": "ลดความเสียหายธาตุไฟลง 50% · เมื่อถูกโจมตี มีโอกาส 50% สะท้อนดาเมจไฟ 25% ของ ATK คืนแก่ผู้โจมตี (Fire Thorns)"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.5
+    },
+    {
+      "id": "erawan",
+      "name": "พญาช้างเอราวัณ",
+      "rarity": "SS",
+      "element": "lightning",
+      "archetype": "ERAWAN",
+      "role": "Tank",
+      "str": 44,
+      "agi": 36,
+      "sta": 102,
+      "customMultipliers": {
+        "hp": 1.25,
+        "def": 0.5
+      },
+      "signatureName": "อัสนีบาตคชสารสะท้านปฐพี",
+      "signatureEffect": {
+        "type": "erawan_thunder_stomp",
+        "target": "all_enemies",
+        "stunChance": 0.6,
+        "shield": 0.2,
+        "duration": 1
+      },
+      "ability": {
+        "id": "lightning_conductor_trunk",
+        "name": "เสาล่อฟ้าคชสารเผือก",
+        "description": "ต้านทานสถานะสตั้น 100% · เมื่อได้รับความเสียหาย จะฟื้นฟู SP +10 และเปลี่ยนดาเมจ 30% ให้กลายเป็นเกราะป้องกัน"
+      },
+      "defaultSkills": [
+        "electric_l",
+        "electric_m1",
+        "catalyst_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "yeti",
+      "name": "เยติ",
+      "rarity": "SS",
+      "element": "ice",
+      "archetype": "YETI",
+      "role": "Tank",
+      "str": 47,
+      "agi": 33,
+      "sta": 102,
+      "customMultipliers": {
+        "hp": 1.22,
+        "def": 0.52
+      },
+      "signatureName": "กำแพงธารน้ำแข็งเยติพิทักษ์",
+      "signatureEffect": {
+        "type": "yeti_glacial_wall",
+        "target": "enemy",
+        "shield": 0.25,
+        "debuffAtk": 0.15,
+        "duration": 2
+      },
+      "ability": {
+        "id": "abominable_resilience",
+        "name": "กายาอสูรหิมะดึกดำบรรพ์",
+        "description": "เพิ่มอัตราการบล็อก +20% และลดดาเมจจากการถูกโจมตีติดคริติคอลลงเหลือ 65% · เมื่อบล็อกการโจมตีสำเร็จ มีโอกาส 50% แช่แข็ง (Freeze) ศัตรูผู้โจมตี 1 เทิร์น"
+      },
+      "defaultSkills": [
+        "ice_l",
+        "ice_m2",
+        "martial_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "tarasque",
+      "name": "ทาแร็สก์",
+      "rarity": "SS",
+      "element": "plant",
+      "archetype": "TARASQUE",
+      "role": "Tank",
+      "str": 46,
+      "agi": 34,
+      "sta": 102,
+      "customMultipliers": {
+        "hp": 1.24,
+        "def": 0.5
+      },
+      "signatureName": "พฤกษากระดองหนามสยบปฐพี",
+      "signatureEffect": {
+        "type": "tarasque_ironwood_surge",
+        "target": "enemy",
+        "healPct": 0.15,
+        "thornReflect": 0.3,
+        "duration": 2
+      },
+      "ability": {
+        "id": "ironwood_regrowth",
+        "name": "รากไม้พฤกษาฟื้นชีพ",
+        "description": "ต้นเทิร์นฟื้นฟู HP 4% ของ Max HP เสมอ · เมื่อถูกโจมตี มีโอกาส 40% ปล่อยเถาวัลย์ดูดเลือดศัตรู 3% Max HP กลับมาเพิ่มให้ตนเอง"
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_m1",
+        "medical_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "karkinos",
+      "name": "คาร์คิโนส",
+      "rarity": "SS",
+      "element": "poison",
+      "archetype": "KARKINOS",
+      "role": "Tank",
+      "str": 46,
+      "agi": 36,
+      "sta": 100,
+      "customMultipliers": {
+        "hp": 1.2,
+        "def": 0.55
+      },
+      "signatureName": "ก้ามยักษ์ตัดพิภพปล่อยไอพิษ",
+      "signatureEffect": {
+        "type": "karkinos_pincer_carapace",
+        "target": "all_enemies",
+        "shield": 0.22,
+        "duration": 2
+      },
+      "ability": {
+        "id": "toxic_carapace_spikes",
+        "name": "กระดองไคตินพิษมหากาฬ",
+        "description": "ทนทานต่อการเจาะเกราะ (Armor Break) 40% · เมื่อบล็อกสำเร็จ จะปล่อยละอองพิษสวนกลับ ทำให้ศัตรูติดพิษ 1 ชั้นทันที (3 เทิร์น)"
+      },
+      "defaultSkills": [
+        "poison_l",
+        "poison_m1",
+        "martial_l",
+        "catalyst_m1"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.3
+    },
+    {
+      "id": "ammut",
+      "name": "อัมมิต",
+      "rarity": "SS",
+      "element": "dark",
+      "archetype": "AMMUT",
+      "role": "Tank",
+      "str": 50,
+      "agi": 34,
+      "sta": 98,
+      "customMultipliers": {
+        "hp": 1.22,
+        "def": 0.48
+      },
+      "signatureName": "พิพากษากลืนวิญญาณใต้พิภพ",
+      "signatureEffect": {
+        "type": "ammut_soul_devour",
+        "target": "enemy",
+        "lifestealPct": 0.35,
+        "gaugeDrain": 15,
+        "duration": 1
+      },
+      "ability": {
+        "id": "duat_soul_eater",
+        "name": "กายาสามสัตว์นรกอเวจี",
+        "description": "ลดความเสียหายจากสถานะต่อเนื่อง (Burn, Bleed, Poison) ลง 35% · มีสถานะดูดเลือดพื้นฐาน (Lifesteal) +12% เสมอ"
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.5
+    },
+    {
+      "id": "nemean_lion",
+      "name": "สิงโตเนเมีย",
+      "rarity": "SS",
+      "element": "light",
+      "archetype": "NEMEAN_LION",
+      "role": "Tank",
+      "str": 52,
+      "agi": 38,
+      "sta": 92,
+      "customMultipliers": {
+        "hp": 1.18,
+        "def": 0.58
+      },
+      "signatureName": "คำรามก้องแสงสุริยะศักดิ์สิทธิ์",
+      "signatureEffect": {
+        "type": "nemean_solar_roar",
+        "target": "enemy",
+        "reflectPhys": 0.2,
+        "duration": 2
+      },
+      "ability": {
+        "id": "invulnerable_golden_pelt",
+        "name": "ขนทองคำไร้ศัสตรากรายกล้ำ",
+        "description": "ขนทองคำลดความเสียหายจากการโจมตีกายภาพลง 15% เสมอ · เพิ่มอัตราการบล็อก +15%"
+      },
+      "defaultSkills": [
+        "light_l",
+        "light_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.4
+    },
+    {
+      "id": "baku",
+      "name": "บาคุ",
+      "rarity": "SS",
+      "element": "psychic",
+      "archetype": "BAKU",
+      "role": "Tank",
+      "str": 42,
+      "agi": 40,
+      "sta": 100,
+      "customMultipliers": {
+        "hp": 1.2,
+        "def": 0.48
+      },
+      "signatureName": "มิติมายากลืนฝันร้ายคืนชีพ",
+      "signatureEffect": {
+        "type": "baku_dream_reflection",
+        "target": "enemy",
+        "barrierPct": 0.2,
+        "spRestored": 20,
+        "duration": 2
+      },
+      "ability": {
+        "id": "nightmare_eater_barrier",
+        "name": "อสูรกลืนฝันร้ายเปลี่ยนเป็นพลัง",
+        "description": "ต้านทานสถานะสับสน (Confusion) และหลับ (Sleep) 100% · เมื่อถูกโจมตีด้วยสกิล จะดูดซับ SP ของศัตรู -6 SP กลับมาฟื้นฟูให้ตนเอง"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m1",
+        "catalyst_l",
+        "medical_l"
+      ],
+      "preferredRow": "front",
+      "backlineChance": 0,
+      "customSigMult": 2.2
+    },
+    {
+      "id": "tsuchigumo",
+      "name": "ซึจิกุโมะ",
+      "rarity": "SS",
+      "element": "earth",
+      "archetype": "TSUCHIGUMO",
+      "role": "Assassin",
+      "str": 69,
+      "agi": 69,
+      "sta": 44,
+      "customMultipliers": {
+        "atk": 1.08,
+        "hp": 1.02
+      },
+      "signatureName": "ค่ายกลใยศิลาเขี้ยวอสูรสูบธรณี",
+      "signatureEffect": {
+        "type": "tsuchigumo_stone_web",
+        "target": "enemy",
+        "rootDuration": 2,
+        "defRedPct": 0.3,
+        "lifestealPct": 0.2,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "seismic_trapdoor_ambush",
+        "name": "หลุมพรางพสุธาสั่นสะเทือน",
+        "description": "เพิ่มอัตราหลบหลีก (Flee) +14% และเจาะเกราะ (AB) +18% ถาวร · เมื่อโจมตีใส่ศัตรูที่ติดสถานะตรึงร่าง (Root), สโลว์ (Slow) หรือกลายเป็นหิน (Petrify) จะสร้างความเสียหายแรงขึ้น +30% และมีโอกาสคริติคอลเพิ่มขึ้น +20%"
+      },
+      "defaultSkills": [
+        "earth_l",
+        "earth_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.7,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "kraken",
+      "name": "คราเคน",
+      "rarity": "SS",
+      "element": "water",
+      "archetype": "KRAKEN",
+      "role": "Assassin",
+      "str": 68,
+      "agi": 68,
+      "sta": 46,
+      "customMultipliers": {
+        "atk": 1.06,
+        "hp": 1.04
+      },
+      "signatureName": "หมึกทมิฬหนวดอสูรฉุดลงเหวลึก",
+      "signatureEffect": {
+        "type": "kraken_abyssal_grasp",
+        "target": "enemy",
+        "duration": 2,
+        "spDrain": 20,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "abyssal_ink_camouflage",
+        "name": "พรางกายเงาสมุทรลึก",
+        "description": "เพิ่มอัตราหลบหลีก (Flee) +15% และอัตราคริติคอล (CRI) +12% · เมื่อโจมตีใส่ศัตรูที่ติดสถานะตาบอด (Blind) หรือตรึงร่าง (Root) จะทำดาเมจแรงขึ้น +30% และดูดเลือด 18% ของดาเมจที่ทำได้"
+      },
+      "defaultSkills": [
+        "water_l",
+        "water_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 4.2
+    },
+    {
+      "id": "kamaitachi",
+      "name": "คามาอิตาจิ",
+      "rarity": "SS",
+      "element": "wind",
+      "archetype": "KAMAITACHI",
+      "role": "Assassin",
+      "str": 64,
+      "agi": 76,
+      "sta": 42,
+      "customMultipliers": {
+        "atk": 1.07,
+        "hp": 1
+      },
+      "signatureName": "สามคมเคียววายุสะบั้นวิญญาณ",
+      "signatureEffect": {
+        "type": "kamaitachi_sickle_dance",
+        "target": "enemy",
+        "bleedDuration": 2,
+        "spdBpu": 0.25,
+        "chance": 0.95
+      },
+      "ability": {
+        "id": "vacuum_sickle_trinity",
+        "name": "คมเคียวสายลมไร้เสียง",
+        "description": "เพิ่ม SPD พื้นฐาน +10 และอัตราคริติคอล +15% · ทุกครั้งที่โจมตีติดคริติคอล มีโอกาส 50% ที่จะฟันซ้ำด้วยคลื่นสุญญากาศ สร้างความเสียหายเพิ่มเติมอีก 35% ของ ATK"
+      },
+      "defaultSkills": [
+        "wind_l",
+        "wind_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.7,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "skoll",
+      "name": "สกอลล์",
+      "rarity": "SS",
+      "element": "fire",
+      "archetype": "SKOLL",
+      "role": "Assassin",
+      "str": 71,
+      "agi": 69,
+      "sta": 42,
+      "customMultipliers": {
+        "atk": 1.08,
+        "hp": 1
+      },
+      "signatureName": "เขี้ยวอุกกาบาตกลืนสุริยัน",
+      "signatureEffect": {
+        "type": "skoll_sun_devourer",
+        "target": "enemy",
+        "burnDuration": 2,
+        "statRedPct": 0.2,
+        "breakShield": true,
+        "chance": 0.9
+      },
+      "ability": {
+        "id": "sun_chaser_predator",
+        "name": "นักล่าสุริยะคราสคลั่ง",
+        "description": "เพิ่มความเสียหายคริติคอล (CRI DMG) +30% และเจาะเกราะ (AB) +15% · เมื่อโจมตีใส่ศัตรูที่มีบัฟหรือมีสถานะเผาไหม้ (Burn) จะได้รับอัตราคริติคอลเพิ่มขึ้น +20% และฟื้นฟูเกจไม้ตาย +15"
+      },
+      "defaultSkills": [
+        "fire_l",
+        "fire_m1",
+        "martial_l",
+        "catalyst_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 4.4
+    },
+    {
+      "id": "raiju",
+      "name": "ไรจู",
+      "rarity": "SS",
+      "element": "lightning",
+      "archetype": "RAIJU",
+      "role": "Assassin",
+      "str": 66,
+      "agi": 74,
+      "sta": 42,
+      "customMultipliers": {
+        "atk": 1.07,
+        "hp": 1
+      },
+      "signatureName": "อสุนีบาตเขี้ยวแสงผ่าจุดตาย",
+      "signatureEffect": {
+        "type": "raiju_thunder_strike",
+        "target": "enemy",
+        "stunDuration": 1,
+        "gaugeDrain": 25,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "flash_lightning_fang",
+        "name": "ร่างจำแลงสายฟ้าแลบ",
+        "description": "ต้านทานสถานะมึนงง (Stun) และสโลว์ (Slow) 100% · เมื่อโจมตีเป้าหมายที่มีค่า SPD ต่ำกว่าตน จะเพิ่มอัตราคริติคอล +15% และสร้างโบนัสดาเมจสายฟ้าเพิ่มขึ้นอีก +25%"
+      },
+      "defaultSkills": [
+        "electric_l",
+        "electric_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.7,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "wendigo",
+      "name": "เวนดิโก",
+      "rarity": "SS",
+      "element": "ice",
+      "archetype": "WENDIGO",
+      "role": "Assassin",
+      "str": 72,
+      "agi": 68,
+      "sta": 42,
+      "customMultipliers": {
+        "atk": 1.09,
+        "hp": 1
+      },
+      "signatureName": "กรงเล็บเหมันต์ปลิดวิญญาณ",
+      "signatureEffect": {
+        "type": "wendigo_glacial_execute",
+        "target": "enemy",
+        "freezeDuration": 1,
+        "lifestealPct": 0.25,
+        "executeBonus": 0.3,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "blizzard_bloodlust_stalker",
+        "name": "กระหายเลือดกลางพายุหิมะ",
+        "description": "โจมตีใส่ศัตรูที่มี HP ต่ำกว่า 50% แรงขึ้น +28% เสมอ · ทุกครั้งที่โจมตีติดคริติคอลหรือสังหารศัตรูได้ จะดูดเลือด 20% และได้รับบัฟเพิ่ม ATK/SPD +15% นาน 2 เทิร์น"
+      },
+      "defaultSkills": [
+        "ice_l",
+        "ice_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 4.5
+    },
+    {
+      "id": "weretiger_saming",
+      "name": "พญาเสือสมิง",
+      "rarity": "SS",
+      "element": "plant",
+      "archetype": "WERETIGER_SAMING",
+      "role": "Assassin",
+      "str": 70,
+      "agi": 68,
+      "sta": 44,
+      "customMultipliers": {
+        "atk": 1.08,
+        "hp": 1.02
+      },
+      "signatureName": "อาคมสมิงพรางดงกระโจนขย้ำคอ",
+      "signatureEffect": {
+        "type": "weretiger_saming_pounce",
+        "target": "enemy",
+        "duration": 2,
+        "healPct": 0.2,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "jungle_mirage_pounce",
+        "name": "มนตราพรางไพรสะกดวิญญาณ",
+        "description": "เพิ่มอัตราหลบหลีก (Flee) +15% และเจาะเกราะ (AB) +15% · เมื่อหลบหลีกการโจมตีสำเร็จ หรือเมื่อโจมตีติดคริติคอล มีโอกาส 55% ที่จะพันธนาการศัตรูด้วยเถาวัลย์อาคม (Root 1 เทิร์น) และเพิ่ม CRI ให้ตนเอง +15%"
+      },
+      "defaultSkills": [
+        "plant_l",
+        "plant_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 4.4
+    },
+    {
+      "id": "manticore",
+      "name": "แมนติคอร์",
+      "rarity": "SS",
+      "element": "poison",
+      "archetype": "MANTICORE",
+      "role": "Assassin",
+      "str": 69,
+      "agi": 69,
+      "sta": 44,
+      "customMultipliers": {
+        "atk": 1.08,
+        "hp": 1.02
+      },
+      "signatureName": "ห่าเข็มพิษหางแมงป่องสังหาร",
+      "signatureEffect": {
+        "type": "manticore_tail_spikes",
+        "target": "enemy",
+        "poisonStacks": 2,
+        "poisonDuration": 3,
+        "defRedPct": 0.3,
+        "bonusDmgIfPoisoned": 0.25,
+        "chance": 0.9
+      },
+      "ability": {
+        "id": "crimson_scorpion_barbs",
+        "name": "เหล็กในราชสีห์พิษอัมพาต",
+        "description": "การโจมตีปกติและสกิลทั้งหมดมีโอกาส 65% ที่จะฝังพิษ (Poison 2 เทิร์น) · โจมตีใส่ศัตรูที่ติดพิษด้วยอัตราคริติคอลเพิ่มขึ้น +18% และเจาะเกราะเพิ่มขึ้น +20%"
+      },
+      "defaultSkills": [
+        "poison_l",
+        "poison_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.7,
+      "customSigMult": 4.3
+    },
+    {
+      "id": "camazotz",
+      "name": "คามาซอตซ์",
+      "rarity": "SS",
+      "element": "dark",
+      "archetype": "CAMAZOTZ",
+      "role": "Assassin",
+      "str": 68,
+      "agi": 72,
+      "sta": 42,
+      "customMultipliers": {
+        "atk": 1.08,
+        "hp": 1
+      },
+      "signatureName": "ปีกรัตติกาลบั่นเศียรสูบวิญญาณ",
+      "signatureEffect": {
+        "type": "camazotz_decapitation",
+        "target": "enemy",
+        "silenceDuration": 2,
+        "lifestealPct": 0.3,
+        "gaugeDrain": 20,
+        "chance": 0.85
+      },
+      "ability": {
+        "id": "xibalba_night_reaper",
+        "name": "คลื่นโซนาร์รัตติกาลดูดเลือด",
+        "description": "ต้านทานสถานะตาบอด (Blind) 100% และเพิ่มพลังดูดเลือดพื้นฐาน +15% · เมื่อโจมตีใส่ศัตรูแถวหลังหรือศัตรูที่ติดสถานะผิดปกติ จะสร้างความเสียหายคริติคอลแรงขึ้น +25%"
+      },
+      "defaultSkills": [
+        "dark_l",
+        "dark_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.75,
+      "customSigMult": 4.4
+    },
+    {
+      "id": "nue",
+      "name": "นูเอะ",
+      "rarity": "SS",
+      "element": "psychic",
+      "archetype": "NUE",
+      "role": "Assassin",
+      "str": 66,
+      "agi": 70,
+      "sta": 46,
+      "customMultipliers": {
+        "atk": 1.07,
+        "hp": 1.02
+      },
+      "signatureName": "คลื่นจิตอสูรเมฆาทมิฬสะกดชีพ",
+      "signatureEffect": {
+        "type": "nue_phantom_cloud",
+        "target": "enemy",
+        "spBurn": 25,
+        "duration": 2,
+        "chance": 0.8
+      },
+      "ability": {
+        "id": "phantom_chimera_shroud",
+        "name": "ร่างจำแลงเมฆาฝันร้าย",
+        "description": "เพิ่มอัตราหลบหลีก (Flee) +15% และต้านทานสถานะสับสน/ใบ้ 100% · เมื่อโจมตีใส่ศัตรูที่ติดสถานะผิดปกติ (Debuff) หรือมี SP ต่ำกว่า 50% จะทำดาเมจแรงขึ้น +28% และดูด SP +10 มาเป็นของตน"
+      },
+      "defaultSkills": [
+        "psychic_l",
+        "psychic_m1",
+        "martial_l",
+        "trick_l"
+      ],
+      "preferredRow": "mid",
+      "backlineChance": 0.65,
+      "customSigMult": 4.3
+    }
+  ]
+}

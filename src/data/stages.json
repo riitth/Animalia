@@ -1,0 +1,516 @@
+{
+  "chapter": 1,
+  "chapterName": "ป่าฝนต้นกำเนิดวิญญาณ",
+  "chapterNameEn": "The Primordial Rainforest",
+  "chapterDescription": "ดินแดนแห่งความอุดมสมบูรณ์ที่เคยสงบสุข บัดนี้ถูกไอหมอกแห่ง Void กัดเซาะจนพืชพันธุ์และสัตว์ป่าคุ้มคลั่ง จงนำสัตว์เลี้ยงเข้าชำระล้างความมืดและกอบกู้สมดุล",
+  "stages": [
+    {
+      "id": "stage_1_1",
+      "chapter": 1,
+      "stageNumber": 1,
+      "name": "ชายป่ารกชัฏ",
+      "nameEn": "Edge of the Rainforest",
+      "description": "ก้าวแรกสู่ป่าฝนโบราณ หมอกทมิฬแห่ง Void กัดเซาะเถาวัลย์ป่าจนกลายเป็นอสูรพืชกลืนชีพขวางทางอยู่",
+      "battleMode": "1v1",
+      "recommendedLevel": 1,
+      "tutorialTopic": "พื้นฐาน: การออกแอ็กชัน, หลอด HP และ SP",
+      "tutorialGuide": [
+        "การโจมตีธรรมดา (Normal Attack) จะฟื้นฟู SP +6 แต้มให้กับตนเอง",
+        "การใช้สกิล 4 ช่องต้องใช้ค่า SP ตามที่ระบุ (S: 20-28 SP, M: 35-50 SP, L: 55-70 SP)",
+        "ส่ง ไก่ (Fire Striker) เผาทำลายเถาวัลย์ทมิฬ (Plant) เพื่อคว้าชัยชนะอย่างรวดเร็ว"
+      ],
+      "storyDialogue": {
+        "intro": "สายลมชื้นพัดผ่านแนวป่ารกทึบ ไอหมอกมืดมิดของ Void พันรอบเถาวัลย์จนคลุ้มคลั่งขวางทางอยู่!",
+        "victory": "เถาวัลย์ทมิฬสลายตัวกลายเป็นฝุ่นผง เส้นทางข้างหน้าเปิดออกแล้ว!"
+      },
+      "enemies": [
+        {
+          "heroId": "void_thornvine",
+          "level": 1,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["plant_s", "martial_s", "trick_s", "catalyst_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 260,
+          "food": 200,
+          "crystals": 25,
+          "warmth": 15,
+          "egg": "normal"
+        },
+        "repeatClear": {
+          "gold": 75,
+          "food": 50,
+          "elementStone": "plant",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_2"
+    },
+    {
+      "id": "stage_1_2",
+      "chapter": 1,
+      "stageNumber": 2,
+      "name": "หนองน้ำพิษซึม",
+      "nameEn": "Poison Mire",
+      "description": "ผืนน้ำนิ่งที่มีฟองก๊าซพิษผุดขึ้นตลอดเวลา สปอร์เห็ดพิษคลั่งพ่นละอองมลทินปกคลุมหนองน้ำ",
+      "battleMode": "1v1",
+      "recommendedLevel": 1,
+      "tutorialTopic": "วงล้อแห่งธาตุ (Elemental Advantage)",
+      "tutorialGuide": [
+        "การชนะธาตุ (Elemental Advantage) จะทำความเสียหายแรงขึ้น ×1.3 เท่า",
+        "การแพ้ธาตุ (Elemental Disadvantage) จะทำความเสียหายเบาลงเหลือ ×0.85 เท่า",
+        "ศัตรูเป็นธาตุพิษ (Poison) ชนะทางดินแต่แพ้ทางลม! ให้ส่ง แมว (Wind) ออกรบเพื่อคว้าชัยชนะ"
+      ],
+      "storyDialogue": {
+        "intro": "บึงน้ำนิ่งส่งกลิ่นกำมะถันฉุนกึก สปอร์เห็ดสีม่วงกำลังปล่อยฟองก๊าซพิษใส่ทุกคนที่ย่างกรายเข้ามา!",
+        "victory": "ละอองสปอร์พิษจางหาย ผิวน้ำกลับมาสะท้อนแสงอาทิตย์ได้อีกครั้ง"
+      },
+      "enemies": [
+        {
+          "heroId": "toxic_sporeling",
+          "level": 1,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["poison_s", "trick_s", "earth_s", "martial_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 320,
+          "food": 240,
+          "crystals": 25,
+          "warmth": 15
+        },
+        "repeatClear": {
+          "gold": 95,
+          "food": 65,
+          "elementStone": "poison",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_3"
+    },
+    {
+      "id": "stage_1_3",
+      "chapter": 1,
+      "stageNumber": 3,
+      "name": "หล่มโคลนดูดกลืน",
+      "nameEn": "Quicksilver Bog",
+      "description": "ดินโคลนด่างพร้อยยุบตัวกลืนกินทุกสรรพสิ่ง สไลม์โคลนเน่าเปื่อยหยุ่นตัวดักซุ่มอยู่ในหล่มลึก",
+      "battleMode": "1v1",
+      "recommendedLevel": 2,
+      "tutorialTopic": "เกจท่าไม้ตาย (Ultimate Gauge) & ท่าไม้ตาย",
+      "tutorialGuide": [
+        "เกจท่าไม้ตายจะสะสมเพิ่มขึ้นในทุกๆ เทิร์นของการต่อสู้",
+        "เมื่อสะสมครบ 100 แต้ม ปุ่มท่าไม้ตายประจำตัวจะสว่างขึ้นและปลดปล่อยพลังทำลายล้างสูงสุด",
+        "สไลม์โคลนมีเกราะและความทนทานสูง ให้รอจังหวะระเบิดท่าไม้ตายเพื่อทะลวงการป้องกัน"
+      ],
+      "storyDialogue": {
+        "intro": "พื้นดินเริ่มยุบตัวเป็นโคลนดูดเหนียวหนืด ก้อนสไลม์ยักษ์ผุดขึ้นมาจากหล่มโคลนพร้อมส่งเสียงขู่ฟ่อ!",
+        "victory": "สไลม์โคลนระเบิดกลายเป็นแอ่งน้ำใส ความบริสุทธิ์ของผืนดินเริ่มกลับคืนมา"
+      },
+      "enemies": [
+        {
+          "heroId": "putrid_slime",
+          "level": 2,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["earth_s", "martial_s", "trick_s", "earth_m2"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 380,
+          "food": 260,
+          "crystals": 30,
+          "warmth": 15
+        },
+        "repeatClear": {
+          "gold": 105,
+          "food": 70,
+          "elementStone": "earth",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_4"
+    },
+    {
+      "id": "stage_1_4",
+      "chapter": 1,
+      "stageNumber": 4,
+      "name": "สายธารหมอกลวง",
+      "nameEn": "Mist Veil Brook",
+      "description": "ม่านหมอกน้ำปกคลุมสายธาร บล็อบหยดน้ำหมอกมายาลอยละล่องสร้างภาพลวงตาขัดขวางทางเดิน",
+      "battleMode": "1v1",
+      "recommendedLevel": 2,
+      "tutorialTopic": "การสลับตัวสำรอง (Tag Relay Switch & Backup SP Regen)",
+      "tutorialGuide": [
+        "ปุ่มสลับตัว (Switch) สามารถกดเพื่อสลับนำตัวสำรองแนวหลังขึ้นมาต่อสู้แทนได้",
+        "ตัวสำรองที่พักอยู่แนวหลังจะได้รับการฟื้นฟู SP +10 แต้มในทุกๆ เทิร์น",
+        "เมื่อตัวหลักบาดเจ็บหรือเสียเปรียบธาตุ จงสลับตัวสำรองเพื่อพลิกสถานการณ์!"
+      ],
+      "storyDialogue": {
+        "intro": "หมอกหนาทึบลอยเหนือน้ำตก มีสิ่งมีชีวิตคล้ายหยดน้ำลอยละล่องสร้างม่านภาพลวงตาขวางทาง!",
+        "victory": "ม่านหมอกสลายตัว เผยให้เห็นเส้นทางขึ้นสู่เนินเขาของป่าฝนชั้นใน"
+      },
+      "enemies": [
+        {
+          "heroId": "mist_droplet_blob",
+          "level": 2,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["water_s", "water_m1", "medical_s", "trick_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 440,
+          "food": 280,
+          "crystals": 30,
+          "warmth": 15
+        },
+        "repeatClear": {
+          "gold": 115,
+          "food": 75,
+          "elementStone": "water",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_5"
+    },
+    {
+      "id": "stage_1_5",
+      "chapter": 1,
+      "stageNumber": 5,
+      "name": "ถิ่นล่าพรานเงาไพร",
+      "nameEn": "Ocelot's Prowl",
+      "description": "มินิบอสประจำครึ่งบท! แมวออสลอตผู้มีความเร็วสูงถูกครอบงำด้วยไอเพลิงของวิสป์วิญญาณแค้น",
+      "battleMode": "1v1",
+      "recommendedLevel": 3,
+      "tutorialTopic": "การรับมือศัตรูแบบคู่ Tag & สถานะเผาไหม้ (Burn)",
+      "tutorialGuide": [
+        "ศัตรูระดับมินิบอสจะเริ่มมี 'ตัวสำรอง' คอยสลับตัวลงมาต่อสู้เช่นเดียวกับเรา!",
+        "วิสป์ไฟมีความเร็วสูงและสร้างสถานะเผาไหม้ (Burn) ส่วนแมวออสลอตมีพลังโจมตีรุนแรง",
+        "วางแผนสลับตัวแก้ทางธาตุและกอบโกยชัยชนะเพื่อรับรางวัลไข่ทองคำ!"
+      ],
+      "storyDialogue": {
+        "intro": "เปลวไฟสีม่วงลอยหมุนวน... ข้างหลังนั้นมีดวงตาสีทองจ้องเขม็ง แมวออสลอตผู้พิทักษ์ถูกความมืดเข้าสิง!",
+        "victory": "หมอกดำสลายออกจากร่างแมวออสลอต มันก้มหัวคำนับและมอบไข่ทองคำแห่งพงไพรให้แก่ผู้ชนะ!"
+      },
+      "enemies": [
+        {
+          "heroId": "cursed_wisp",
+          "level": 2,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["fire_s", "fire_m1", "trick_s", "martial_s"]
+        },
+        {
+          "heroId": "ocelot",
+          "level": 3,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["plant_m1", "plant_s", "martial_s", "trick_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 580,
+          "food": 380,
+          "crystals": 60,
+          "warmth": 20,
+          "egg": "gold"
+        },
+        "repeatClear": {
+          "gold": 160,
+          "food": 105,
+          "elementStone": "plant",
+          "elementStoneChance": 0.60
+        }
+      },
+      "nextStageId": "stage_1_6"
+    },
+    {
+      "id": "stage_1_6",
+      "chapter": 1,
+      "stageNumber": 6,
+      "name": "ลานหินสะท้อนคลื่น",
+      "nameEn": "Resonance Plateau",
+      "description": "ลานหินโบราณใจกลางป่า ผลึกหินคอร์แปรปรวนสะท้อนคลื่นพลังงานผสานกับลูกแก้ววายุฉวัดเฉวียน",
+      "battleMode": "1v1",
+      "recommendedLevel": 3,
+      "tutorialTopic": "ระบบบัฟและดีบัฟ (Buffs & Debuffs: ATK/DEF/SPD)",
+      "tutorialGuide": [
+        "สกิลบัฟเพิ่ม ATK/DEF/SPD ให้ความได้เปรียบอย่างมหาศาลในการรบระยะยาว",
+        "การใช้สกิลลด DEF (เจาะเกราะ) ช่วยทะลวงผลึกหินศิลาที่ทนทานได้ง่ายขึ้น",
+        "ระวังลูกแก้ววายุที่มีความเร็วสูงและออกแอ็กชันตัดหน้าเราเสมอ"
+      ],
+      "storyDialogue": {
+        "intro": "ลานหินโบราณสั่นสะเทือน ผลึกหินยักษ์ที่มีคอร์ Void ส่องประกายคำรามพร้อมพายุหมุนลูกแก้ว!",
+        "victory": "ผลึกหิน Void แตกสลาย พลังงานบริสุทธิ์กลับคืนสู่ลานหินศักดิ์สิทธิ์"
+      },
+      "enemies": [
+        {
+          "heroId": "anomalous_rockling",
+          "level": 2,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["earth_s", "earth_m2", "martial_s", "catalyst_s"]
+        },
+        {
+          "heroId": "gale_swarm_orb",
+          "level": 2,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["wind_s", "wind_m1", "martial_s", "trick_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 500,
+          "food": 320,
+          "crystals": 35,
+          "warmth": 15
+        },
+        "repeatClear": {
+          "gold": 150,
+          "food": 100,
+          "elementStone": "earth",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_7"
+    },
+    {
+      "id": "stage_1_7",
+      "chapter": 1,
+      "stageNumber": 7,
+      "name": "ดงรากไม้หวีดหวิว",
+      "nameEn": "Haunted Mandrake Grove",
+      "description": "แนวป่าลึกที่เต็มไปด้วยรากไม้โบราณ แมนเดรกพรายหวีดหวิวกู่ร้องเสียงแหลมสูงทำให้ผู้มาเยือนเสียสติ",
+      "battleMode": "1v1",
+      "recommendedLevel": 4,
+      "tutorialTopic": "การรับมือ Hard CC (สตัน / สับสน / หลับใหล)",
+      "tutorialGuide": [
+        "สถานะสับสน (Confusion) มีโอกาส 60% ที่ตัวละครจะโจมตีตนเอง เสียเลือด 12% Max HP",
+        "เมื่อตัวหลักติดสตันหรือสับสน สามารถตัดสินใจกดสลับตัวสำรองลงมาเล่นแทนได้",
+        "เตรียมสกิลและจังหวะรบให้รอบคอบเพื่อไม่ให้เสียเทิร์นฟรี"
+      ],
+      "storyDialogue": {
+        "intro": "เสียงกรีดร้องเสียดหูแว่วมาตามลม! รากไม้หน้าตามนุษย์และเห็ดพิษโผล่ขึ้นมาล้อมหน้าหลัง!",
+        "victory": "เสียงกรีดร้องสงบลง รากไม้กลายเป็นดอกไม้ป่าสีขาวบริสุทธิ์ กลิ่นหอมฟุ้งกระจาย"
+      },
+      "enemies": [
+        {
+          "heroId": "phantom_mandrake",
+          "level": 3,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["plant_s", "plant_m1", "trick_s", "martial_s"]
+        },
+        {
+          "heroId": "toxic_sporeling",
+          "level": 2,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["poison_s", "poison_m1", "trick_s", "earth_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 560,
+          "food": 380,
+          "crystals": 40,
+          "warmth": 15,
+          "skillBook": "plant_m1"
+        },
+        "repeatClear": {
+          "gold": 175,
+          "food": 115,
+          "elementStone": "plant",
+          "elementStoneChance": 0.55
+        }
+      },
+      "nextStageId": "stage_1_8"
+    },
+    {
+      "id": "stage_1_8",
+      "chapter": 1,
+      "stageNumber": 8,
+      "name": "โพรงกรดละลายวิญญาณ",
+      "nameEn": "Acid Cavern",
+      "description": "ถ้ำหินปูนที่มีน้ำย่อยกรดเข้มข้นหยดไหลตลอดเวลา เจลลี่กรดและปรสิตดูดเงากลืนกินสิ่งมีชีวิตที่หลงเข้ามา",
+      "battleMode": "1v1",
+      "recommendedLevel": 4,
+      "tutorialTopic": "ความอันตรายของ DoT & สถานะเปราะบาง (Vulnerable)",
+      "tutorialGuide": [
+        "สถานะเปราะบาง (Vulnerable) ทำให้รับดาเมจทุกประเภทแรงขึ้น +25% และห้ามกางเกราะ (Shield)",
+        "ดาเมจ DoT (พิษและเลือดไหล) กัดกินเลือดตาม Max HP ไม่สนค่า DEF",
+        "ต้องรีบเร่งปิดฉากศัตรูให้เร็วที่สุด ก่อนที่จะถูกกรดกัดกร่อนจนยืนไม่อยู่"
+      ],
+      "storyDialogue": {
+        "intro": "ผนังถ้ำหยดน้ำย่อยกรดเข้มข้น เจลลี่กรดม่วงและปรสิตดูดเงาเลื้อยออกมาจากรอยแยกหิน!",
+        "victory": "กรดพิษสลายกลายเป็นน้ำแร่ธรรมชาติ ทางเข้าสู่ใจกลางป่าฝนเปิดโล่งแล้ว"
+      },
+      "enemies": [
+        {
+          "heroId": "caustic_acid_jelly",
+          "level": 3,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["poison_s", "poison_m1", "trick_m1", "martial_s"]
+        },
+        {
+          "heroId": "shadow_parasite",
+          "level": 3,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["dark_s", "dark_m1", "trick_s", "martial_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 620,
+          "food": 440,
+          "crystals": 45,
+          "warmth": 20,
+          "egg": "normal"
+        },
+        "repeatClear": {
+          "gold": 190,
+          "food": 125,
+          "elementStone": "poison",
+          "elementStoneChance": 0.60
+        }
+      },
+      "nextStageId": "stage_1_9"
+    },
+    {
+      "id": "stage_1_9",
+      "chapter": 1,
+      "stageNumber": 9,
+      "name": "ทางขึ้นสู่ยอดพฤกษา",
+      "nameEn": "Pre-Boss Tree Ascent",
+      "description": "ด่านหน้าบอสใหญ่! รากไม้ยักษ์ทอดยาวสู่ยอดไม้ เถาวัลย์ทมิฬประสานพลังกับสมเสร็จยักษ์ที่ถูกสะกดจิต",
+      "battleMode": "1v1",
+      "recommendedLevel": 4,
+      "tutorialTopic": "การประยุกต์ใช้ความรู้รอบด้าน (Pre-Boss Synergy Check)",
+      "tutorialGuide": [
+        "จัดทีม 2 ตัวที่ลบจุดอ่อนของกันและกัน เพื่อเตรียมความพร้อมรับมือศึกบอสใหญ่",
+        "เถาวัลย์ทมิฬกลืนชีพประสานพลังกับสมเสร็จยักษ์ที่ถูกสะกดจิต",
+        "ใช้ประโยชน์จากการสลับตัว การสะสมเกจไม้ตาย และการแก้ทางธาตุอย่างเต็มที่"
+      ],
+      "storyDialogue": {
+        "intro": "บันไดรากไม้ยักษ์ทอดยาวสู่ยอดไม้ สมเสร็จผู้พิทักษ์ถูกไอหมอกดำครอบงำยืนขวางทางเดิน!",
+        "victory": "สมเสร็จหลุดพ้นจากการสะกด มันชี้ทางขึ้นสู่ยอดไม้พร้อมส่งเสียงเชียร์ให้เราไปช่วยพญาลิงอุรังอุตัง!"
+      },
+      "enemies": [
+        {
+          "heroId": "void_thornvine",
+          "level": 3,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["plant_s", "plant_m1", "martial_s", "trick_s"]
+        },
+        {
+          "heroId": "tapir",
+          "level": 3,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["plant_s", "plant_m1", "earth_s", "trick_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 800,
+          "food": 550,
+          "crystals": 60,
+          "warmth": 25,
+          "skillBook": "poison_m2"
+        },
+        "repeatClear": {
+          "gold": 225,
+          "food": 150,
+          "elementStone": "plant",
+          "elementStoneChance": 0.65
+        }
+      },
+      "nextStageId": "stage_1_10"
+    },
+    {
+      "id": "stage_1_10",
+      "chapter": 1,
+      "stageNumber": 10,
+      "name": "ต้นไม้โลกใจกลางป่าฝน",
+      "nameEn": "The Primordial World Tree",
+      "description": "ศึกตัดสินบอสใหญ่บทที่ 1! พญาลิงอุรังอุตังผู้พิทักษ์ต้นไม้โลกถูก Void ครอบงำจนสูญเสียสติ จงปลดปล่อยเขา!",
+      "battleMode": "1v1",
+      "recommendedLevel": 6,
+      "isBossStage": true,
+      "tutorialTopic": "ศึกตัดสินบอสใหญ่ (Boss Encounter: Break & Burst)",
+      "tutorialGuide": [
+        "พญาลิงอุรังอุตังระดับ 2 ดาว มี HP และค่าสเตตัสสูงมาก พร้อมท่าไม้ตายทุบทำลายล้าง",
+        "กำจัดปรสิตดูดเงาเพื่อเปิดทาง จากนั้นบริหาร SP และระเบิดท่าไม้ตายชำระล้างจิตใจของพญาลิง!",
+        "พิชิตบอสใหญ่เพื่อกอบกู้สมดุลบทที่ 1 และรับ 150 คริสตัล + ไข่ทองคำ + เศษวิญญาณอุรังอุตัง 30 ชิ้น"
+      ],
+      "storyDialogue": {
+        "intro": "บนยอดบัลลังก์ไม้ พญาลิงอุรังอุตังคำรามลั่นด้วยดวงตาสีเลือด! 'พวกเจ้า... ไม่มีวันขัดขวางความสงบแห่งความว่างเปล่าได้!'",
+        "victory": "เถาวัลย์ทมิฬสลายกลายเป็นละอองแสงสีทอง! พญาลิงอุรังอุตังได้สติกลับคืนมา แสงสว่างสาดส่องลงมายังป่าฝนอีกครั้ง สมดุลของบทที่ 1 ได้รับการกอบกู้แล้ว!"
+      },
+      "enemies": [
+        {
+          "heroId": "shadow_parasite",
+          "level": 2,
+          "stars": 1,
+          "row": "front",
+          "col": 1,
+          "customSkills": ["dark_s", "dark_m1", "trick_s", "martial_s"]
+        },
+        {
+          "heroId": "orangutan",
+          "level": 3,
+          "stars": 1,
+          "row": "mid",
+          "col": 1,
+          "customSkills": ["plant_m1", "earth_s", "trick_s", "martial_s"]
+        }
+      ],
+      "rewards": {
+        "firstClear": {
+          "gold": 1800,
+          "food": 1200,
+          "crystals": 200,
+          "warmth": 30,
+          "egg": "gold",
+          "shards": {
+            "orangutan": 30
+          }
+        },
+        "repeatClear": {
+          "gold": 320,
+          "food": 200,
+          "elementStone": "plant",
+          "elementStoneChance": 0.70
+        }
+      },
+      "nextStageId": null
+    }
+  ]
+}
